@@ -40,6 +40,14 @@ a{//circle icon style
 	}
 }
 
+
+section{
+	padding: 80px 0px;
+}
 @import "header";
+
+//page styles here
+@import "home";
+//end page styles
 
 @import "footer";
