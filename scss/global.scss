@@ -1,0 +1,18 @@
+@import "compass/css3";
+@import "normalize";
+@import "bits";
+@import "widgets";
+
+html {
+	font-family: "SortsMillGoudy", serif;
+  font-size: 16px;
+  line-height: 1;
+  text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
+ }
+
+.page-wrap{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+@import "header";

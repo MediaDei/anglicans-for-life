@@ -1,0 +1,138 @@
+header{
+	position: relative;
+	z-index: 0; 
+	nav{
+		position: absolute;
+		width: 100%; 
+		top: 0px;
+		z-index: 1; 
+		background-color: rgba(43,48,61,0.55); 
+		padding: 20px 5px; 
+		div.ribbon{
+			background-color: #7998c1;
+	    height: 80px;
+	    position: relative;
+	    right: 0%;
+	    top: 0%;
+	    width: 60px;
+	    box-shadow: -6px 0px 10px -7px rgba(black,0.5),
+	    						6px 0px 10px -7px rgba(black,0.5),
+	    						inset 0px 0px 3px 1px rgba(white,1);
+	    border-top: 2px solid lighten(#50647D,15%);
+	    border-right: 2px solid #50647D;
+	    border-bottom: 2px solid #50647D;
+	    border-left: 2px solid #50647D;
+	    /*
+	    &:active{
+	    	background-color: darken(#7998c1,3%); 
+	    }
+			&:before{
+				background-color: white;
+				border-bottom-right-radius: 100%; 
+		    content: "";
+		    height: 56px;
+		    position: absolute;
+		    right: 10px;
+		    top: 109px;
+		    @include transform(rotate(45deg));
+		    width: 56px;
+		    box-shadow: 0px 0px 2px 1px rgba(white,1),
+										inset 0px 18px 0px -15px #50647D,
+										inset 18px 0px 0px -15px #50647D,
+										inset 0 40px 6px -35px rgba(black, 0.5),
+		    						inset 40px 0px 6px -35px rgba(black, 0.5);
+			} 
+			*/
+			p{
+				font-style: italic;
+				hyphens: none;
+				font-size: 1em;
+				color: white;
+				text-shadow: 0px 2px 0px rgba(black,0.5);
+				text-align: center;
+				padding: 0px 5px; 
+				position: relative;
+				top: 0px;
+				left: 0px;
+				&:hover{
+		    	cursor: pointer;
+		    }
+			}	  
+		}
+		div.buttons-left,div.buttons-right{
+			a{
+				display: table;
+				float: left;
+				margin-right: 5px; 
+				&:active{
+					position: relative;
+					top: 1px;
+				}
+				div.button{
+					color: white;
+					padding: 5px 10px;
+					background-color: rgba(black,0.3);
+					border-radius: 2px;
+					box-shadow: 0px 2px 2px 0px rgba(black,0.3);
+					@include background-image(
+      linear-gradient(to bottom, rgba(white, 0.05), rgba(black, 0)));
+     		&:hover{
+     			@include background-image(
+      linear-gradient(to bottom, rgba(white, 0.0), rgba(black, 0.08)));
+     			}
+				}
+			}
+		}
+		div.buttons-left{
+			float: left;
+		}
+		a.logo{
+			display: table;
+			margin: 0 auto;
+			position: absolute;
+			left: 50%;
+			h1{
+				margin: 0 auto;  
+				font-size: 1em;
+				color: white; 
+				position: relative;
+				padding-left: 5px;
+				&:first-of-type{
+					&:before{
+						content: "";
+						background: url("../images/logo-flame-white.png") no-repeat center center / 100% auto;
+						width: 25px;
+						height: 30px;
+						position: absolute;
+						top: 3px;
+						left: -25px; 
+					}
+				}
+				&:nth-of-type(2){
+					font-size: 1.2em;
+					letter-spacing: 2px; 
+				}
+			}
+		}
+		div.buttons-right{
+			float: right;
+		}
+	}
+	div.hero-img{
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto; 
+			position: relative;
+			display: block;
+		}
+	}
+	div.logo{
+		position: absolute;
+		bottom: 2%;
+		left: 2%;  
+		width: 100px;
+		height: 50px;
+		background: url("../images/logo-text-white.png") no-repeat center center / 100% auto;  
+	}
+}
