@@ -25,4 +25,35 @@ function scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'scripts_styles');
-?>
+
+//stop WP core from adding <p> and <br> tags to shortcode from WYSIWYG editor filter (wpautop)
+function media_dei_shortcode_empty_paragraph_fix($content)
+{   
+  $array = array (
+    '<p>[' => '[', 
+    ']</p>' => ']', 
+    ']<br />' => ']'
+  );
+
+  $content = strtr($content, $array);
+
+  return $content;
+}
+add_filter('the_content', 'media_dei_shortcode_empty_paragraph_fix');
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function media_dei_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'media_dei_custom_excerpt_length', 999 );
+
+//Change excerpt text from "[...]"" to "Read more"
+function media_dei_new_excerpt_more( $more ) {
+    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read more', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'media_dei_new_excerpt_more' );

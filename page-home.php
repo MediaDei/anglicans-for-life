@@ -35,7 +35,7 @@ Template Name: Home Page
 				<div class="title-content">
 					<h1><?php the_title(); ?></h1>
 					<time class="pub-date"><?php echo 'Published ' . get_the_date('F j,Y'); ?></time>
-					<p><?php the_excerpt(); ?></p>
+					<p><?php the_excerpt('Read More'); ?></p>
 				</div>
 			</article>
 			<?php
