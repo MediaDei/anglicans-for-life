@@ -1,34 +1,95 @@
 footer{
 	background-color: #2D2A58;
 	box-shadow: inset 0px 3px 6px rgba(black,1);
+	padding: 10px 0px;
 	div.grid{
 		padding: 20px;
 		div.grid-1-4{
 			border-right: 1px solid $grey-border;
 			padding: 20px; 
 			color: white;
+			height: 80px;
+			overflow: hidden; 
 			&:last-of-type{
 				border-right: none; 
 			}
+			p{
+				margin: 0 auto;
+				width: 100px; 
+				&.logo{
+				position: relative;
+				padding-left: 5px;
+					&:before{
+						content: "";
+						background: url("../images/logo-flame-white.png") no-repeat center center / 100% auto;
+						width: 25px;
+						height: 30px;
+						position: absolute;
+						top: 3px;
+						left: -25px; 
+					}
+				}
+				&.logo-bottom{
+					font-size: 1.2em;
+					letter-spacing: 2px;
+					padding-left: 5px;
+				} 
+			} 
 			a{
+				&.contact{
+					float: left;
+				}
 				color: white;
+				div.icon.fa-envelope-o{
+					padding: 8px 0px 0px 8px;
+				}
+				p.terms-privacy{
+					font-size: 0.8em;	
+				}
 				&:hover{
 					text-decoration: underline;
 				}
+			}
+			div.icon-row{
+				margin: 0 auto 10px;
+				display: table;
+			}
+			address{
+				margin: 0 auto;
+				display: table;
+				line-height: 1.2;
 			}
 		}
 	}
 	div.inset-prayer{
 		background-color: #7D7AA6;
+		@include background-image(linear-gradient (to top, rgba(black,0.06), rgba(black,0.44)));
 		color: #E7E7E7;
 		width: 90%;
 		margin: 0 auto;
-		padding: 10px; 
+		padding: 10px 50px; 
 		font-size: 0.9em;
+		border-radius: 0px;
+		border-top: 1px solid $border;
+		box-shadow: inset 0px 4px 4px -2px rgba(black,1);
 		h3{
-			margin: 0 auto;
+			margin: 0 auto 15px;
 			display: table;
 			color: rgba(white,0.52);
+			font-size: 1.1em;
+			&:last-of-type{
+				margin: 5px auto 0px;
+			} 
+		}
+		div.sentences{
+			margin: 0 auto;
+			@include column-count(2);
+			font-size: 0.85em;
+			p{
+				padding-left: 1.5em;
+				text-indent: -1.5em;
+				margin: 0px 0px 10px;
+			}
 		}  
 	}
 }
