@@ -11,6 +11,7 @@ $bg-grey: #faf9f9;
 $border: #979797;
 $lighter-border: #DFDFDF;
 $lightest-border: #CBCBCB;
+$grey-border: #C4C4C4;
 
 //Font-Stacks
 @font-face {
@@ -77,6 +78,11 @@ $lightest-border: #CBCBCB;
 	width: 33%;
 	float: left;
 
+}
+
+.grid-1-4{
+  width: 25%;
+  float: left;
 }
 
 .grid-1-6{
