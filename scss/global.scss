@@ -14,7 +14,9 @@ html {
 	max-width: 960px;
 	margin: 0 auto;
 }
-
+a{
+	color: $link;
+}
 a{//circle icon style
 	div.icon{
 		display: inline-block;
@@ -40,6 +42,29 @@ a{//circle icon style
 	}
 }
 
+//button style
+a.button{
+	color: #46565D;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	div.button{
+		display: table;
+	 	padding: 6px 28px 5px;
+	 	background-color: #F5E3BF;
+	 	@include background-image(linear-gradient(to bottom, rgba(white,0.5),rgba(191,161,140,0.38)));
+	 	border: 1px solid $border;
+	 	border-radius: 9px;
+	 	box-shadow: inset 0px -1px 11px 1px rgba(white,0.75);
+	 	text-shadow: 0px -1px 0px rgba(black,0.25),
+							 	 0px 1px 0px rgba(white,0.7);
+		font-size: 1.05em;
+	 	&:active{
+	 		position: relative;
+	 		top: 1px;
+	 	}  
+	}
+}
 
 section{
 	padding: 80px 0px;
