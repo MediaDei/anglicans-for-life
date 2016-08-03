@@ -40,7 +40,16 @@ section{
 			border: 1px solid $border;
 			box-shadow: 10px 0px 2px -9px rgba(black,0.5);
 			border-radius: 4px; 
-			background-color: white;  
+			background-color: white;
+			&:after{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				@include background-image(linear-gradient(to bottom, rgba(white,0.5), rgba(white,0)));
+				z-index: 3; 
+			}  
 			img{
 				display: block;
 				width: 100%;
@@ -59,13 +68,25 @@ section{
 			border: 1px solid #DCD8CE; 
 			border-radius: 2px;
 			background-color: #FFFEFA; 
-			padding: 20px; 
+			padding: 20px;
+			div.social-buttons{
+				float: right;
+				a{
+					div.icon{
+						font-size: 0.9em;
+						width: 28px;
+						height: 28px;  
+						margin-right: 2px;
+					}
+				}
+			}
 			time.pub-date{
 				font-style: italic;
 				font-size: 0.9em;
 			}
 			h1{
 				font-size: 1.5em;
+				padding-bottom: 2px;
 			}
 			p{
 				line-height: 1.2; 
@@ -92,7 +113,89 @@ section{
 				display: inline-block;
 				color: white;
 				text-shadow: 0px 1px 0px rgba(black,0.5);
+				letter-spacing: 0.5px;
 			}
 		}  
+	}
+	div.qa-twitter{
+		padding: 80px 0px;
+		div.grid{
+			div.ask{
+				padding: 20px;
+				width: 513px;
+				height: 280px;
+				box-shadow: 0px 7px 14px 0px rgba(black,0.5);
+				background: url("../images/ask-bg.png") no-repeat bottom right / 75% auto;
+				h2{
+					color: #C8C8C8;
+					font-size: 2.2em;
+				}
+				p{
+					font-size: 1.1em;
+					width: 310px; 
+					line-height: 1.3; 
+					color: #585858;
+					&:before{
+						content: "Q | ";
+						color: #FF0000;
+					}
+				}
+				a{
+					color: #585858;
+					&:before{
+						content: "A | ";
+						color: #FF0000;
+					}
+					span{
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+	div.img-header-section{
+		width: 100%;
+		height: 315px;
+		padding-top: 50px;
+		@include background( 
+					    linear-gradient(
+					      rgba(45,45,45,0.64), 
+					      rgba(45,45,45,0.64)
+					    ),
+					    url('../images/get-involved-bg.jpg') no-repeat center center / 960px 315px);
+		h2,p{
+			display: table;
+			margin: 0 auto;
+			color: white;
+			text-shadow: 0px 7px 14px rgba(black,0.8),
+									 0px 2px 4px rgba(black,0.8);
+		}
+		h2{
+			font-size: 5em;
+			letter-spacing: 3.5px;
+			padding-bottom: 6px 
+		}
+		div.line{
+			margin: 0px auto;
+			width: 650px;
+			height: 2px; 
+			border-bottom: 2px solid white;
+			box-shadow: 0px 2px 4px rgba(black,0.8); 
+		}
+		p{
+			font-size: 1.5em;
+			letter-spacing: 1px;
+			padding-top: 18px;
+		} 
+	}
+	div.subscribe{
+		padding: 60px 0px;
+		p{
+			display: table;
+			margin: 0 auto;
+			letter-spacing: 0.5px;
+		}
 	}
 }

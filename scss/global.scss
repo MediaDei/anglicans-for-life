@@ -8,6 +8,7 @@ html {
   font-size: 16px;
   line-height: 1;
   text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
+  color: $base-text;
  }
 
 .page-wrap{
@@ -29,11 +30,11 @@ a{//circle icon style
 		box-shadow: inset 0px 0px 4px 1px rgba(white,0.75);
 		text-shadow: 0px 1px 0px rgba(white,1);
 		border-radius: 100%;
-		padding: 10px;
+		padding: 0.5em;
 		font-size: 1.3em;
 		margin-right: 10px;
 		&.facebook{
-			padding-left: 12px; 
+			padding-left: 0.6em; 
 		}
 		&:active{
 			position: relative;
@@ -59,6 +60,7 @@ a.button{
 	 	text-shadow: 0px -1px 0px rgba(black,0.25),
 							 	 0px 1px 0px rgba(white,0.7);
 		font-size: 1.05em;
+		letter-spacing: 0.5px;
 	 	&:active{
 	 		position: relative;
 	 		top: 1px;
@@ -66,6 +68,9 @@ a.button{
 	}
 }
 
+span.italic{
+	font-style: italic;
+}
 section{
 	padding: 80px 0px;
 }

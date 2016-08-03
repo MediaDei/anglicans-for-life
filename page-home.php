@@ -33,6 +33,10 @@ Template Name: Home Page
 				}
 				?>
 				<div class="title-content">
+					<div class="social-buttons">
+						<a href="https://www.facebook.com/AnglicansforLife/"><div class="icon facebook fa fa-facebook"></div></a>
+						<a href="https://twitter.com/Anglicans4Life"><div class="icon fa fa-twitter"></div></a>
+					</div>
 					<h1><?php the_title(); ?></h1>
 					<time class="pub-date"><?php echo 'Published ' . get_the_date('F j, Y'); ?></time>
 					<p><?php the_excerpt('Read More'); ?></p>
@@ -55,12 +59,12 @@ Template Name: Home Page
 	</div>
 	<div class="qa-twitter">
 		<div class="grid">
-			<div class="grid-2-3">
-				<h2>Ask:</h2>
+			<div class="grid-2-3 ask">
+				<h2><span class="italic">Ask:</span></h2>
 				<p class="question">
-					“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne
+					<span class="italic">“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne</span>
 				</p>
-				<a href="#" class="answer-link"> read & respond &rarr;</a>
+				<a href="#" class="answer-link"><span class="italic">read & respond</span> &rarr;</a>
 			</div>
 			<div class="grid-1-3">
 				<h2>Recent Tweets</h2>
@@ -74,7 +78,11 @@ Template Name: Home Page
 	</div>
 	<div class="img-header-section">
 		<h2 class="smallcaps">get involved</h2>
+		<div class="line"></div>
 		<p>Lorem ipsum dolor sit amet arma virumque cano.</p>
+	</div>
+	<div class="subscribe">
+		<p>Sign up for <span class="italic">Carpe Diem</span>, AFL’s quarterly newsletter:</p>
 	</div>
 </section>
 
