@@ -1,0 +1,12 @@
+section{
+	div.bubbles{
+		width: 100%; 
+		min-height: 700px; 
+		@include background( 
+			linear-gradient(
+	      rgba(white,1), 
+	      rgba(white,0)
+	    ),
+			url("../images/bubbles-bg.png") no-repeat center center / 100% auto);
+	}
+}

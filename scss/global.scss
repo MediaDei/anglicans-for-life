@@ -71,6 +71,75 @@ a.button{
 span.italic{
 	font-style: italic;
 }
+h1.page-title{
+	font-size: 2.7em;
+	font-style: italic;
+	margin: 0 auto 30px;
+	display: table;
+}
+p.top-p{
+	width: 70%;
+	margin: 0 auto; 
+}
+
+//donate section divider
+div.donate{
+	height: 110px;
+	background-color: #2D2A58;
+	@include background-image(linear-gradient(to bottom, rgba(black,0.24), rgba(150,150,150,0), rgba(white,0.27)));
+	div.content-wrapper{
+		display: table;
+		margin: 0 auto;
+		padding-top: 30px;
+		p{
+			margin: 0 15px 0 0;
+			display: inline-block;
+			color: white;
+			text-shadow: 0px 1px 0px rgba(black,0.5);
+			letter-spacing: 0.5px;
+		}
+	}  
+}
+//subscribe section divider
+div.subscribe{
+	padding: 60px 0px;
+	p{
+		display: table;
+		margin: 0 auto;
+		letter-spacing: 0.5px;
+	}
+}
+//social buttons in posts
+div.social-buttons{
+	float: right;
+}
+//post date style
+time.circle {
+	position: relative;
+	bottom: 60px;
+  height: 102px;
+  width: 102px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid #DCD8CE;
+  text-transform: uppercase;
+  background-color: #FFFEFA;
+  font-size: 1.06em;
+  color: $lighter-text;
+  text-align: center;
+  .top {
+    padding: 4px 0 8px;
+    letter-spacing: 2px;
+    margin-top: 24px;
+  }
+  .bottom {
+    font-size: 1.8em;
+    border-top: 1px solid #DEDEDE;
+    box-shadow: inset 0 1px 0 rgba(white, 0.8);
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 section{
 	padding: 80px 0px;
 }
@@ -78,6 +147,9 @@ section{
 
 //page styles here
 @import "home";
+@import "issues";
+@import "get-involved";
+@import "single";
 //end page styles
 
 @import "footer";

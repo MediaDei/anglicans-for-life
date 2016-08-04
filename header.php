@@ -82,7 +82,9 @@
 				
 			}
 			if(is_single()){
-				echo '<div class="hero-img single-post" role="image"></div>';
+				echo '<div class="hero-img single-post" role="image">';
+				the_post_thumbnail();
+				echo '</div>';
 			}
 			?>
 			<div class="logo"></div>

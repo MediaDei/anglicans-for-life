@@ -1,0 +1,33 @@
+section{
+	div.post{
+		width: 80%;
+		background-color: #FFFEFA;
+		margin: 0 auto;
+		border: 1px solid #DCD8CE;
+		border-radius: 4px;  
+		padding: 40px 70px 20px;
+		position: relative;
+		time.circle {
+			position: absolute;
+			top: 0px;
+			left: -80px;
+			box-shadow: 0px 1px 3px rgba(black,0.5); 
+		}
+		h1.title{
+			font-size: 2em;
+			display: table;		
+			margin: 0 auto;
+		}
+		time.pub-date{
+			display: table;
+			margin: 0 auto;
+			color: $lighter-text;
+		} 
+		div.line{
+			border-bottom: 1px solid $border;
+			height: 1px;
+			width: 95%;
+			margin: 40px auto 0px; 
+		}
+	}
+}
