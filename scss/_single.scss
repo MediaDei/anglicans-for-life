@@ -14,20 +14,45 @@ section{
 			box-shadow: 0px 1px 3px rgba(black,0.5); 
 		}
 		h1.title{
-			font-size: 2em;
-			display: table;		
+			font-size: 2.3em;
 			margin: 0 auto;
+			max-width: 540px;
+			text-align: center; 
 		}
 		time.pub-date{
 			display: table;
 			margin: 0 auto;
 			color: $lighter-text;
+			padding-bottom: 25px; 
+		}
+		div.img{
+			margin: 0 auto; 
+			border: 8px solid white;
+			box-shadow: 0px 2px 4px 1px rgba(black,0.4);
+			img{
+				display: block;
+				width: 100%;
+				height: auto;  
+			}
 		} 
 		div.line{
 			border-bottom: 1px solid $border;
 			height: 1px;
 			width: 95%;
 			margin: 40px auto 0px; 
+			&.top-line{
+				width: 75%;
+				margin: 10px auto; 
+			}
+		}
+	}
+	
+	&.latest-posts{
+		padding-top: 0px; 
+			h2{
+			text-align: center;
+			font-size: 2.5em;
+			margin: 30px 0px; 
 		}
 	}
 }

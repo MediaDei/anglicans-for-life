@@ -10,16 +10,8 @@
 		<h2>Pray for life</h2>
 		<p><span class="italic">Join our prayer team:</span></p>
 	</div>
-	<div class="subscribe">
-		<p>Sign up for <span class="italic">Carpe Diem</span>, AFL’s quarterly newsletter:</p>
-	</div>
-	<div class="donate">
-		<div class="content-wrapper">
-			<p>Partner with AFL’s life-affirming ministry today:</p>
-			<a class="button" href="">
-				<div class="button">Donate</div>
-			</a>
-		</div>
+	<?php include(TEMPLATEPATH."/global-parts/subscribe-section-divider.php"); ?>
+	<?php include(TEMPLATEPATH."/global-parts/donate-section-divider.php"); ?>
 	</div>
 </section>
 

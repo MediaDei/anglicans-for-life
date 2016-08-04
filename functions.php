@@ -41,6 +41,17 @@ function media_dei_shortcode_empty_paragraph_fix($content)
 }
 add_filter('the_content', 'media_dei_shortcode_empty_paragraph_fix');
 
+function media_dei_filter_ptags_on_images($content)
+{
+    // strip <p> from post images
+    // regular expression: <p> (whitespace) <a (stuff)>(stuff)</a> (whitespace) </p>
+    // replace with <div> and inner contents
+    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '<div class="img">\1\2\3</div>', $content);
+}
+// we want it to be run after the autop stuff... 10 is default.
+add_filter('the_content', 'media_dei_filter_ptags_on_images');
+
+
 /**
  * Filter the except length to 20 characters.
  *
