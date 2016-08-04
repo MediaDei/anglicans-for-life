@@ -1,0 +1,33 @@
+section.terms-privacy{
+	p.privacy-p,address{
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+	address{
+		line-height: 1.3; 
+	}
+	h2,h3{
+		margin: 0 auto;
+		max-width: 430px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	h3{
+		margin: 0px auto 20px;
+		padding-top: 20px;
+	}
+	ol{
+		width: 280px;
+		margin: 50px auto; 
+		li{
+			margin-bottom: 10px; 
+			padding-left: 10px;
+			a{
+				color: $base-text;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
