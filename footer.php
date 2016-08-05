@@ -18,7 +18,7 @@
 						$(document).ready(function() {
 							var e = "info"; // replace with your email username
 							var t = "anglicansforlife"; // replace with your email provider
-							var n = ".com"; // replace with your email provider TLD
+							var n = ".org"; // replace with your email provider TLD
 							var r = "mailto:" + e + '@' + t + n; //href
 							$('#hidden-email').attr('href',r).html(e + '@'+t+n);
 						});

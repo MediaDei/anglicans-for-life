@@ -16,10 +16,10 @@ else{
 $query = new WP_Query($args);
 if($query->have_posts()){
 	if(is_page('archives')){
-		echo '<h1 class="page-title"><span class="italic">Archive</span></h1>';
+		echo '<h1 class="page-title">Archive</h1>';
 	}
 	elseif(is_page('home')){
-		echo '<h1 class="page-title"><span class="italic">Latest Posts</span></h1>';
+		echo '<h1 class="page-title">Latest Posts</h1>';
 	}
 	else{
 		echo '<h2><span class="italic">Latest Posts</span></h2>';
