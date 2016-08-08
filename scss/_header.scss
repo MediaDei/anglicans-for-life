@@ -2,55 +2,55 @@ header{
 	position: relative;
 	z-index: 0; 
 	nav{
-		position: absolute;
 		width: 100%; 
-		top: 0px;
-		z-index: 1; 
-		background-color: rgba(43,48,61,0.55); 
-		padding: 20px 5px; 
+		background-color: #60517F; 
+		border-top: 1px solid #807DA9;
+		border-bottom: 1px solid #807DA9;
+		box-shadow: 0px 5px 4px -2px rgba(black,0.7);
+		padding: 7px 12px; 
+		position: relative;
+		z-index: 1; //show shadow over div.hero-img
 		div.ribbon{
-			background-color: #7998c1;
+			background-color: #F1CE18;
 	    height: 80px;
-	    position: relative;
-	    right: 0%;
-	    top: 0%;
+	    position: absolute;
+	    left: 10px;
+	    top: -4px;
 	    width: 60px;
 	    box-shadow: -6px 0px 10px -7px rgba(black,0.5),
 	    						6px 0px 10px -7px rgba(black,0.5),
 	    						inset 0px 0px 3px 1px rgba(white,1);
-	    border-top: 2px solid lighten(#50647D,15%);
-	    border-right: 2px solid #50647D;
-	    border-bottom: 2px solid #50647D;
-	    border-left: 2px solid #50647D;
-	    /*
+	    border-top: 2px solid lighten(#B9A74E,15%);
+	    border-right: 2px solid #B9A74E;
+	    border-bottom: 2px solid #B9A74E;
+	    border-left: 2px solid #B9A74E;
 	    &:active{
-	    	background-color: darken(#7998c1,3%); 
+	    	background-color: darken(#F1CE18,3%); 
 	    }
 			&:before{
-				background-color: white;
+				background-color: rgba(white,1);
 				border-bottom-right-radius: 100%; 
 		    content: "";
-		    height: 56px;
+		    height: 42px;
 		    position: absolute;
-		    right: 10px;
-		    top: 109px;
+		    right: 7px;
+		    top: 55px;
 		    @include transform(rotate(45deg));
-		    width: 56px;
-		    box-shadow: 0px 0px 2px 1px rgba(white,1),
-										inset 0px 18px 0px -15px #50647D,
-										inset 18px 0px 0px -15px #50647D,
+		    width: 42px;
+		    box-shadow: inset 0px 18px 0px -15px #B9A74E,
+										inset 18px 0px 0px -15px #B9A74E,
 										inset 0 40px 6px -35px rgba(black, 0.5),
 		    						inset 40px 0px 6px -35px rgba(black, 0.5);
 			} 
-			*/
 			p{
 				font-style: italic;
 				hyphens: none;
-				font-size: 1em;
-				color: white;
-				text-shadow: 0px 2px 0px rgba(black,0.5);
+				font-size: 0.8em;
+				color: #252553;
+				text-shadow: 0px 1px 1px rgba(white,1);
 				text-align: center;
 				padding: 0px 5px; 
+				margin-top: 12px;
 				position: relative;
 				top: 0px;
 				left: 0px;
@@ -64,18 +64,30 @@ header{
 				display: table;
 				float: left;
 				margin-right: 5px; 
+				&.menu{
+  				margin-left: 12px; 
+  				margin-right: 0px; 
+  			}
 				&:active{
 					position: relative;
 					top: 1px;
 				}
 				div.button{
 					color: white;
-					padding: 5px 10px;
-					background-color: rgba(black,0.3);
-					border-radius: 2px;
-					box-shadow: 0px 2px 2px 0px rgba(black,0.3);
+					font-size: 1.05em;
+					letter-spacing: 0.8px;
+					text-shadow: 0px 1px 0px rgba(black,1);
+					padding: 8px 10px;
+					background-color: rgba(24,22,48,0.4);
+					border: 1px solid rgba(225,213,241,0.53);
+					border-radius: 4px;
+					box-shadow: 0px 2px 2px 0px rgba(black,0.5);
 					@include background-image(
-      linear-gradient(to bottom, rgba(white, 0.05), rgba(black, 0)));
+      linear-gradient(to bottom, rgba(white, 0.09), rgba(black, 0.11)));
+      		&.fa{
+      			font-size: 1.45em;
+      			padding: 5px 10px; 
+      		}
      		&:hover{
      			@include background-image(
       linear-gradient(to bottom, rgba(white, 0.0), rgba(black, 0.08)));
@@ -85,6 +97,7 @@ header{
 		}
 		div.buttons-left{
 			float: left;
+			margin-left: 70px; //make room for ribbon 
 		}
 		a.logo{
 			display: table;
@@ -95,14 +108,15 @@ header{
 				margin: 0 auto;  
 				font-size: 1em;
 				color: white; 
+				text-shadow: 0px 1px 0px rgba(black,0.5);
 				position: relative;
 				padding-left: 5px;
 				&:first-of-type{
 					&:before{
 						content: "";
-						background: url("../images/logo-flame-white.png") no-repeat center center / 100% auto;
-						width: 25px;
-						height: 30px;
+						background: url("../images/logo-flame-white.svg") no-repeat center center / 100% auto;
+						width: 24px;
+						height: 32px;
 						position: absolute;
 						top: 3px;
 						left: -25px; 
@@ -126,7 +140,50 @@ header{
 			position: relative;
 			display: block;
 		}
+		div.trending-issues{
+			position: absolute;
+			top: 38%;
+			right: 8%;
+			width: 225px;
+			background-color: rgba(white,0.5);
+			h2,a.all-issues{
+				background-color: rgba(black,0.06); 
+				color: #393939;
+				text-shadow: 0px 1px 0px rgba(white,0.33);
+				text-align: center;
+				padding: 16px 0px;
+			} 
+			h2{
+				font-size: 1.45em;
+			}
+			ul{
+				padding: 20px 20px 20px 40px;
+				li{
+					margin-bottom: 10px;
+					padding-left: 20px;
+					a{
+						color: #585858;
+						font-size: 0.9em; 
+						span{
+							&:hover{
+								text-decoration: underline;
+							}
+						}	  
+					}
+				}
+			}
+			a.all-issues{
+				display: block;
+				padding: 10px 0px; 
+				span{
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
+	/*
 	div.logo{
 		position: absolute;
 		bottom: 2%;
@@ -135,4 +192,5 @@ header{
 		height: 50px;
 		background: url("../images/logo-text-white.png") no-repeat center center / 100% auto;  
 	}
+	*/
 }
