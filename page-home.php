@@ -16,6 +16,7 @@ Template Name: Home Page
 				<p class="question">
 					<span class="italic">“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne</span>
 				</p>
+				<div class="line"></div>
 				<a href="#" class="answer-link"><span class="italic">read & respond</span> &rarr;</a>
 			</div>
 			<div class="twitter grid-1-3">

@@ -45,9 +45,9 @@ if($query->have_posts()){
 			?>
 			<div class="title-content">
 				<div class="social-buttons">
-					<a href="https://www.facebook.com/AnglicansforLife/"><div class="icon facebook fa fa-facebook"></div></a>
-					<a href="https://twitter.com/Anglicans4Life"><div class="icon fa fa-twitter"></div></a>
-					<a href="#"><div class="icon fa fa-pinterest"></div></a>
+					<a class="icon" href="https://www.facebook.com/AnglicansforLife/"><div class="icon facebook fa fa-facebook"></div></a>
+					<a class="icon" href="https://twitter.com/Anglicans4Life"><div class="icon fa fa-twitter"></div></a>
+					<a class="icon" href="#"><div class="icon fa fa-pinterest"></div></a>
 				</div>
 				<h1><?php the_title(); ?></h1>
 				<time class="pub-date"><?php echo 'Published ' . get_the_date('F j, Y'); ?></time>
