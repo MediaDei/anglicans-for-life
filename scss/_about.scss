@@ -1,0 +1,84 @@
+section.about{
+	p.top-p{
+		margin-bottom: 70px; 
+	}
+	h2{
+		font-size: 2.7em;
+		text-align: center;
+		margin-bottom: 40px; 
+	}
+	div.grid{
+		div.grid-1-2{
+			margin-bottom: 40px; 
+			div.position-icon{
+				margin-right: 10px; 
+				width: 90px;
+				height: 90px;
+				border: 1px solid #E0DED7;
+				border-radius: 100%;
+				display: inline-block;
+				box-shadow: 0px 2px 3px rgba(black,0.35); 
+				&.abortion{
+					background: #F6F3E9  url("../images/abortion-icon.png") no-repeat center center / 50% auto;
+				}
+				&.contraception{
+					background: #F6F3E9  url("../images/contraception-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.euthanasia{
+					background: #F6F3E9  url("../images/euthanasia-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.stem-cells{
+					background: #F6F3E9  url("../images/stem-cells-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.partial-birth-abortion{
+					background: #F6F3E9  url("../images/partial-birth-abortion-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.post-abortion-aftercare{
+					background: #F6F3E9  url("../images/post-abortion-aftercare-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.death-penalty{
+					background: #F6F3E9  url("../images/death-penalty-icon.svg") no-repeat center center / 50% auto;
+				}
+				&.adoption{
+					background: #F6F3E9  url("../images/adoption-icon.svg") no-repeat center center / 50% auto;
+				}
+			}
+			div.text{
+				display: inline-block;
+				width: 66%; 
+				h3{
+					font-size: 1.8em;
+				}
+				p{
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+	h3{
+		font-size: 2.4em;
+		text-align: center;
+		margin-bottom: 20px; 
+	}
+	p{
+		&.history{
+			width: 600px;
+			margin: 0 auto 20px;
+		}
+	}
+	div.bottom-history-row{
+		display: table;
+		margin: 0 auto;
+		p.history-bottom{
+			width: 400px;
+			display: inline-block;
+			margin: 0px;
+		}
+		div.gold-frame.silent-img{
+			display: inline-block;
+			width: 300px;
+			height: 120px; 
+			background: url("../images/our-history-silent.png") no-repeat center center / 90% auto;
+		}
+	}
+}
