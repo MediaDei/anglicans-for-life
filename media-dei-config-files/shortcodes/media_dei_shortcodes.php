@@ -34,8 +34,40 @@ add_filter('the_content', 'media_dei_shortcode_empty_paragraph_fix');
 
 
 
-
 //Media Dei Shortcodes
+/*Template
+function media_dei_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "att" => 'value',               
+  ), $atts)); 
+  $return_string='';
+  return $return_string;
+}
+add_shortcode('shortcode_name', 'media_dei_shortcode');
+*/
+
+function media_dei_custom_heading_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    'style'              => '1',//default to style 1 if not specified
+    'heading_level'      => '1',//default to h1 if not specified
+    'has_image'          => 'false'//default to false if not specified              
+  ), $atts)); 
+  $return_string='
+  <h'.$heading_level.' class="custom-heading style-'.$style.'">'
+   . do_shortcode($content) . 
+
+   /*insert image
+   if($has_image==='true'){
+    
+    }
+  */
+
+    '</h'.$heading_level.'>';
+  return $return_string;
+}
+add_shortcode('custom_heading', 'media_dei_custom_heading_shortcode');
+
+
 function media_dei_smallcaps_shortcode($atts, $content){
   $return_string='<span class="smallcaps">' . do_shortcode($content) . '</span>';
   return $return_string;

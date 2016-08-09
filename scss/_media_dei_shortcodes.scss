@@ -86,6 +86,36 @@ p.capital-ornate {
     padding: 39px 12px 29px;
   }
 }
+h1,h2,h3,h4,h5,h6{
+  &.custom-heading{
+    &.style-1{
+      font-size: 2em;
+      text-align: center;
+      width: 80%;
+      margin: 100px auto 60px; 
+      padding-bottom: 10px;
+      border-bottom: 1px solid #390E65;
+      &.has-image{
+        position: relative;//for image positioning 
+      }
+      figure{
+        margin: 0px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #7D7D7D;
+        border-radius: 100%; 
+        img{
+          display: block;
+          width: 100%;
+          height: auto;   
+        }
+      }
+    }
+  }
+}
 //--------------------END TYPOGRAPHY STYLES USED-------
 
 

@@ -119,6 +119,20 @@ h1.page-title{
 	font-style: italic;
 	margin: 0 auto 30px;
 	display: table;
+	&.has-subtitle{
+		margin-bottom: 0px 
+	}
+}
+span.page-title-subtext{
+	font-style: italic;
+	font-size: 2em;
+	display: table;
+	margin: 0 auto 30px;
+}
+div.colored-section-break{
+	height: 10px;
+	background-color: #787594;
+	margin: 40px 0px;  
 }
 p.top-p{
 	width: 70%;
@@ -307,6 +321,7 @@ section{
 @import "home";
 @import "about";
 @import "issues";
+@import "lead-life-ministry";
 @import "get-involved";
 @import "need-help";
 @import "pastoral-resources";
