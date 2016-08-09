@@ -18,13 +18,21 @@ Template Name: Home Page
 				</p>
 				<a href="#" class="answer-link"><span class="italic">read & respond</span> &rarr;</a>
 			</div>
-			<div class="grid-1-3">
-				<h2>Recent Tweets</h2>
-				<ul>
-					<li>Tweet</li>
-					<li>Tweet</li>
-					<li>Tweet</li>
-				</ul>
+			<div class="twitter grid-1-3">
+				<h2><span class="italic">Recent Tweets</span></h2>
+				<a class="twitter-follow-button"
+  				 href="https://twitter.com/Anglicans4Life"
+  				 data-show-count="false">
+						Follow @AFL       </a>
+				<a 
+				class="twitter-timeline" 
+				href="https://twitter.com/Anglicans4Life"
+				data-tweet-limit="3"
+				data-show-replys="false"
+				data-link-color="#2C80FF"
+				data-chrome="transparent noheader nofooter noborders">
+				</a>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 	</div>

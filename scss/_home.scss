@@ -35,6 +35,43 @@ section{
 					}
 				}
 			}
+			div.twitter{
+				margin-left: 30px;
+				max-height: 100px;  
+				h2{
+					color: #585858;
+					font-size: 1.5em;
+					float: left;
+				}
+				iframe{
+					&.twitter-follow-button{
+						float: right;
+					}
+					&.twitter-timeline{
+						html{
+							body{
+								div.timeline-Widget{
+									font: 16px "SortsMillGoudy", serif !important;
+									div.timeline-Body{
+										div.timeline-Viewport{
+											ol.timeline-TweetList{
+												li.timeline-TweetList-tweet{
+													div.timeline-Tweet{
+														border-bottom: 1px solid #E6E6E6;
+														ul.timeline-Tweet-actions{
+															display: none; 
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
