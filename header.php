@@ -36,7 +36,7 @@
 					<p>Need Help?</p>
 				</div>
 				<div class="buttons-left">
-					<a href="#">
+					<a href="/pregnant/">
 						<div class="button">
 							Pregnant?
 						</div>

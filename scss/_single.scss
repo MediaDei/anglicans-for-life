@@ -1,10 +1,11 @@
-section{
+section.single-post{
+	padding-bottom: 0px; 
 	div.post{
 		width: 80%;
-		background-color: #FFFEFA;
+		//background-color: #FFFEFA;
 		margin: 0 auto;
-		border: 1px solid #DCD8CE;
-		border-radius: 4px;  
+		//border: 1px solid #DCD8CE;
+		//border-radius: 4px;  
 		padding: 40px 70px 20px;
 		position: relative;
 		time.circle {
@@ -15,7 +16,7 @@ section{
 		}
 		h1.title{
 			font-size: 2.3em;
-			margin: 0 auto;
+			margin: 0 auto 5px;
 			max-width: 540px;
 			text-align: center; 
 		}
@@ -23,7 +24,9 @@ section{
 			display: table;
 			margin: 0 auto;
 			color: $lighter-text;
-			padding-bottom: 25px; 
+			&.bottom{
+				margin: 30px 0px 0px;
+			}
 		}
 		div.img{
 			margin: 0 auto; 
@@ -38,20 +41,20 @@ section{
 		div.line{
 			border-bottom: 1px solid $border;
 			height: 1px;
-			width: 95%;
-			margin: 40px auto 0px; 
-			&.top-line{
-				width: 75%;
-				margin: 10px auto; 
+			width: 100%;
+			margin: 30px auto; 
+			&.bottom{
+				margin: 10px 0px 0px; 
 			}
 		}
 	}
-	
+}
+section{
 	&.latest-posts{
-		padding-top: 0px; 
+		padding-top: 5px; 
 			h2{
 			text-align: center;
-			font-size: 2.5em;
+			font-size: 2.4em;
 			margin: 30px 0px; 
 		}
 	}
