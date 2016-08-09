@@ -1,16 +1,16 @@
 		<footer>
 			<div class="grid">
-				<div class="grid-1-4">
+				<div class="grid-box brand">
 					<p class="smallcaps logo">Anglicans</p>
 					<p class="smallcaps logo-bottom">for life</p>
 				</div>
-				<div class="grid-1-4">
+				<div class="grid-box address">
 					<address>
 						405 Frederick Avenue<br>Sewickley, PA 15143
 					</address>
 				</div>
-				<div class="grid-1-4">
-					<a class="contact" href="#">
+				<div class="grid-box contact">
+					<a class="contact icon" href="#">
 						<div class="icon fa fa-envelope-o"></div>
 					</a>
 					<script type="text/javascript">
@@ -23,7 +23,7 @@
 							$('#hidden-email').attr('href',r).html(e + '@'+t+n);
 						});
 					</script>
-					<a id="hidden-email" href="#">Please enable Javascript to view</a>
+					<a class="underline" id="hidden-email" href="#">Please enable Javascript to view</a>
 					<script type="text/javascript">
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
@@ -35,21 +35,24 @@
 							$('#hidden-phone').attr('href',r).html(e + ' ' + t + ' ' + n);
 						});
 					</script>
-					<a id="hidden-phone" href="#">Please enable Javascript to view</a>
+					<a class="underline" id="hidden-phone" href="#">Please enable Javascript to view</a>
 				</div>
-				<div class="grid-1-4">
+				<div class="grid-box social">
 					<div class="icon-row">
-						<a href="#">
+						<a class="icon" href="#">
 							<div class="icon facebook fa fa-facebook"></div>
 						</a>
-						<a href="#">
+						<a class="icon" href="#">
 							<div class="icon twitter fa fa-twitter"></div>
 						</a>
-						<a href="#">
+						<a class="icon" href="#">
+							<div class="icon pinterest fa fa-pinterest"></div>
+						</a>
+						<a class="icon" href="#">
 							<div class="icon instagram fa fa-instagram"></div>
 						</a>
 					</div>
-					<a href="#">
+					<a class="terms-privacy" href="#">
 						<p class="terms-privacy">Terms and Privacy</p>
 					</a>
 				</div>

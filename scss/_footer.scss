@@ -1,17 +1,40 @@
 footer{
 	background-color: #2D2A58;
-	box-shadow: inset 0px 3px 6px rgba(black,1);
-	padding: 10px 0px;
+	//box-shadow: inset 0px 3px 6px rgba(black,1);
+	box-shadow: 0px -3px 0px #2D2A58;
+	border-top: 2px solid white;
+	margin-bottom: 3px; 
 	div.grid{
-		padding: 20px;
-		div.grid-1-4{
-			border-right: 1px solid $grey-border;
+		padding: 10px;
+		div.grid-box{
+			border-right: 1px solid rgba(196,196,196,0.24);
 			padding: 20px; 
 			color: white;
 			height: 80px;
-			overflow: hidden; 
+			overflow: hidden;
+			float: left; 
 			&:last-of-type{
 				border-right: none; 
+			}
+			&.brand{
+				width: 20%;
+				p{
+					line-height: 1;
+				}
+			}
+			&.address{
+				width: 20%;
+			}
+			&.contact{
+				width: 29%;
+				a.underline{
+					&:hover{
+						text-decoration: underline;
+					}
+				} 
+			}
+			&.social{
+				width: 31%;
 			}
 			p{
 				margin: 0 auto;
@@ -21,18 +44,18 @@ footer{
 				padding-left: 5px;
 					&:before{
 						content: "";
-						background: url("../images/logo-flame-white.png") no-repeat center center / 100% auto;
+						background: url("../images/logo-flame-white.svg") no-repeat center center / 100% auto;
 						width: 25px;
-						height: 30px;
+						height: 35px;
 						position: absolute;
-						top: 3px;
+						top: 0px;
 						left: -25px; 
 					}
 				}
 				&.logo-bottom{
 					font-size: 1.2em;
-					letter-spacing: 2px;
-					padding-left: 5px;
+					letter-spacing: 1.5px;
+					padding-left: 7px;
 				} 
 			} 
 			a{
@@ -43,15 +66,17 @@ footer{
 				div.icon.fa-envelope-o{
 					padding: 8px 0px 0px 8px;
 				}
-				p.terms-privacy{
-					font-size: 0.8em;	
-				}
-				&:hover{
-					text-decoration: underline;
+				&.terms-privacy{
+					p.terms-privacy{
+						font-size: 0.8em;	
+							&:hover{
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 			div.icon-row{
-				margin: 0 auto 10px;
+				margin: 0 auto 5px;
 				display: table;
 			}
 			address{
@@ -62,20 +87,20 @@ footer{
 		}
 	}
 	div.inset-prayer{
-		background-color: #7D7AA6;
+		background-color: #787594;
 		@include background-image(linear-gradient (to top, rgba(black,0.06), rgba(black,0.44)));
 		color: #E7E7E7;
-		width: 90%;
 		margin: 0 auto;
-		padding: 10px 50px; 
+		padding: 25px 220px 20px; 
 		font-size: 0.9em;
 		border-radius: 0px;
-		border-top: 1px solid $border;
-		box-shadow: inset 0px 4px 4px -2px rgba(black,1);
+		border-top: 1px solid rgba(white,0.48);
+		box-shadow: inset 0px 10px 5px -7px rgba(black,0.5);
 		h3{
 			margin: 0 auto 15px;
 			display: table;
 			color: rgba(white,0.52);
+			letter-spacing: 1.38px;
 			font-size: 1.1em;
 			&:last-of-type{
 				margin: 5px auto 0px;
