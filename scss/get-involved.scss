@@ -1,20 +1,98 @@
 section{
+	p.top-p{
+		width: 500px;
+		margin: 0 auto 50px; 
+	}
 	a.priests-pastors-link{
 		display: table;
 		margin: 0 auto;
 	}
 	div.pray-for-life{
-		background-color: rgba(108,156,116,0.13);
-		width: 80%;
+		background-color: #F4F1F5;
+		border-radius: 4px;
+		border: 1px solid #D2CBD5;
+		width: 650px;
 		height: 200px;
-		margin: 0 auto;  
+		padding: 20px 40px; 
+		margin: 50px auto;  
 		h2{
 			font-size: 1.5em;
-			display: table;
+			width: 450px;
+			text-align: center; 
 			margin: 0 auto;		
+			padding-bottom: 10px;
+			border-bottom: 1px solid #CCCCCC;
+			box-shadow: 0px 2px 0px 0px rgba(white,1); 
 		}
 		p{
 			color: $lighter-text;
+		}
+	}
+	div.grid{
+		margin-bottom: 50px;
+		&.lower-grid{
+			width: 520px;
+			margin: 0 auto;
+		}
+		div.grid-1-3,div.grid-1-2{
+			a.bubble{
+				div.bubble{
+					width: 190px;
+					height: 190px;
+					margin: 0 auto 15px;
+					border-radius: 100%;
+					border: 2px solid white;
+					box-shadow: 0px 0px 0px 1px #BABABA;
+					@include background-image(linear-gradient(to bottom, rgba(white,0.5) 10%, rgba(white, 0)));   
+					&.bubble-1{
+						background: url("../images/get-involved-bubble-1.jpg") no-repeat center center / 100% auto;
+					}
+					&.bubble-2{
+						background: url("../images/get-involved-bubble-2.jpg") no-repeat center center / 100% auto;
+					}
+					&.bubble-3{
+						background: url("../images/get-involved-bubble-3.jpg") no-repeat center center / 100% auto;
+					}
+					&.bubble-4{
+						background: url("../images/get-involved-bubble-4.jpg") no-repeat center center / 100% auto;
+					}
+					&.bubble-5{
+						background: url("../images/get-involved-bubble-5.jpg") no-repeat center center / 100% auto;
+					}
+				}
+				
+				&:active{
+					position: relative;
+					top: 1px;
+				}
+			}
+			h3.bubble-title{
+				text-align: center;
+				margin: 0px auto;
+				max-width: 200px;
+				font-size: 1.3em;
+			}
+			p.bubble-text{
+				font-style: italic;
+				margin: 0px auto;
+				padding: 10px 0px 0px;
+				max-width: 200px; 
+				color: $lighter-text;
+				text-align: center;
+				font-size: 1.1em;
+			}
+		}
+	}
+	div.colored-section-break{
+		margin: 0px;
+	}
+	div#priests-pastors-section{
+		padding: 60px 0px;
+		h2{
+			text-align: center;
+			font-size: 2.7em;
+			font-style: italic;
+			margin-bottom: 40px;
 		}
 	}
 }
