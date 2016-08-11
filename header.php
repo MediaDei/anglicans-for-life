@@ -32,9 +32,11 @@
 	<div class="page-wrap">
 		<header>
 			<nav class="grid">
-				<div class="ribbon">
-					<p>Need Help?</p>
-				</div>
+				<a href="/need-help/" class="ribbon">
+					<div class="ribbon">
+						<p>Need Help?</p>
+					</div>
+				</a>
 				<div class="buttons-left">
 					<a href="/pregnant/">
 						<div class="button">

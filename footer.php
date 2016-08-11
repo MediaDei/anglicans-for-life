@@ -39,20 +39,20 @@
 				</div>
 				<div class="grid-box social">
 					<div class="icon-row">
-						<a class="icon" href="#">
+						<a class="icon" href="https://www.facebook.com/AnglicansforLife/">
 							<div class="icon facebook fa fa-facebook"></div>
 						</a>
-						<a class="icon" href="#">
+						<a class="icon" href="https://twitter.com/anglicans4life">
 							<div class="icon twitter fa fa-twitter"></div>
 						</a>
-						<a class="icon" href="#">
+						<a class="icon" href="https://www.pinterest.com/anglicans4life/anglicans-for-life/">
 							<div class="icon pinterest fa fa-pinterest"></div>
 						</a>
-						<a class="icon" href="#">
+						<a class="icon" href="https://www.instagram.com/anglicans4life/">
 							<div class="icon instagram fa fa-instagram"></div>
 						</a>
 					</div>
-					<a class="terms-privacy" href="#">
+					<a class="terms-privacy" href="/terms-privacy/">
 						<p class="terms-privacy">Terms and Privacy</p>
 					</a>
 				</div>
