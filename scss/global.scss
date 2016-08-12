@@ -76,6 +76,12 @@ a.icon{//circle icon style
 			height: 28px;  
 			font-size: 0.9em; 
 		}
+		&.has-fade{
+			opacity: 0.3;
+			&:hover{
+				opacity: 1;
+			} 
+		}
 		&.facebook{
 			padding-left: 0.6em; 
 		}

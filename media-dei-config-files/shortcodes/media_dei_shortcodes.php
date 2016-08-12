@@ -1,8 +1,25 @@
 <?php
+/*
+This File contains all of the shortcodes made by Media Dei
+Shortcodes are styled in _media_dei_shortcodes.scss
 
-//Shortcode Settings
+
+Template for creating shortcodes:
+
+function media_dei_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "att" => 'value',               
+  ), $atts)); 
+  $return_string='';
+  return $return_string;
+}
+add_shortcode('shortcode_name', 'media_dei_shortcode');
 
 
+*/
+
+
+//-------------------- SHORTCODE SETTINGS ----------
 
 //stop WP core from adding <p> and <br> tags to shortcode from WYSIWYG editor filter (wpautop)
 function media_dei_shortcode_empty_paragraph_fix($content)
@@ -18,33 +35,14 @@ function media_dei_shortcode_empty_paragraph_fix($content)
   return $content;
 }
 add_filter('the_content', 'media_dei_shortcode_empty_paragraph_fix');
-//End Shortcode Settings
+
+//-------------------- END SHORTCODE SETTINGS ----------
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-//Media Dei Shortcodes
-/*Template
-function media_dei_shortcode($atts, $content){
-  extract(shortcode_atts(array(            
-    "att" => 'value',               
-  ), $atts)); 
-  $return_string='';
-  return $return_string;
-}
-add_shortcode('shortcode_name', 'media_dei_shortcode');
-*/
+//--------------------TYPOGRAPHY SHORTCODES ----------
 
 function media_dei_custom_heading_shortcode($atts, $content){
   extract(shortcode_atts(array(            
@@ -81,16 +79,23 @@ function media_dei_simple_dropcaps_shortcode($atts, $content){
 }
 add_shortcode('simple_dropcaps', 'media_dei_simple_dropcaps_shortcode');
 
+//--------------------END TYPOGRAPHY SHORTCODES ------
+
+
+
+//--------------------ACCORDION SHORTCODES ----------
 
 //wrapper for all shortcodes with css accordion functionality
 function media_dei_accordion_shortcode($atts, $content){
+  //increment counter for each accordion in use on this page
+  $GLOBALS['accordionCount'];
+  $GLOBALS['accordionCount']++;
+
   extract(shortcode_atts(array(            
     "style" => '1',//if not set by user in wp page wysiwyg editor, defaults to style 1               
-  ), $atts)); 
+  ), $atts));
 
   if($style==='1'){
-    $GLOBALS['accordionCount'];
-    $accordionCount++;
     $return_string='
     <div class="accordion style-1">' 
       . do_shortcode($content) . 
@@ -109,8 +114,8 @@ function media_dei_accordion_button_shortcode($atts, $content){
 
   if($style==='1'){
     $return_string='
-    <span class="anchor" id="accordion-button-' . $accordionCount .'"></span>
-    <a class="accordion-button-anchor anchor-button" href="#accordion-button-' . $accordionCount . '">
+    <span class="anchor" id="accordion-button-' . $GLOBALS['accordionCount'] .'"></span>
+    <a class="accordion-button-anchor anchor-button" href="#accordion-button-' . $GLOBALS['accordionCount'] . '">
       <div class="accordion-button" role="button">
         <p class="button-text">'
           . do_shortcode($content) .
@@ -123,82 +128,124 @@ function media_dei_accordion_button_shortcode($atts, $content){
 add_shortcode('accordion_button', 'media_dei_accordion_button_shortcode');
 
 
-
-//hidden content to go under button for css accordion functionality
-function media_dei_accordion_hidden_content_shortcode($atts, $content){
+//button for css accordion-staff functionality
+function media_dei_accordion_staff_shortcode($atts, $content){
   extract(shortcode_atts(array(            
     "style" => '1',//if not set by user in wp page wysiwyg editor, defaults to style 1               
   ), $atts));
 
-  if($style==='1'){
+  if($style==='1'){//used in AFL
     $return_string='
-    <div class="accordion-button-' . $accordionCount . ' accordion-button-hidden hidden-content">
-      <p class="hidden-text">'
+    <span class="anchor" id="accordion-button-' . $GLOBALS['accordionCount'] .'"></span>
+    <a class="accordion-button-anchor anchor-button" href="#accordion-button-' . $GLOBALS['accordionCount'] . '">
+      <div class="accordion-staff" role="button">'
+          . do_shortcode($content) .
+      '</div>
+    </a>';
+    return $return_string;
+  }
+}
+add_shortcode('accordion_staff', 'media_dei_accordion_staff_shortcode');
+
+
+//accordion_staff_photo
+function media_dei_accordion_staff_photo_shortcode($atts, $content){
+  $return_string='
+  <figure class="accordion-staff-photo">'
+    . do_shortcode($content) .
+  '</figure>';
+  return $return_string;
+}
+add_shortcode('accordion_staff_photo', 'media_dei_accordion_staff_photo_shortcode');
+
+//accordion_staff_name
+function media_dei_accordion_staff_name_shortcode($atts, $content){
+  $return_string='
+  <p class="accordion-staff-name">'
+    . do_shortcode($content) .
+  '</p>';
+  return $return_string;
+}
+add_shortcode('accordion_staff_name', 'media_dei_accordion_staff_name_shortcode');
+
+//accordion_staff_title
+function media_dei_accordion_staff_title_shortcode($atts, $content){
+  $return_string='
+  <p class="accordion-staff-title">'
+    . do_shortcode($content) .
+  '</p>';
+  return $return_string;
+}
+add_shortcode('accordion_staff_title', 'media_dei_accordion_staff_title_shortcode');
+
+
+
+//hidden content to go under button for css accordion functionality
+function media_dei_accordion_hidden_content_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    'for_button'           => 'false',
+    'for_staff'            => 'false',
+    'style'                => '1'        
+  ), $atts));
+
+  //apply appropriate classes for accordion-button widget hidden content
+  if($for_button==='true'){
+    $return_string='
+    <div class="accordion-button-' . $GLOBALS['accordionCount'] . ' accordion-button-hidden hidden-content">
+      <p class="hidden-text hidden-button-content">'
         . do_shortcode($content) .
       '</p>
-    </div>
-    <style>
-    /* reveal when targeted */
-      .anchor:target + .anchor-button + .accordion-button-' . $accordionCount . ' {
-        height: auto;
-        padding: 30px 30px 15px;
-        position: relative;
-        top: -10px;
-        z-index: -1;
-        opacity: 1;
-      }
-    </style>';
-    return $return_string;
+    </div>'; 
+    if($style==='1'){
+      $widget_style='
+        <style>
+        /* reveal when targeted */
+          .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
+            height: auto;
+            padding: 30px 30px 15px;
+            position: relative;
+            top: -10px;
+            z-index: -1;
+            opacity: 1;
+          }
+        </style>';
+    } 
+    return $return_string+$widget_style;
+  }
+
+  //apply appropriate classes for accordion-staff widget hidden content
+  if($for_staff==='true'){
+    $return_string='
+    <div class="accordion-button-' . $GLOBALS['accordionCount'] . ' accordion-button-hidden hidden-content style-'.$style.'">
+      <p class="hidden-text hidden-staff-content style-'.$style.'">'
+        . do_shortcode($content) .
+      '</p>
+    </div>';
+    if ($style==='1'){
+      $widget_style='
+        <style>
+        /* reveal when targeted */
+          .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
+            height: auto;
+            padding: 30px 30px 15px;
+            position: relative;
+            top: -10px;
+            z-index: -1;
+            opacity: 1;
+          }
+        </style>';
+    }
+    return $return_string+$widget_style;
   }
 }
 add_shortcode('accordion_hidden_content', 'media_dei_accordion_hidden_content_shortcode');
 
+//--------------------END ACCORDION SHORTCODES ------
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function media_dei_resource_item_url_shortcode($atts, $content){
-  $GLOBALS['resourceUrl'];
-  $GLOBALS['resourceUrl']=$content;
-}
-add_shortcode('resource_item_url', 'media_dei_resource_item_url_shortcode');
-
-
-
-
-
-function media_dei_resource_item_title_shortcode($atts, $content){
-  $return_string='<h2 class="resource-heading"><a href="' . $GLOBALS['resourceUrl'] . '">' . $content . '</a></h2>';
-  return $return_string;
-}
-add_shortcode('resource_item_title', 'media_dei_resource_item_title_shortcode');
-
-
-
-
-function media_dei_resource_item_text_shortcode($atts, $content){
-  $return_string='<p class="resource-paragraph">' . $content . '</p>';
-  return $return_string;
-}
-add_shortcode('resource_item_text', 'media_dei_resource_item_text_shortcode');
-
-
+//----------------------- IMG WIDGET SHORTCODES -------------
 
 
 function media_dei_announcement_image_shortcode($atts, $content){
@@ -209,6 +256,40 @@ add_shortcode('announcement_image', 'media_dei_announcement_image_shortcode');
 
 
 
+//----------------------- END IMG WIDGET SHORTCODES -------------
+
+
+
+//----------------------- RESOURCE ITEM WIDGET SHORTCODES -------------
+
+
+function media_dei_resource_item_url_shortcode($atts, $content){
+  $GLOBALS['resourceUrl'];
+  $GLOBALS['resourceUrl']=$content;
+}
+add_shortcode('resource_item_url', 'media_dei_resource_item_url_shortcode');
+
+
+function media_dei_resource_item_title_shortcode($atts, $content){
+  $return_string='<h2 class="resource-heading"><a href="' . $GLOBALS['resourceUrl'] . '">' . $content . '</a></h2>';
+  return $return_string;
+}
+add_shortcode('resource_item_title', 'media_dei_resource_item_title_shortcode');
+
+
+function media_dei_resource_item_text_shortcode($atts, $content){
+  $return_string='<p class="resource-paragraph">' . $content . '</p>';
+  return $return_string;
+}
+add_shortcode('resource_item_text', 'media_dei_resource_item_text_shortcode');
+
+//----------------------- RESOURCE ITEM WIDGET SHORTCODES -------------
+
+
+
+
+
+//----------------------- RADIO BUTTON STAFF WIDGET SHORTCODES -------------
 
 function media_dei_staff_circles_3_shortcode($atts, $content){
   $GLOBALS['staffCounter'] = 0;
@@ -383,8 +464,13 @@ function media_dei_person_bio_shortcode($atts, $content){
 }
 add_shortcode('bio', 'media_dei_person_bio_shortcode');
 
+//----------------------- END RADIO BUTTON STAFF WIDGET SHORTCODES -------------
 
 
+
+
+
+//----------------------- ADDITIONAL STAFF WIDGET SHORTCODES -------------
 
 
 function media_dei_additional_staff_members_shortcode($atts, $content){           
@@ -413,4 +499,7 @@ function media_dei_additional_staff_member_title_shortcode($atts, $content){
     return $return_string;
 }
 add_shortcode('additional_staff_title', 'media_dei_additional_staff_member_title_shortcode');
-//End Media Dei Shortcodes
+
+//----------------------- END ADDITIONAL STAFF WIDGET SHORTCODES -------------
+//end Media Dei shortcodes
+
