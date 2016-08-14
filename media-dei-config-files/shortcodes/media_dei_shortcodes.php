@@ -181,6 +181,7 @@ add_shortcode('accordion_staff_title', 'media_dei_accordion_staff_title_shortcod
 
 
 //hidden content to go under button for css accordion functionality
+//need to make the style functionality work in later projects...currently styled in theme scss files
 function media_dei_accordion_hidden_content_shortcode($atts, $content){
   extract(shortcode_atts(array(            
     'for_button'           => 'false',
@@ -190,52 +191,52 @@ function media_dei_accordion_hidden_content_shortcode($atts, $content){
 
   //apply appropriate classes for accordion-button widget hidden content
   if($for_button==='true'){
+    //echo "for button working ";
     $return_string='
     <div class="accordion-button-' . $GLOBALS['accordionCount'] . ' accordion-button-hidden hidden-content">
       <p class="hidden-text hidden-button-content">'
         . do_shortcode($content) .
       '</p>
     </div>'; 
-    if($style==='1'){
-      $widget_style='
-        <style>
-        /* reveal when targeted */
-          .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
-            height: auto;
-            padding: 30px 30px 15px;
-            position: relative;
-            top: -10px;
-            z-index: -1;
-            opacity: 1;
-          }
-        </style>';
-    } 
-    return $return_string+$widget_style;
+    $widget_style='
+      <style>
+      /* reveal when targeted */
+        .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
+          height: auto;
+          padding: 30px 30px 15px;
+          position: relative;
+          top: -10px;
+          z-index: -1;
+          opacity: 1;
+        }
+      </style>';
+    $return_string.=$widget_style;
+    return $return_string;
   }
 
   //apply appropriate classes for accordion-staff widget hidden content
   if($for_staff==='true'){
+    //echo "for staff working";
     $return_string='
     <div class="accordion-button-' . $GLOBALS['accordionCount'] . ' accordion-button-hidden hidden-content style-'.$style.'">
       <p class="hidden-text hidden-staff-content style-'.$style.'">'
         . do_shortcode($content) .
       '</p>
     </div>';
-    if ($style==='1'){
-      $widget_style='
-        <style>
-        /* reveal when targeted */
-          .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
-            height: auto;
-            padding: 30px 30px 15px;
-            position: relative;
-            top: -10px;
-            z-index: -1;
-            opacity: 1;
-          }
-        </style>';
-    }
-    return $return_string+$widget_style;
+    $widget_style='
+      <style>
+      /* reveal when targeted */
+        .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
+          height: auto;
+          padding: 30px 30px 15px;
+          position: relative;
+          top: -10px;
+          //z-index: -1;
+          opacity: 1;
+        }
+      </style>';
+      $return_string.=$widget_style;
+      return $return_string;
   }
 }
 add_shortcode('accordion_hidden_content', 'media_dei_accordion_hidden_content_shortcode');

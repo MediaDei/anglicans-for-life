@@ -44,11 +44,14 @@ section{
 			}
 			div.twitter{
 				margin-left: 30px;
-				max-height: 100px;  
+				max-height: 280px;
+				overflow: scroll;
 				h2{
 					color: #585858;
 					font-size: 1.5em;
 					float: left;
+				}
+				div.tweets{
 				}
 				iframe{
 					&.twitter-follow-button{

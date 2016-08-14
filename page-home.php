@@ -25,15 +25,16 @@ Template Name: Home Page
   				 href="https://twitter.com/Anglicans4Life"
   				 data-show-count="false">
 						Follow @AFL       </a>
-				<a 
-				class="twitter-timeline" 
-				href="https://twitter.com/Anglicans4Life"
-				data-tweet-limit="3"
-				data-show-replys="false"
-				data-link-color="#2C80FF"
-				data-chrome="transparent noheader nofooter noborders">
-				</a>
-				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="tweets">
+					<a 
+					class="twitter-timeline" 
+					href="https://twitter.com/Anglicans4Life"
+					data-show-replys="false"
+					data-link-color="#2C80FF"
+					data-chrome="transparent noheader nofooter noborders">
+					</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
 			</div>
 		</div>
 	</div>
