@@ -12,10 +12,16 @@
 
 //simple-dropcaps
 span.simple-dropcaps{
-  font-size: 3em; 
+  font-size: 2.4em; 
   margin-right: 0.1em;
   float: left;
+  line-height: 0.5;
+  padding-top: 0.4em;  
   color: lighten($base-text,5%);
+  &+.smallcaps{
+    display: inline-block;//for text-indent
+    text-indent: -2px;//bring first line closer to dropcaps then second line
+  }
 }
 
 //ornate-capitals

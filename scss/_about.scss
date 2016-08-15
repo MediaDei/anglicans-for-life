@@ -88,6 +88,11 @@ section.about{
 		padding-bottom: 20px; 
 		margin-top: 80px; 
 		background-color: $bg-grey;
+		box-shadow: 0px 135px 6px -135px rgba(black,0.5);//shadow over board members div below
+		h2{
+			margin-bottom: 90px;
+			font-style: italic; 
+		}
 		div.accordion{
 			margin-bottom: 2px;
 			width: 70%; 
@@ -159,6 +164,43 @@ section.about{
 			div.hidden-content{
 				width: 96%; 
 				top: -70px;
+			}
+		}
+	}
+	div.more-staff{
+		position: relative;
+		z-index: -1;
+		top: -10px;  
+		width: 660px; 
+		margin: 0 auto;
+		border: 1px solid #C9C7BF;
+		border-radius: 4px;
+		padding: 20px 70px; 
+		background-color: #FFFEFA; 
+		div.board-of-directors{ 
+			h3{
+				text-align: center;
+				font-style: italic;
+				font-size: 1.8em; 
+				border-bottom: 1px solid #E2E0E0;
+				padding: 10px 0px 4px;  
+			}
+			div.members{
+				@include column-count(2);
+				div.board-member{
+					margin-bottom: 10px; 
+					p{
+						margin: 0px;
+					}
+					p.name{
+						font-size: 1.2em; 
+					}
+					p.title{
+						font-style: italic;
+						color: $lighter-text;
+						font-size: 1.1em;
+					}
+				}
 			}
 		}
 	}
