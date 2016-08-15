@@ -11,13 +11,8 @@
 		Special section for Priests and Pastors below &darr;
 	</a>
 
-	<div class="pray-for-life">
-		<h2>Pray for life</h2>
-		<p>
-			<span class="italic">Join our prayer team:</span>
-		</p>
-	</div>
-
+	<?php include(TEMPLATEPATH."/global-parts/pray-for-life-subscription.php"); ?>
+	
 	<div class="grid">
 		<div class="grid-1-3">
 			<a class="bubble" href="#">

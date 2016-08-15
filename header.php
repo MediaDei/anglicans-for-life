@@ -33,9 +33,10 @@
 		<header>
 			<nav class="grid">
 				<a href="/need-help/" class="ribbon">
-					<div class="ribbon">
+					<div class="top-ribbon">
 						<p>Need Help?</p>
 					</div>
+					<div class="bottom-ribbon"></div>
 				</a>
 				<div class="buttons-left">
 					<a href="/pregnant/">

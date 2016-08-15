@@ -116,7 +116,28 @@ a.button{
 	 	}  
 	}
 }
-
+//pray for life subscription
+div.pray-for-life{
+	background-color: #F4F1F5;
+	border-radius: 4px;
+	border: 1px solid #D2CBD5;
+	width: 650px;
+	height: 200px;
+	padding: 20px 40px; 
+	margin: 50px auto;  
+	h2{
+		font-size: 1.5em;
+		width: 450px;
+		text-align: center; 
+		margin: 0 auto;		
+		padding-bottom: 10px;
+		border-bottom: 1px solid #CCCCCC;
+		box-shadow: 0px 2px 0px 0px rgba(white,1); 
+	}
+	p{
+		color: $lighter-text;
+	}
+}
 span.italic{
 	font-style: italic;
 }

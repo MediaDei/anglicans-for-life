@@ -11,37 +11,22 @@ header{
 		position: relative;
 		z-index: 1; //show shadow over div.hero-img
 		a.ribbon{
-			div.ribbon{
+			div.top-ribbon{
 				background-color: #F1CE18;
-		    height: 80px;
+		    height: 54px; 
 		    position: absolute;
 		    left: 10px;
 		    top: -4px;
-		    width: 60px;
-		    box-shadow: -6px 0px 10px -7px rgba(black,0.5),
-		    						6px 0px 10px -7px rgba(black,0.5),
-		    						inset 0px 0px 3px 1px rgba(white,1);
-		    border-top: 2px solid lighten(#B9A74E,15%);
-		    border-right: 2px solid #B9A74E;
-		    border-bottom: 2px solid #B9A74E;
-		    border-left: 2px solid #B9A74E;
-		    &:active{
-		    	background-color: darken(#F1CE18,3%); 
-		    }
+		    width: 52px;
+		    z-index: 2;
 				&:before{
-					background-color: rgba(white,1);
-					border-bottom-right-radius: 100%; 
-			    content: "";
-			    height: 42px;
-			    position: absolute;
-			    right: 7px;
-			    top: 55px;
-			    @include transform(rotate(45deg));
-			    width: 42px;
-			    box-shadow: inset 0px 18px 0px -15px #B9A74E,
-											inset 18px 0px 0px -15px #B9A74E,
-											inset 0 40px 6px -35px rgba(black, 0.5),
-			    						inset 40px 0px 6px -35px rgba(black, 0.5);
+					content: "";
+					border-width: 18px 26px;
+					border-style: solid;
+					border-color: transparent #F1CE18;	
+					position: absolute;
+			    right: 0px;
+			    top: 35px;				
 				} 
 				p{
 					font-style: italic;
@@ -59,6 +44,24 @@ header{
 			    	cursor: pointer;
 			    }
 				}	  
+			}
+			div.bottom-ribbon{
+				background-color: #B9A74E;
+		    height: 54px; 
+		    position: absolute;
+		    left: 8px;
+		    top: -1px;
+		    width: 56px;
+		    z-index: 1; 
+				&:before{
+					content: "";
+					border-width: 19px 28px;
+					border-style: solid;
+					border-color: transparent #B9A74E;	
+					position: absolute;
+			    right: 0px;
+			    top: 35px;				
+				}   
 			}
 		}
 		div.buttons-left,div.buttons-right{
