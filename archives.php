@@ -6,7 +6,7 @@ Template Name: Archives
 
 <?php get_header(); ?>
 
-<section>
+<section class="archives">
 	<?php include(TEMPLATEPATH."/global-parts/posts-loop.php"); ?>
 </section>
 

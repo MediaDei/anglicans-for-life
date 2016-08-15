@@ -141,7 +141,7 @@ div.pray-for-life{
 span.italic{
 	font-style: italic;
 }
-h1.page-title{
+h1.page-title,.sub-section-title{
 	font-size: 2.7em;
 	font-style: italic;
 	margin: 0 auto 30px;
@@ -204,8 +204,15 @@ div.img-heading-section{
 //donate section divider
 div.donate{
 	height: 110px;
-	background-color: #2D2A58;
-	@include background-image(linear-gradient(to bottom, rgba(black,0.24), rgba(150,150,150,0), rgba(white,0.27)));
+	//background-color: #2D2A58;
+	//@include background(linear-gradient(to bottom, rgba(black,0.24), rgba(150,150,150,0), rgba(white,0.27)));
+	@include background(
+				    linear-gradient(to bottom,
+				      rgba(black,0.24), 
+				      rgba(150,150,150,0),
+				      rgba(white,0.27)
+				    ),
+				    url('../images/transparent-lines.png') repeat-x center center / 100% 100% #2D2A58);
 	margin: 50px 0px;
 	div.content-wrapper{
 		display: table;
@@ -352,6 +359,7 @@ section{
 @import "pregnant";
 @import "lead-life-ministry";
 @import "get-involved";
+@import "take-action";
 @import "need-help";
 @import "pastoral-resources";
 @import "single";

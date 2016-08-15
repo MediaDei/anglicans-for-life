@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section>
+<section class="get-involved">
 	<h1 class="page-title">Get Involved</h1>
 
 	<p class="top-p">

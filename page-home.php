@@ -6,7 +6,7 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
-<section>
+<section class="home">
 	<?php include(TEMPLATEPATH."/global-parts/posts-loop.php"); ?>
 	<?php include(TEMPLATEPATH."/global-parts/donate-section-divider.php"); ?>
 	<div class="qa-twitter">

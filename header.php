@@ -54,7 +54,7 @@
 						<div class="button fa fa-envelope-o">
 						</div>
 					</a>
-					<a href="#">
+					<a href="/take-action/">
 						<div class="button">
 							Take Action
 						</div>
