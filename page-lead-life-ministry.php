@@ -124,7 +124,9 @@
 
 	<div class="colored-section-break"></div>
 
-	<h2>Take the next step:</h2>
+	<h2 class="sub-section-title">Take the next step:</h2>
+	
+	<?php include(TEMPLATEPATH."/global-parts/raised-button.php"); ?>
 </section>
 
 <?php get_footer(); ?>

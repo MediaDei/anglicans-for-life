@@ -27,5 +27,146 @@ section.pregnant{
 	p.msg-p{
 		width: 470px;
 		margin: 0 auto; 
+		position: relative;
+		&:before{
+			content: "“";
+			color: #F7F5F3;
+			font-size: 13em;
+			font-family: georgia;
+			position: absolute;
+			top: -50px; 
+			left: -90px; 
+		}
 	}
+	div.development-slider{
+		height: 426px;
+		padding: 30px 0px;
+		margin: 100px 0px;  
+		@include background(
+			linear-gradient(
+			rgba(93,70,127,0.5),
+			rgba(93,70,127,0.5)
+			),
+			
+			url('../images/development-slider.jpg') no-repeat center center / 100% auto); 
+			div.top{
+				display: table;
+				margin: 0 auto;
+				div.slider-icon{
+					display: inline-block;
+					background: url('../images/abortion-icon.png') no-repeat center center / 100% auto;
+					width: 37px;
+					height: 45px;  
+					margin-right: 10px; 
+				}
+				h2{
+					display: inline-block;
+					color: white;
+					text-shadow: 0px 2px 4px rgba(black,0.5);
+					width: 140px;
+					margin: 0 auto; 
+					font-size: 1.6em;
+					font-style: italic;
+				}
+			}
+			
+	}
+	p.contact-text{
+		text-align: center;
+		font-size: 1.1em;
+		margin: 60px auto 10px;
+	}
+	div.considering-abortion{
+		div.grid{
+			padding-top: 20px; 
+			width: 80%;
+			margin: 0 auto; 
+		}
+		a.considering-button{
+			display: table;
+			margin: 0 auto;
+			&:active{
+				position: relative;
+				top: 1px;
+			}
+			div.considering-button{
+				width: 298px;
+				height: 254px;  
+				margin: 0 auto;
+				padding: 96px 0px; 
+				box-shadow: 0px 0px 0px 1px rgba(white,1),
+										0px 0px 0px 2px #BABABA,
+										0px 2px 4px 2px rgba(black,0.5);
+				border: 1px solid #979797;
+				border-radius: 2px;
+				&.options{
+					background: url('../images/pregnant-options.jpg') no-repeat center center / 106% auto;
+				}
+				&.voices{
+					background: url('../images/pregnant-voices.jpg') no-repeat center center / 106% auto;
+				}
+				&.contact{
+					width: 428px;
+					height: 156px;  
+					background: url('../images/pregnant-contact.jpg') no-repeat center center / 130% auto;
+					padding: 45px 0px; 
+				}
+				div.text{
+					padding: 4px 0px; 
+					@include background-image(linear-gradient(
+						to right,
+						rgba(black,0),
+						rgba(black,0.6),
+						rgba(black,1),
+						rgba(black,0.6),
+						rgba(black,0)
+						));
+					&.contact{
+						position: relative;
+						width: 100%;
+						padding: 8px 0px;  
+						div.fa.fa-envelope-o{
+							position: absolute;
+							top: 44%;
+							left: 50%;
+							@include transform(translateX(-50%) translateY(-50%));
+							font-size: 3em;
+							color: rgba(125,125,125,0.5);
+							text-shadow: 0px 1px 0px rgba(white,0.5); 
+						}
+					}
+					p{
+						color: white;
+						margin: 0 auto;
+						text-align: center;
+						&.top{
+							font-style: italic;
+						}
+						&.bottom{
+							
+						}
+						&.left,&.right{
+							width: 40%;
+							font-size: 0.95em;
+							font-style: italic;
+							line-height: 1.1;
+							text-align: left; 
+						}
+						&.left{
+							float: left;
+							padding-left: 15px; 
+						}
+						&.right{
+							float: right;
+							padding-right: 15px; 
+						}
+					}
+				}
+			}
+		}
+	}
+	div.colored-section-break{
+		margin-top: 80px; 
+	}
+
 }

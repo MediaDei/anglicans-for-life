@@ -44,7 +44,7 @@
 		} // end while
 	} // end if
 	?>
-	
+	<?php include(TEMPLATEPATH."/global-parts/event-widget.php"); ?>
 </section>
 
 <?php get_footer(); ?>
