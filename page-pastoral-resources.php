@@ -45,6 +45,30 @@
 	} // end if
 	?>
 	<?php include(TEMPLATEPATH."/global-parts/event-widget.php"); ?>
+
+	<div class="doc-list">
+		<h2 class="doc-cat">Liturgies</h2>
+		<ul>
+			<li>Memorial for the unborn  <a href="#" class="pdf"></a><a href="#" class="docx"></a></li>
+			<li>Holy Communion for mothers & unborn children  <a href="#" class="pdf"></a><a href="#" class="docx"></a></li>
+			<li>Summit 2016 liturgy  <a href="#" class="pdf"></a><a href="#" class="docx"></a></li>
+			<li>lorem ipsum <a href="#" class="pdf"></a></li>
+			<li>lorem ipsum dolor <a href="#" class="docx"></a></li>
+			<li>lorem ipsum dolor sit <a href="#" class="docx"></a></li>
+		</ul>
+	</div>
+
+	<div class="doc-list">
+		<h2 class="doc-cat">Litanies</h2>
+		<ul>
+			<li>Memorial for the unborn  <a href="#" class="pdf"></a><a href="#" class="docx"></a></li>
+			<li>Holy Communion for mothers & unborn children  <a href="#" class="pdf"></a><a href="#" class="docx"></a></li>
+			<li>Summit 2016 liturgy <a href="#" class="pdf"></a></li>
+			<li>lorem ipsum <a href="#" class="pdf"></a></li>
+			<li>lorem ipsum dolor <a href="#" class="docx"></a></li>
+			<li>lorem ipsum dolor sit <a href="#" class="docx"></a></li>
+		</ul>
+	</div>
 </section>
 
 <?php get_footer(); ?>

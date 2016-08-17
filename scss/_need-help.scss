@@ -5,6 +5,7 @@ section.need-help{
 		width: 440px;
 		margin: 60px auto;
 		padding: 15px 50px; 
+		position: relative;
 		p.next-to-button{
 			width: 160px;
 			font-size: 1.05em;
@@ -12,6 +13,9 @@ section.need-help{
 			margin: 0px;
 		}
 		a.button{
+			position: absolute;
+			top: 50%;
+			@include transform(translateY(-50%));
 			div.button{
 			display: inline-table;
 			}

@@ -64,10 +64,10 @@ if($query->have_posts()){
 	<?php
 	}
 	elseif(is_page('home')){
-		echo '<a class="smallcaps older-posts" href="/archives">older posts &rarr;</a>';
+		echo '<a class="smallcaps older-posts" href="/archives"><span>older posts</span> &rarr;</a>';
 	}
 	else{
-		echo '<a class="smallcaps older-posts" href="/archives">all posts &rarr;</a>';
+		echo '<a class="smallcaps older-posts" href="/archives"><span>all posts</span> &rarr;</a>';
 	}
 }
 // clean up after wp_query

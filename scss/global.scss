@@ -97,7 +97,9 @@ a.button{
 	color: #46565D;
 	display: inline-block;
 	position: relative;
-	//top: 10px;
+	&.donate{
+		top: 10px;
+	}
 	div.button{
 		display: table;
 	 	padding: 10px 35px 8px;
@@ -116,37 +118,7 @@ a.button{
 	 	}  
 	}
 }
-//raised-button
-div.raised-button-widget{
-	&.purple-box{
-		background-color: #F4F1F5;
-		border-radius: 4px;
-		border: 1px solid #D2CBD5;
-		width: 600px;
-		height: 200px;
-		padding: 20px 40px; 
-		margin: 50px auto;
-	}
-	p.box-title{
-		font-size: 1.1em;
-		text-align: center; 
-		margin: 0 auto 20px;		
-		padding-bottom: 10px;
-		border-bottom: 1px solid #CCCCCC;
-		box-shadow: 0px 2px 0px 0px rgba(white,1);
-	}
-	p.button-title{
-		text-align: center;
-		font-style: italic;
-		font-size: 2.5em; 
-		margin-top: 50px; 
-		&.pregnant{
-			font-size: 1em;
-			font-style: normal;
-			margin-top: 20px;
-		}
-	}
-}
+
 //event widget
 div.event-widget{
 	padding: 30px 0px; 
@@ -210,6 +182,37 @@ div.event-widget{
 		}
 	}
 }
+//raised-button
+div.raised-button-widget{
+	&.purple-box{
+		background-color: #F4F1F5;
+		border-radius: 4px;
+		border: 1px solid #D2CBD5;
+		width: 600px;
+		height: 200px;
+		padding: 20px 40px; 
+		margin: 50px auto;
+	}
+	p.box-title{
+		font-size: 1.1em;
+		text-align: center; 
+		margin: 0 auto 20px;		
+		padding-bottom: 10px;
+		border-bottom: 1px solid #CCCCCC;
+		box-shadow: 0px 2px 0px 0px rgba(white,1);
+	}
+	p.button-title{
+		text-align: center;
+		font-style: italic;
+		font-size: 2.5em; 
+		margin-top: 50px; 
+		&.pregnant{
+			font-size: 1em;
+			font-style: normal;
+			margin-top: 20px;
+		}
+	}
+}
 div.raised-button-container{
 	margin: 0 auto;
 	position: relative;
@@ -246,6 +249,10 @@ div.raised-button-container{
 					color: #46565D;
 					box-shadow: 0px 2px 4px rgba(black,0.5),
 											inset 0px -2px 11px 1px rgba(white,0.75);
+					&:active{
+						box-shadow: 0px 1px 2px rgba(black,0.5),
+												inset 0px -2px 11px 1px rgba(white,0.75);
+					}
 					&.fa-envelope-o{
 						padding: 9px 11px;
 					}
@@ -256,7 +263,10 @@ div.raised-button-container{
 			}
 		}
 		div.links{
-			display: inline-block;
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 10px;
+			padding-bottom: 16px;  
 			a#hidden-email,a#hidden-phone{
 				display: block;
 				width: 175px;
@@ -374,7 +384,7 @@ div.donate{
 	div.content-wrapper{
 		display: table;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 26px;
 		p{
 			width: none; 
 			margin: 0 15px 0 0;
@@ -476,6 +486,11 @@ a.older-posts{
 	font-size: 1.7em;
 	color: black;
 	letter-spacing: 2px;
+	span{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
 //post date style
 time.circle {
