@@ -9,6 +9,7 @@ Template Name: Home Page
 <section class="home">
 	<?php include(TEMPLATEPATH."/global-parts/posts-loop.php"); ?>
 	<?php include(TEMPLATEPATH."/global-parts/donate-section-divider.php"); ?>
+	
 	<div class="qa-twitter">
 		<div class="grid">
 			<div class="grid-2-3 ask">

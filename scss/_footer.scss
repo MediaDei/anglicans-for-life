@@ -6,22 +6,26 @@ footer{
 	margin-bottom: 3px; 
 	div.grid{
 		padding: 10px;
+
 		div.grid-box{
 			border-right: 1px solid rgba(196,196,196,0.24);
 			padding: 20px; 
 			color: white;
 			height: 80px;
 			overflow: hidden;
-			float: left; 
+			float: left;
+
 			&:last-of-type{
 				border-right: none; 
 			}
+
 			&.brand{
 				width: 20%;
 				p{
 					line-height: 1;
 				}
 			}
+
 			&.address{
 				width: 20%;
 			}
@@ -33,9 +37,11 @@ footer{
 					}
 				} 
 			}
+
 			&.social{
 				width: 31%;
 			}
+
 			p{
 				margin: 0 auto;
 				width: 100px; 
@@ -67,16 +73,14 @@ footer{
 					padding: 8px 0px 0px 8px;
 				}
 				&.terms-privacy{
-					p.terms-privacy{
-						font-size: 0.8em;	
-							&:hover{
-							text-decoration: underline;
-						}
+					font-size: 0.8em;
+						&:hover{
+						text-decoration: underline;
 					}
 				}
 			}
 			div.icon-row{
-				margin: 0 auto 5px;
+				margin: -4px auto 9px;
 				display: table;
 			}
 			address{

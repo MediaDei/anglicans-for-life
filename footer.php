@@ -84,7 +84,9 @@
 				</div>
 				<h3 class="smallcaps">amen</h3>
 			</div>
-		</footer>
+		</footer> 
 	</div><!--close page-wrap opened in header.php-->
+
+	<?php wp_footer(); ?>
 </body>
 </html>

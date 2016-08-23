@@ -69,34 +69,35 @@ header{
 				display: table;
 				float: left;
 				margin-right: 5px; 
-				&.menu{
-  				margin-left: 12px; 
-  				margin-right: 0px; 
-  			}
-				&:active{
-					position: relative;
-					top: 1px;
-				}
+
+				&.menu {
+  					margin-left: 12px; 
+  					margin-right: 0px; 
+	  			}
 				div.button{
 					color: white;
-					font-size: 1.05em;
-					letter-spacing: 0.8px;
 					text-shadow: 0px 1px 0px rgba(black,1);
 					padding: 8px 10px;
-					background-color: rgba(24,22,48,0.4);
-					border: 1px solid rgba(225,213,241,0.53);
+					border: 1px solid rgba(225,213,241,0.4);
 					border-radius: 4px;
-					box-shadow: 0px 2px 2px 0px rgba(black,0.5);
-					@include background-image(
-      linear-gradient(to bottom, rgba(white, 0.09), rgba(black, 0.11)));
-      		&.fa{
-      			font-size: 1.45em;
-      			padding: 5px 10px; 
-      		}
-     		&:hover{
-     			@include background-image(
-      linear-gradient(to bottom, rgba(white, 0.0), rgba(black, 0.08)));
-     			}
+					box-shadow: 0px 2px 1px rgba(black,0.5);
+					@include background(
+	  					linear-gradient(to bottom, rgba(white, 0.09), rgba(black, 0.11)),
+	  					rgba(24,22,48,0.4));
+	      		&.fa{
+	      			font-size: 1.3em;
+	      			padding: 4px 10px 6px; 
+	      		}
+	     		&:hover{
+					@include background(
+	  					linear-gradient(to bottom, rgba(white, 0.0), rgba(black, 0.08)),
+	  					rgba(24,22,48,0.4));
+	     			}
+		     		&:active{
+		     			position: relative;
+		     			top: 1px;
+		     			box-shadow: 0px 1px 0px rgba(black,0.5);
+		     		}
 				}
 			}
 		}
@@ -150,18 +151,19 @@ header{
 			position: absolute;
 			top: 38%;
 			right: 8%;
-			width: 225px;
+			width: 200px;
 			background-color: rgba(white,0.5);
-			h2,a.all-issues{
+			h2, a.all-issues{
 				background-color: rgba(black,0.06); 
 				color: #393939;
 				text-shadow: 0px 1px 0px rgba(white,0.33);
 				text-align: center;
-				padding: 16px 0px;
 			} 
 			h2{
-				font-size: 1.45em;
+				font-size: 1.2em;
+				padding: 10px 0px;
 			}
+
 			ul{
 				padding: 20px 20px 20px 40px;
 				li{
@@ -180,11 +182,9 @@ header{
 			}
 			a.all-issues{
 				display: block;
-				padding: 10px 0px; 
-				span{
-					&:hover{
-						text-decoration: underline;
-					}
+				padding: 7px 0px; 
+				span:hover{
+					text-decoration: underline;
 				}
 			}
 		}

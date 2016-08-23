@@ -29,6 +29,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 	<div class="page-wrap">
 		<header>
 			<nav class="grid">
@@ -95,5 +96,4 @@
 			?>
 			<!--<div class="logo"></div>-->
 		</header>
-
 	
