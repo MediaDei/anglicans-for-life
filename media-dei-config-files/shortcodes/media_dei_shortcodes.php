@@ -40,6 +40,22 @@ add_filter('the_content', 'media_dei_shortcode_empty_paragraph_fix');
 
 
 
+//-------------------- SECTION DIVIDER SHORTCODES ----------
+
+function media_dei_colored_section_divider_shortcode($atts, $content){
+  $return_string='<div class="colored-section-break"></div>';
+  return $return_string;
+}
+add_shortcode('colored_section_divider', 'media_dei_colored_section_divider_shortcode');
+
+function media_dei_line_section_divider_shortcode($atts, $content){
+  $return_string='<div class="line-section-break"></div>';
+  return $return_string;
+}
+add_shortcode('line_section_divider', 'media_dei_line_section_divider_shortcode');
+
+//-------------------- END SECTION DIVIDER SHORTCODES ------
+
 
 
 //--------------------TYPOGRAPHY SHORTCODES ----------
@@ -79,6 +95,53 @@ function media_dei_simple_dropcaps_shortcode($atts, $content){
 }
 add_shortcode('simple_dropcaps', 'media_dei_simple_dropcaps_shortcode');
 
+function media_dei_page_title_shortcode($atts, $content){
+  $return_string='<h1 class="page-title">'. $content . '</h1>';
+  return $return_string;
+}
+add_shortcode('page_title', 'media_dei_page_title_shortcode');
+
+function media_dei_sub_section_title_shortcode($atts, $content){
+  $return_string='<h2 class="sub-section-title">'. $content . '</h2>';
+  return $return_string;
+}
+add_shortcode('sub_section_title', 'media_dei_sub_section_title_shortcode');
+
+function media_dei_issue_paragraph_heading_shortcode($atts, $content){
+  $return_string='<h3 class="issue-paragraph-heading">'. $content . '</h3>';
+  return $return_string;
+}
+add_shortcode('issue_paragraph_heading', 'media_dei_issue_paragraph_heading_shortcode');
+
+function media_dei_issue_paragraph_shortcode($atts, $content){
+  $return_string='<p class="issue-paragraph">'. $content . '</p>';
+  return $return_string;
+}
+add_shortcode('issue_paragraph', 'media_dei_issue_paragraph_shortcode');
+
+
+function media_dei_unordered_list_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "bullet" => 'purple_arrow',               
+  ), $atts)); 
+  if($bullet==='purple_arrow'){
+    $return_string='<ul class="purple-arrow">' . do_shortcode($content) . '</ul>';
+  }
+  else{
+    $return_string='<ul>' . do_shortcode($content) . '</ul>';
+  }
+  return $return_string;
+}
+add_shortcode('unordered_list', 'media_dei_unordered_list_shortcode');
+
+function media_dei_list_item_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "att" => 'value',               
+  ), $atts)); 
+  $return_string='<li>' . do_shortcode($content) . '</li>';
+  return $return_string;
+}
+add_shortcode('list_item', 'media_dei_list_item_shortcode');
 //--------------------END TYPOGRAPHY SHORTCODES ------
 
 

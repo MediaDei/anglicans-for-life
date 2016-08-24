@@ -323,11 +323,6 @@ span.page-title-subtext{
 	display: table;
 	margin: 0 auto 30px;
 }
-div.colored-section-break{
-	height: 10px;
-	background-color: #787594;
-	margin: 40px 0px;  
-}
 p.top-p{
 	width: 70%;
 	margin: 0 auto 20px; 
@@ -524,9 +519,10 @@ section{
 }
 @import "header";
 
-//page styles here
+//page and template styles
 @import "home";
 @import "about";
+@import "issue";
 @import "issues";
 @import "pregnant";
 @import "lead-life-ministry";
@@ -537,6 +533,6 @@ section{
 @import "single";
 @import "terms-privacy";
 @import "archives";
-//end page styles
+//end page and template styles
 
 @import "footer";
