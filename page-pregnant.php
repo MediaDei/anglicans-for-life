@@ -14,7 +14,13 @@
 	<div class="development-slider">
 		<div class="top">
 			<div class="slider-icon"></div>
-			<h2>Stages of fetal development:</h2>
+			<h2>Stages of fetal<br>development:</h2>
+
+		</div>
+		<div class="inner-content">
+			<?php
+			if ( function_exists( 'soliloquy' ) ) { soliloquy( 'fetal-development-slider', 'slug' ); } 
+			?>
 		</div>
 	</div>
 
