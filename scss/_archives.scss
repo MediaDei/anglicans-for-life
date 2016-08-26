@@ -2,11 +2,11 @@ section.archives{
 	div.pagination{
 		display: table;
 		margin: 0 auto;
-		a,span{
+		a, span{
 			margin-right: 5px; 
 		}
 		a{
-			&:hover{
+			&:hover {
 			text-decoration: underline;
 			} 
 		}

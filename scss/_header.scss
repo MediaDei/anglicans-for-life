@@ -142,7 +142,7 @@ header{
 	}
 	span.anchor{
 		&:target{
-			&+div.navigation-menu{
+			& + div.navigation-menu{
 				width: 300px;
 				height: 100%;
 				background-color: rgba(black,0.25);

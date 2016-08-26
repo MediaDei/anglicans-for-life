@@ -16,7 +16,7 @@
 	<div class="grid">
 		<div class="grid-1-3">
 			<a class="bubble" href="#">
-				<div class="bubble  bubble-1"></div>
+				<div class="bubble bubble-1"></div>
 			</a>
 			<h3 class="bubble-title">
 				Find a Life-Affirming Church or Leader
@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="grid-1-3">
-			<a class="bubble" href="/lead-life-ministry/">
+			<a class="bubble" href="<?php echo get_site_url() ?>/lead-life-ministry/">
 				<div class="bubble bubble-2"></div>
 			</a>
 			<h3 class="bubble-title">
@@ -39,8 +39,8 @@
 		</div>
 
 		<div class="grid-1-3">
-			<a class="bubble" href="/take-action/">
-				<div class="bubble  bubble-3"></div>
+			<a class="bubble" href="<?php echo get_site_url() ?>/take-action/">
+				<div class="bubble bubble-3"></div>
 			</a>
 			<h3 class="bubble-title">
 				Take Action for Life
@@ -59,7 +59,7 @@
 		<h2>Priests & Pastors</h2>
 		<div class="grid lower-grid">
 			<div class="grid-1-2">
-				<a href="/pastoral-resources/" class="bubble">
+				<a href="<?php echo get_site_url() ?>/pastoral-resources/" class="bubble">
 					<div class="bubble bubble-4">
 						
 					</div>
@@ -67,7 +67,7 @@
 				<h3 class="bubble-title">Pastoral Resources</h3>
 			</div>
 			<div class="grid-1-2">
-				<a href="/teaching-resources/#audio-track-1" class="bubble">
+				<a href="<?php echo get_site_url() ?>/teaching-resources/#audio-track-1" class="bubble">
 					<div class="bubble bubble-5">
 						
 					</div>

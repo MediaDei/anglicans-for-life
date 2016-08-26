@@ -33,20 +33,20 @@
 	<div class="page-wrap">
 		<header>
 			<nav class="grid">
-				<a href="/need-help/" class="ribbon">
+				<a href="<?php echo get_site_url() ?>/need-help/" class="ribbon">
 					<div class="top-ribbon">
 						<p>Need Help?</p>
 					</div>
 					<div class="bottom-ribbon"></div>
 				</a>
 				<div class="buttons-left">
-					<a href="/pregnant/">
+					<a href="<?php echo get_site_url() ?>/pregnant/">
 						<div class="button">
 							Pregnant?
 						</div>
 					</a>
 				</div>
-				<a href="/" class="logo">
+				<a href="<?php echo get_site_url() ?>/" class="logo">
 					<h1 class="smallcaps">Anglicans</h1>
 					<h1 class="smallcaps">for life</h1>
 				</a>
@@ -55,7 +55,7 @@
 						<div class="button fa fa-envelope-o">
 						</div>
 					</a>
-					<a href="/take-action/">
+					<a href="<?php echo get_site_url() ?>/take-action/">
 						<div class="button">
 							Take Action
 						</div>
