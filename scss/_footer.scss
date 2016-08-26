@@ -4,6 +4,8 @@ footer{
 	box-shadow: 0px -3px 0px #2D2A58;
 	border-top: 2px solid white;
 	margin-bottom: 3px; 
+	font-size: 0.9em;
+
 	div.grid{
 		padding: 10px;
 
@@ -12,7 +14,6 @@ footer{
 			padding: 20px; 
 			color: white;
 			height: 80px;
-			overflow: hidden;
 			float: left;
 
 			&:last-of-type{
@@ -28,9 +29,19 @@ footer{
 
 			&.address{
 				width: 20%;
+
+				address{
+					font-style: normal;
+					margin: 0 auto;
+					display: table;
+					line-height: 1.2;
+				}
 			}
+
 			&.contact{
 				width: 29%;
+				line-height: 1.2;
+
 				a.underline{
 					&:hover{
 						text-decoration: underline;
@@ -44,7 +55,8 @@ footer{
 
 			p{
 				margin: 0 auto;
-				width: 100px; 
+				width: 100px;
+
 				&.logo{
 				position: relative;
 				padding-left: 5px;
@@ -55,7 +67,7 @@ footer{
 						height: 35px;
 						position: absolute;
 						top: 0px;
-						left: -25px; 
+						left: -25px;
 					}
 				}
 				&.logo-bottom{
@@ -83,11 +95,13 @@ footer{
 				margin: -4px auto 9px;
 				display: table;
 			}
-			address{
-				margin: 0 auto;
-				display: table;
-				line-height: 1.2;
+
+			div.icon {
+				height: 35px;
+				width: 35px;
+				font-size: 18px;
 			}
+
 		}
 	}
 	div.inset-prayer{
@@ -95,24 +109,27 @@ footer{
 		@include background-image(linear-gradient (to top, rgba(black,0.06), rgba(black,0.44)));
 		color: #E7E7E7;
 		margin: 0 auto;
-		padding: 25px 220px 20px; 
-		font-size: 0.9em;
+		padding: 25px 200px 20px; 
+		font-size: 1em;
 		border-radius: 0px;
 		border-top: 1px solid rgba(white,0.48);
 		box-shadow: inset 0px 10px 5px -7px rgba(black,0.5);
+
 		h3{
 			margin: 0 auto 15px;
 			display: table;
 			color: rgba(white,0.52);
-			letter-spacing: 1.38px;
-			font-size: 1.1em;
+			letter-spacing: 1.3px;
+			font-size: 0.75em;
+			text-transform: uppercase;
+
 			&:last-of-type{
 				margin: 5px auto 0px;
 			} 
 		}
 		div.sentences{
 			margin: 0 auto;
-			@include column-count(2);
+			@include column-count(2);			
 			font-size: 0.85em;
 			p{
 				padding-left: 1.5em;

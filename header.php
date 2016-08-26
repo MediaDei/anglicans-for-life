@@ -91,7 +91,7 @@
 				echo '</div>';
 			}
 			if(is_page('home')){
-				echo '<div class="hero-img" role="img"><div class="trending-issues"><h2>Trending Issues:</h2><ul><li><a href="#"><span>Abortion</span></a></li><li><a href="#"><span>The Pill</span></a></li><li><a href="#"><span>Euthanasia</span></a></li><li><a href="#"><span>RU-485</span></a></li></ul><a href="/archives/" class="smallcaps all-issues"><span>all issues</span> &rarr;</a></div></div>';
+				echo '<div class="hero-img" role="img"><div class="trending-issues"><h2>Trending Issues:</h2><ul><li><a href="#"><span>Abortion</span></a></li><li><a href="#"><span>The Pill</span></a></li><li><a href="#"><span>Euthanasia</span></a></li><li><a href="#"><span>RU-485</span></a></li></ul><a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a></div></div>';
 			}
 			?>
 			<!--<div class="logo"></div>-->
