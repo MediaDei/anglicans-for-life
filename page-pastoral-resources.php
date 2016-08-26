@@ -36,16 +36,9 @@
 		</style>
 	</div>
 -->
-	<?php //get page contents
-	if ( have_posts() ) {
-		while ( have_posts() ) {
-			the_post(); 
-			the_content();
-		} // end while
-	} // end if
-	?>
-	<?php include(TEMPLATEPATH."/global-parts/event-widget.php"); ?>
 
+
+<!--
 	<div class="doc-list">
 		<h2 class="doc-cat">Liturgies</h2>
 		<ul>
@@ -69,6 +62,7 @@
 			<li>lorem ipsum dolor sit <a href="#" class="docx"></a></li>
 		</ul>
 	</div>
+-->
 </section>
 
 <?php get_footer(); ?>

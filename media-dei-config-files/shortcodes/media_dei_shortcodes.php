@@ -269,7 +269,7 @@ function media_dei_accordion_hidden_content_shortcode($atts, $content){
           padding: 30px 30px 15px;
           position: relative;
           top: -10px;
-          z-index: -1;
+          //z-index: 1;
           opacity: 1;
         }
       </style>';
@@ -294,7 +294,7 @@ function media_dei_accordion_hidden_content_shortcode($atts, $content){
           padding: 30px 30px 15px;
           position: relative;
           top: -10px;
-          //z-index: -1;
+          //z-index: 1;
           opacity: 1;
         }
       </style>';
@@ -564,6 +564,136 @@ function media_dei_additional_staff_member_title_shortcode($atts, $content){
 }
 add_shortcode('additional_staff_title', 'media_dei_additional_staff_member_title_shortcode');
 
-//----------------------- END ADDITIONAL STAFF WIDGET SHORTCODES -------------
+//----------------------- END ADDITIONAL STAFF WIDGET SHORTCODES ---------
+
+
+
+//----------------------- EVENT WIDGET SHORTCODES -------------
+
+function media_dei_event_widget_shortcode($atts, $content){
+  $return_string='<div class="event-widget">'. do_shortcode($content) . '</div>';
+  return $return_string;
+}
+add_shortcode('event', 'media_dei_event_widget_shortcode');
+
+
+function media_dei_event_title_shortcode($atts, $content){
+  $return_string='<h2>' . $content . '</h2>';
+  return $return_string;
+}
+add_shortcode('event_title', 'media_dei_event_title_shortcode');
+
+function media_dei_event_dateshortcode($atts, $content){
+  $return_string='<time><div class="fa fa-calendar"></div><p>'. $content . '</p></time>';
+  return $return_string;
+}
+add_shortcode('event_date', 'media_dei_event_dateshortcode');
+
+function media_dei_event_description_shortcode($atts, $content){ 
+  $return_string='<div class="inner-content"><p>' . do_shortcode($content) . '</p></div>';
+  return $return_string;
+}
+add_shortcode('event_description', 'media_dei_event_description_shortcode');
+//----------------------- END EVENT WIDGET SHORTCODES ---------
+
+
+//----------------------- DOCUMENT LIST WIDGET SHORTCODE -------------
+
+function media_dei_document_list_shortcode($atts, $content){
+  $return_string='<div class="doc-list">' . do_shortcode($content) . '</div>';
+  return $return_string;
+}
+add_shortcode('document_list', 'media_dei_document_list_shortcode');
+
+function media_dei_document_list_category_shortcode($atts, $content){
+  $return_string='<h2 class="doc-cat">' . $content . '</h2>';
+  return $return_string;
+}
+add_shortcode('document_list_category', 'media_dei_document_list_category_shortcode');
+
+function media_dei_document_list_icon_docx_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "document_url" => 'Insert Document URL Here',               
+  ), $atts)); 
+  $return_string='<a href="' . $document_url . '" class="docx"></a>';
+  return $return_string;
+}
+add_shortcode('document_list_icon_docx', 'media_dei_document_list_icon_docx_shortcode');
+
+function media_dei_document_list_icon_pdf_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "document_url" => 'Insert Document URL Here',               
+  ), $atts)); 
+  $return_string='<a href="' . $document_url . '" class="pdf"></a>';
+  return $return_string;
+}
+add_shortcode('document_list_icon_pdf', 'media_dei_document_list_icon_pdf_shortcode');
+
+
+
+
+//----------------------- END DOCUMENT LIST WIDGET SHORTCODE ---------
+
+
+
+
+//----------------------- AUDIO PLAYER WIDGET SHORTCODE -------------
+function media_dei_audio_player_shortcode($atts, $content){ 
+  $return_string='<div class="audio-player">' . do_shortcode($content) . '</div>';
+  return $return_string;
+}
+add_shortcode('audio_player', 'media_dei_audio_player_shortcode');
+
+function media_dei_audio_track_shortcode($atts, $content){ 
+  $GLOBALS['audioTrackCount'];
+  $GLOBALS['audioTrackCount']++;
+  if($GLOBALS['audioTrackCount']%2===0){
+    $return_string='
+      <span class="anchor" id="audio-track-' . $GLOBALS['audioTrackCount'] . '"></span>
+      <div class="audio-track dark-bg">' . do_shortcode($content) . '</div>';
+  }
+  else{
+    $return_string='
+      <span class="anchor" id="audio-track-' . $GLOBALS['audioTrackCount'] . '"></span>
+      <div class="audio-track">' . do_shortcode($content) . '</div>';
+  }
+  return $return_string;
+}
+add_shortcode('audio_track', 'media_dei_audio_track_shortcode');
+
+function media_dei_audio_title_shortcode($atts, $content){ 
+  $return_string='<p class="audio-title"><a href="#audio-track-' . $GLOBALS['audioTrackCount'] . '">' . $content . '</a></p>';
+  return $return_string;
+}
+add_shortcode('audio_title', 'media_dei_audio_title_shortcode');
+
+function media_dei_audio_author_shortcode($atts, $content){ 
+  $return_string='<p class="audio-author">' . $content . '</p>';
+  return $return_string;
+}
+add_shortcode('audio_author', 'media_dei_audio_author_shortcode');
+
+function media_dei_audio_description_shortcode($atts, $content){ 
+  $return_string='<div class="line"></div><p class="audio-description">' . $content . '</p>';
+  return $return_string;
+}
+add_shortcode('audio_description', 'media_dei_audio_description_shortcode');
+
+function media_dei_audio_file_shortcode($atts, $content){ 
+  extract(shortcode_atts(array(            
+    "audio_url" => 'Insert Audio URL Here',               
+  ), $atts));
+  $return_string='
+    <audio controls>
+      <source src="'. $audio_url . '">
+    Your browser does not support the audio element.
+    </audio>';
+  return $return_string;
+}
+add_shortcode('audio_file', 'media_dei_audio_file_shortcode');
+
+
+//----------------------- AUDIO PLAYER WIDGET SHORTCODE -------------
+
 //end Media Dei shortcodes
 

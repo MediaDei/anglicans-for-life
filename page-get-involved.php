@@ -67,7 +67,7 @@
 				<h3 class="bubble-title">Pastoral Resources</h3>
 			</div>
 			<div class="grid-1-2">
-				<a href="/teaching-resources/" class="bubble">
+				<a href="/teaching-resources/#audio-track-1" class="bubble">
 					<div class="bubble bubble-5">
 						
 					</div>

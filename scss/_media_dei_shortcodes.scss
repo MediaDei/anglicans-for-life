@@ -267,7 +267,7 @@ ul.font-awesome{
   position: fixed;
   &:target{
     &+.anchor-button{
-    	div.accordion-button{
+    	div.accordion-button{ 
     		&:hover{
     			cursor: default;
     		}
@@ -299,7 +299,7 @@ ul.font-awesome{
 						padding: 30px 30px 15px;
 						position: relative;
 						top: -10px;
-						z-index: -1;
+						z-index: 1;
 						opacity: 1;
 					}
 				</style>
@@ -334,8 +334,9 @@ div.accordion{
 			padding: 14px;
 			margin: 0 auto;  
 			box-shadow: 0px 2px 3px rgba(193,193,193,0.5);
+      position: relative;
+      z-index: 2;
 			&:active{
-				position: relative;
 				top: 1px;
 			}
 			p.button-text{
@@ -352,3 +353,205 @@ div.accordion{
 	}
 }
 //--------------- END HIDDEN CONTENT NO JS -----------
+
+
+
+//--------------- EVENT WIDGE STYLES -----------
+
+//event widget - AFL
+div.event-widget{
+  padding: 30px 0px; 
+  margin: 80px 0px;
+  color: white;
+  @include background(
+    linear-gradient(
+    rgba(93,70,127,0.5),
+    rgba(93,70,127,0.5)
+    ),
+    
+    url('../images/event-widget.jpg') no-repeat center center / 110% auto);  
+  h2{
+    font-size: 2.7em;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(black,0.5);
+  }
+  time{
+    display: table;
+    margin: 10px auto 15px;
+    div.fa-calendar,p{
+      display: inline-block; 
+    }
+    div.fa-calendar{
+      margin-right: 30px; 
+      font-size: 2em;  
+    }
+    p{
+      margin: 0px; 
+      font-size: 2em;
+      color: white;
+      text-shadow: 0px 2px 4px rgba(black,0.5);
+    }
+  }
+  div.inner-content{ 
+    width: 75%; 
+    margin: 0 auto;
+    border-top: 1px solid rgba(black,0.25);
+    border-bottom: 1px solid #4E4E4E;
+    padding: 20px 40px; 
+    @include background-image(
+      linear-gradient(
+        to right,
+        rgba(black,0),
+        rgba(black,0.25),
+        rgba(black,0)
+        ));
+    p{
+      span{
+        color: white;
+      }
+    }
+  }
+  a{
+    color: white;
+    font-style: italic;
+    display: table;
+    margin: 20px auto 0px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+//--------------- END EVENT WIDGET STYLES -----------
+
+
+//--------------- DOCUMENT LIST WIDGET STYLES -----------
+div.doc-list{
+  width: 66%;
+  margin: 0 auto 40px;
+  h2.doc-cat{
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 6px 0px 6px 54px;
+    border-bottom: 1px solid rgba(black,0.5);
+    box-shadow: 0px 2px 4px rgba(black,0.5); 
+  }
+  ul{
+    padding: 30px 20px 10px;
+    background-color: #FFFEFA;
+    border: 1px solid #C9C7BF;
+    width: 98%; 
+    margin: 0 auto; 
+    li{
+      padding-left: 20px; 
+      margin: 0px 0px 10px 40px; 
+      a{
+        display: inline-block;
+        color: $base-text;
+        &.pdf{
+          width: 44px;
+          height: 13px;
+          margin: 0px 6px;
+          background: url('../images/icon-pdf.png') no-repeat center center / 100% auto;
+        }
+        &.docx{
+          width: 44px;
+          height: 13px;
+          margin: 0px 6px;
+          background: url('../images/icon-docx.png') no-repeat center center / 100% auto;
+        }
+      }
+    }
+  }
+}
+//--------------- END DOCUMENT LIST WIDGET STYLES -------
+
+
+//--------------- AUDIO PLAYER WIDGET STYLES -------
+
+div.audio-player{
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0px 2px 3px rgba(black,0.5),
+              0px 5px 14px rgba(black,0.25);
+  border-radius: 3px;
+  span{
+    display: none;
+    position: fixed; 
+    &:target{
+      &+div.audio-track{
+        @include background( 
+          linear-gradient(rgba(white,0.5), rgba(123,123,123,0.07), rgba(black,0)), #FFFAEE
+        );
+        border-top: 1px solid rgba(black,0.05);
+        border-bottom: 1px solid rgba(black,0.05);
+        &:first-of-type{
+          border-top: none;
+        }
+        &:last-of-type{
+          border-bottom: none;
+        }
+        p.audio-title{
+          padding: 6px 0px 0px 20px;
+        }
+        p.audio-author{
+          display: block;
+          padding: 0px 0px 4px 20px;
+        }
+        div.line{
+          display: block;
+          border-bottom: 1px solid rgba(black,0.1);
+          height: 1px;
+          width: 96%;
+          margin: 0 auto; 
+          box-shadow: 0px 1px 0px 0px rgba(white,1);
+        }
+        p.audio-description{
+          display: block;
+          padding: 6px 0px 10px 20px;
+        }
+        audio{
+          width: 100%;
+          display: block; 
+        }
+      }
+    }
+  }
+  div.audio-track{  
+    background: rgba(white,1); 
+    &.dark-bg{
+      background: #F3F3F3;
+    }         
+  }
+  p{
+    //display: none; 
+    margin: 0px;
+    font-size: 0.9em; 
+    &.audio-title{
+      font-style: italic;
+      font-size: 1.3em; 
+      padding: 12px 0px 12px 20px;
+      a{
+        color: $base-text;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &.audio-author{
+      display: none;   
+    }
+    &.audio-description{
+      display: none;  
+    }
+  }
+  div.line{
+    display: none;  
+  }
+  audio{
+    display: none; 
+  }
+}
+//--------------- END AUDIO PLAYER WIDGET STYLES ---
+
+

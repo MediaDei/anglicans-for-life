@@ -134,69 +134,7 @@ a.button{
 	}
 }
 
-//event widget
-div.event-widget{
-	padding: 30px 0px; 
-	margin: 80px 0px;
-	color: white;
-	@include background(
-		linear-gradient(
-		rgba(93,70,127,0.5),
-		rgba(93,70,127,0.5)
-		),
-		
-		url('../images/event-widget.jpg') no-repeat center center / 110% auto);  
-	h2{
-		font-size: 2.7em;
-		text-align: center;
-		text-shadow: 0px 2px 4px rgba(black,0.5);
-	}
-	time{
-		display: table;
-		margin: 10px auto 15px;
-		div.fa-calendar,p{
-			display: inline-block; 
-		}
-		div.fa-calendar{
-			margin-right: 30px; 
-			font-size: 2em;  
-		}
-		p{
-			margin: 0px; 
-			font-size: 2em;
-			color: white;
-			text-shadow: 0px 2px 4px rgba(black,0.5);
-		}
-	}
-	div.inner-content{ 
-		width: 75%; 
-		margin: 0 auto;
-		border-top: 1px solid rgba(black,0.25);
-		border-bottom: 1px solid #4E4E4E;
-		padding: 20px 40px; 
-		@include background-image(
-			linear-gradient(
-				to right,
-				rgba(black,0),
-				rgba(black,0.25),
-				rgba(black,0)
-				));
-		p{
-			span{
-				color: white;
-			}
-		}
-	}
-	a.event-document{
-		color: white;
-		font-style: italic;
-		display: table;
-		margin: 20px auto 0px;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
-}
+
 //raised-button
 div.raised-button-widget{
 	&.purple-box{
