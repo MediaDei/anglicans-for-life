@@ -1,65 +1,89 @@
 section.about{
 	p.top-p{
-		margin-bottom: 90px; 
+		margin-bottom: 70px; 
 	}
 	h2{
-		font-size: 2.7em;
+		font-size: 2.3em;
 		text-align: center;
 		margin-bottom: 40px; 
 	}
 	div.grid{
+		max-width: 90%;
+		margin: 0 auto;
+
 		div.grid-1-2{
 			margin-bottom: 40px; 
+			padding-left: 90px;
+			padding-right: 30px;
+
+			h3{
+				font-size: 1.3em;
+				margin-bottom: 5px;
+				text-align: left;
+			}
+			p{
+				font-size: 14px;
+				margin: 0;
+			}
+
+
 			div.position-icon{
-				margin-right: 10px; 
-				width: 90px;
-				height: 90px;
+				//margin-right: 10px; 
+				width: 70px;
+				height: 70px;
 				border: 1px solid #E0DED7;
+				float: left;
+				margin-left: -80px;
+				margin-top: 25px;
 				border-radius: 100%;
-				display: inline-block;
-				box-shadow: 0px 2px 3px rgba(black,0.35); 
+				box-shadow: 0px 2px 3px rgba(black,0.35);
+
 				&.abortion{
-					background: #F6F3E9  url("../images/abortion-icon.png") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/abortion-icon.png") no-repeat center center / 50% auto;
 				}
 				&.contraception{
-					background: #F6F3E9  url("../images/contraception-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/contraception-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.euthanasia{
-					background: #F6F3E9  url("../images/euthanasia-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/euthanasia-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.stem-cells{
-					background: #F6F3E9  url("../images/stem-cells-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/stem-cells-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.partial-birth-abortion{
-					background: #F6F3E9  url("../images/partial-birth-abortion-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/partial-birth-abortion-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.post-abortion-aftercare{
-					background: #F6F3E9  url("../images/post-abortion-aftercare-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/post-abortion-aftercare-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.death-penalty{
-					background: #F6F3E9  url("../images/death-penalty-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/death-penalty-icon.svg") no-repeat center center / 50% auto;
 				}
 				&.adoption{
-					background: #F6F3E9  url("../images/adoption-icon.svg") no-repeat center center / 50% auto;
-				}
-			}
-			div.text{
-				display: inline-block;
-				width: 66%; 
-				h3{
-					font-size: 1.8em;
-				}
-				p{
-					margin-top: 5px;
+					background: #F6F3E9 url("../images/adoption-icon.svg") no-repeat center center / 50% auto;
 				}
 			}
 		}
 	}
+
 	h3{
 		font-size: 2.4em;
 		text-align: center;
 		margin-bottom: 20px; 
 	}
+
+
+	.stand-with-us {
+		background: rgb(250,250,250);
+		height: 300px;
+		border: 1px solid rgb(200,200,200);
+		text-align: center;
+		padding-top: 50px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+
 	p{
 		&.history{
 			width: 600px;
@@ -69,16 +93,18 @@ section.about{
 	div.bottom-history-row{
 		display: table;
 		margin: 0 auto;
+
 		p.history-bottom{
 			width: 400px;
 			display: inline-block;
-			margin: 0px;
+			margin: 20px 0 0px;
 		}
 		div.gold-frame.silent-img{
 			display: inline-block;
 			width: 300px;
 			height: 120px; 
 			background: url("../images/our-history-silent.png") no-repeat center center / 90% auto;
+			vertical-align: top;
 		}
 	}
 	div.our-staff{

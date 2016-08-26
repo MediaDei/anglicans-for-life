@@ -6,123 +6,76 @@
 		<span class="simple-dropcaps">A</span><span class="smallcaps">s ministry based in</span> the Anglican tradition, AFL helps the Church apply the Biblical principles to the human Life issues that challenge people in local congregations and communities.
 	</p>
 	<h2>
-		<span class="italic">AFL 	Positions
-		</span>
+		<span class="italic">AFL Positions</span>
 	</h2>
+
 	<div class="grid">
 		<div class="grid-1-2">
-			<div class="position-icon abortion">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Abortion
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon abortion"></div>
+			<h3 class="italic">Abortion</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon contraception">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Contraception
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon contraception"></div>
+			<h3 class="italic">Contraception</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon euthanasia">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Euthanasia
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon euthanasia"></div>
+			<h3 class="italic">Euthanasia</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon stem-cells">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Stem-cells
-					</span>
-				</h3>
+				<div class="position-icon stem-cells"></div>
+				<h3 class="italic">Stem-cells</h3>
 				<p>
 					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
 				</p>
-			</div>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon partial-birth-abortion">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Partial-birth abortion
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon partial-birth-abortion"></div>
+			<h3 class="italic">Partial-birth abortion</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon post-abortion-aftercare">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Post-abortion aftercare
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon post-abortion-aftercare"></div>
+			<h3 class="italic">Post-abortion aftercare</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon death-penalty">
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Death penalty
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon death-penalty"></div>
+			<h3 class="italic">Death penalty</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 		<div class="grid-1-2">
-			<div class="position-icon adoption">	
-			</div>
-			<div class="text">
-				<h3>
-					<span class="italic">
-						Adoption
-					</span>
-				</h3>
-				<p>
-					Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
-				</p>
-			</div>
+			<div class="position-icon adoption"></div>
+			<h3 class="italic">Adoption</h3>
+			<p>
+				Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. 
+			</p>
 		</div>
 	</div>
+
+
+
+	<div class="stand-with-us">
+		<h3 class="italic">Stand With Us</h3>
+	</div>
+
+
+
 	<h3>
 		<span class="italic">
 			Our History

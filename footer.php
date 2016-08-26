@@ -24,6 +24,8 @@
 						});
 					</script>
 					<a class="underline" id="hidden-email" href="#">Please enable Javascript to view</a>
+					<br>
+
 					<script type="text/javascript">
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
@@ -58,10 +60,10 @@
 				</div>
 			</div>
 			<div class="inset-prayer">
-				<h3 class="smallcaps">the prayer for life</h3>
+				<h3>The prayer for life</h3>
 				<div class="sentences">
 					<p>
-						Lord God, Thank You for creating human life in Your image.
+						<em>Lord God</em>, Thank You for creating human life in Your image.
 					</p>
 					<p>
 						Thank You for my life and the lives of those I love.
@@ -82,7 +84,7 @@
 						I commit myself to protecting and defending the sacredness of life according to Your will, through Christ our Lord.
 					</p>
 				</div>
-				<h3 class="smallcaps">amen</h3>
+				<h3>Amen.</h3>
 			</div>
 		</footer> 
 	</div><!--close page-wrap opened in header.php-->
