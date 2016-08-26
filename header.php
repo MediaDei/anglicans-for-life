@@ -65,7 +65,7 @@
 							Donate
 						</div>
 					</a>
-					<a class="menu" href="#">
+					<a class="menu" href="#navigation-menu">
 						<div class="button fa fa-bars">
 						</div>
 					</a>
@@ -76,24 +76,38 @@
 			//get hero for index.php and also apply it to archive.php
 			if(is_home() || is_archive()) { 
 			  $page_for_posts = get_option( 'page_for_posts' );
-        echo '<div class="hero-img" role="image">'.get_the_post_thumbnail($page_for_posts, 'large').'</div>';
+        echo '<div class="hero-img" role="image">';
+        include(TEMPLATEPATH."/global-parts/navigation-menu.php");
+        get_the_post_thumbnail($page_for_posts, 'large');
+        echo '</div>';
 			}
 			//get hero for all pages except index.php, archive.php, and single.php
 			if ( has_post_thumbnail() && !is_single()) {
 				echo '<div class="hero-img" role="image">';
+				include(TEMPLATEPATH."/global-parts/navigation-menu.php");
+				if(is_page('home')){
+					echo '
+					<div class="trending-issues">
+						<h2>Trending Issues:</h2>
+						<ul>
+							<li><a href="#"><span>Abortion</span></a></li>
+							<li><a href="#"><span>The Pill</span></a></li>
+							<li><a href="#"><span>Euthanasia</span></a></li>
+							<li><a href="#"><span>RU-485</span></a></li>
+						</ul>
+						<a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a>
+					</div>';
+				}
 				the_post_thumbnail();
 				echo '</div>';
 				
 			}
 			if(is_single()){
 				echo '<div class="hero-img single-post" role="image">';
+				include(TEMPLATEPATH."/global-parts/navigation-menu.php");
 				the_post_thumbnail();
 				echo '</div>';
-			}
-			if(is_page('home')){
-				echo '<div class="hero-img" role="img"><div class="trending-issues"><h2>Trending Issues:</h2><ul><li><a href="#"><span>Abortion</span></a></li><li><a href="#"><span>The Pill</span></a></li><li><a href="#"><span>Euthanasia</span></a></li><li><a href="#"><span>RU-485</span></a></li></ul><a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a></div></div>';
-			}
+			}	
 			?>
-			<!--<div class="logo"></div>-->
 		</header>
 	
