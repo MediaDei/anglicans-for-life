@@ -72,6 +72,11 @@
 
 	<div class="stand-with-us">
 		<h3 class="italic">Stand With Us</h3>
+		<div class="stand-with-us-slider">
+			<?php 
+			if ( function_exists( 'soliloquy' ) ) { soliloquy( 'stand-with-us-slider', 'slug' ); }
+			?>
+		</div>
 	</div>
 
 
