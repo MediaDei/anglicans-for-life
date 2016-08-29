@@ -142,6 +142,12 @@ function media_dei_list_item_shortcode($atts, $content){
   return $return_string;
 }
 add_shortcode('list_item', 'media_dei_list_item_shortcode');
+
+function media_dei_shortcode_terms_privacy_heading($atts, $content){
+  $return_string='<h3>'. $content . '</h3>';
+  return $return_string;
+}
+add_shortcode('terms_privacy_heading', 'media_dei_shortcode_terms_privacy_heading');
 //--------------------END TYPOGRAPHY SHORTCODES ------
 
 
@@ -695,5 +701,16 @@ add_shortcode('audio_file', 'media_dei_audio_file_shortcode');
 
 //----------------------- AUDIO PLAYER WIDGET SHORTCODE -------------
 
+
+//----------------------- PHP INCLUDES SHORTCODE -------------
+function media_dei_include_donate_shortcode($atts, $content){
+  $return_string='<?php include(TEMPLATEPATH."/global-parts/donate-section-divider.php"); ?>';
+  return $return_string;
+}
+add_shortcode('include_donate', 'media_dei_include_donate_shortcode');
+  
 //end Media Dei shortcodes
+
+//----------------------- END PHP INCLUDES SHORTCODE -------------
+
 
