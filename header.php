@@ -32,6 +32,7 @@
 	
 	<div class="page-wrap">
 		<header>
+			<span class="anchor" id="navigation-menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
 			<nav class="grid">
 				<a href="<?php echo get_site_url() ?>/need-help/" class="ribbon">
 					<div class="top-ribbon">
@@ -65,12 +66,17 @@
 							Donate
 						</div>
 					</a>
-					<a class="menu" href="#navigation-menu">
+					<a class="menu open" href="#navigation-menu">
+						<div class="button fa fa-bars">
+						</div>
+					</a>
+					<a class="menu close" href="#close-navigation-menu">
 						<div class="button fa fa-bars">
 						</div>
 					</a>
 				</div>
 			</nav>
+			<span class="anchor" id="close-navigation-menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
 
 			<?php 
 			//get hero for index.php and also apply it to archive.php
