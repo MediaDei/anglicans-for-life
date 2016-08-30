@@ -46,16 +46,23 @@ section.lead-life-ministry{
 		div.accordion{
 			width: 600px;
 			margin: 0 auto;
-			margin-bottom: 20px; 
+			margin-bottom: 20px;
+
 			span.anchor:target+.anchor-button{
-				&+.accordion-button-1,&+.accordion-button-2,&+.accordion-button-3,&+.accordion-button-4,&+.accordion-button-5,&+.accordion-button-6{
-          height: auto;
-          padding: 30px 30px 15px;
-          position: relative;
-          top: -10px;
-          //z-index: -1;
-          opacity: 1;
-        }
+				&+.accordion-button-1,
+				&+.accordion-button-2,
+				&+.accordion-button-3,
+				&+.accordion-button-4,
+				&+.accordion-button-5,
+				&+.accordion-button-6{
+		        	height: 100%;
+		        	overflow: hidden;
+		        	@include transition(height 3s ease 0s);
+		        }
+			}
+
+			p {
+				margin: 10px 21px 5px;
 			}
 		}
 	}

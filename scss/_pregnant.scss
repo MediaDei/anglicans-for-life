@@ -11,6 +11,7 @@ section.pregnant{
 		font-style: italic;
 		font-size: 1.3em;	
 		position: relative;
+
 		&:after{//portrait
 			content: "";
 			position: absolute;
@@ -120,8 +121,11 @@ section.pregnant{
 	}
 	p.contact-text{
 		text-align: center;
-		font-size: 1.1em;
-		margin: 60px auto 10px;
+
+		&.title {
+			font-size: 1.5em;
+			margin: 60px auto 10px;
+		}
 	}
 	div.considering-abortion{
 		div.grid{
@@ -132,20 +136,23 @@ section.pregnant{
 		a.considering-button{
 			display: table;
 			margin: 0 auto;
+			box-shadow: 0px 2px 4px 2px rgba(black,0.5);
+
 			&:active{
 				position: relative;
 				top: 1px;
+				box-shadow: 0px 1px 2px 1px rgba(black,0.5);
 			}
+
 			div.considering-button{
 				width: 298px;
-				height: 254px;  
-				margin: 0 auto;
-				padding: 96px 0px; 
+				height: 254px;
+				display: table-cell;
+				vertical-align: middle;
 				box-shadow: 0px 0px 0px 1px rgba(white,1),
-										0px 0px 0px 2px #BABABA,
-										0px 2px 4px 2px rgba(black,0.5);
-				border: 1px solid #979797;
+										0px 0px 0px 2px #BABABA;
 				border-radius: 2px;
+				border: 1px solid #979797;
 				&.options{
 					background: url('../images/pregnant-options.jpg') no-repeat center center / 106% auto;
 				}
@@ -158,6 +165,11 @@ section.pregnant{
 					background: url('../images/pregnant-contact.jpg') no-repeat center center / 130% auto;
 					padding: 45px 0px; 
 				}
+
+				&:hover {
+					opacity: 0.9;
+				}
+
 				div.text{
 					padding: 4px 0px; 
 					@include background-image(linear-gradient(

@@ -9,7 +9,10 @@
 		out that you are pregnant you may be happy and excited or shocked and scared or both. Pregnancy should be a time of celebration, but for you it may feel more like a problem that you wish would just go away. You may be hurt that those who care about you aren’t excited and supportive. If you are feeling alone, scared, or needing help to deal with your problem,
 	</p>
 
-	<?php include(TEMPLATEPATH."/global-parts/raised-button.php"); ?>
+	<?php 
+		$phoneform = true;
+		include(TEMPLATEPATH."/global-parts/raised-button.php"); 
+	?>
 	
 	<div class="development-slider">
 		<div class="top">
@@ -56,45 +59,17 @@
 				</a>
 			</div>
 		</div>
-		<p class="contact-text">Or contact Georgette:</p>
-		<a href="#" class="considering-button">
-			<div class="considering-button contact">
-				<div class="text grid contact">
-					<p class="left">
-						She had an abortion at age 16 — she is happy to talk with you.
-					</p>
-					<div class="fa fa-envelope-o"></div>
-					<p class="right">
-						<!--
-						<script type="text/javascript">
-							var $ = jQuery.noConflict();
-							$(document).ready(function() {
-								var e = "info"; // replace with your email username
-								var t = "anglicansforlife"; // replace with your email provider
-								var n = ".org"; // replace with your email provider TLD
-								var r = "mailto:" + e + '@' + t + n; //href
-								$('#hidden-email').attr('href',r).html(e + '@'+t+n);
-							});
-						</script>
-						<a class="underline" id="hidden-email" href="#">Please enable Javascript to view</a>
-						<script type="text/javascript">
-							var $ = jQuery.noConflict();
-							$(document).ready(function() {
-								var a = "1"; // extension
-								var e = "(412)"; // area code
-								var t = "749"; // next 3 digits
-								var n = "0445"; // final 4 digits
-								var r = "tel:" + e + t + n; //href
-								$('#hidden-phone').attr('href',r).html(e + ' ' + t + ' ' + n);
-							});
-						</script>
-						<a class="underline" id="hidden-phone" href="#">Please enable Javascript to view</a>
-						-->
-					</p>
-				</div>
-			</div>
-		</a>
+		<p class="contact-text title italic">Or contact Georgette:</p>
+
+		<p class="contact-text">She had an abortion at age 16 — she is happy to talk with you.</p>
+		<br>
+
+		<?php 
+			$phoneform = false;
+			include(TEMPLATEPATH."/global-parts/raised-button.php"); 
+		?>
 	</div>
+
 	<div class="colored-section-break"></div>
 	<?php include(TEMPLATEPATH."/global-parts/subscribe-section-divider.php"); ?>
 </section>

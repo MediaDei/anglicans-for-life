@@ -13,9 +13,9 @@ Template Name: Home Page
 	<div class="qa-twitter">
 		<div class="grid">
 			<div class="grid-2-3 ask">
-				<h2><span class="italic">Ask:</span></h2>
-				<p class="question">
-					<span class="italic">“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne</span>
+				<h2 class="italic">Ask:</h2>
+				<p class="question italic">
+					“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne
 				</p>
 				<div class="line"></div>
 				<a href="#" class="answer-link"><span class="italic">read & respond</span> &rarr;</a>
@@ -25,7 +25,8 @@ Template Name: Home Page
 				<a class="twitter-follow-button"
   				 href="https://twitter.com/Anglicans4Life"
   				 data-show-count="false">
-						Follow @AFL       </a>
+						Follow @AFL
+				</a>
 				<div class="tweets">
 					<a 
 					class="twitter-timeline" 

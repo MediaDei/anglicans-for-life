@@ -4,26 +4,28 @@ section.need-help{
 		border-bottom: 1px solid $border;
 		width: 440px;
 		margin: 60px auto;
-		padding: 15px 50px; 
+		padding: 18px 50px 15px; 
 		position: relative;
+
 		p.next-to-button{
 			width: 160px;
 			font-size: 1.05em;
 			display: inline-table; 
-			margin: 0px;
+			margin: 0 15px 0 8px;
 		}
 		a.button{
-			position: absolute;
-			top: 50%;
-			@include transform(translateY(-50%));
-			div.button{
-			display: inline-table;
-			}
+			vertical-align: top;
+
 		}
 	}
 	div.list-with-image{
 		margin: 0 auto 70px;
 		display: table;
+		background-color: #F4F1F5;
+		border: 1px solid #D2CBD5;
+		border-radius: 4px;
+		overflow: hidden;
+
 		div.list-img{
 			@include background( 
 				    linear-gradient(
@@ -31,51 +33,40 @@ section.need-help{
 				      rgba(white,0)
 				    ),
 				    url('../images/need-help-list.jpg') no-repeat center center / 100% auto);
-			width: 210px;
-			height: 210px;  
-			border-top-left-radius: 4px;
-			border-bottom-left-radius: 4px;
+			width: 190px;
+			height: 190px;
 			float: left;
-			box-shadow: 9px 0 7px -6px rgba(black,0.8);
+			box-shadow: 2px 0 6px -2px black;
 			position: relative;
 			z-index: 2;
 		}
 		ul{
-			background-color: #F4F1F5;
-			border: 1px solid #D2CBD5; 
-			padding: 20px 40px;
-			width: 510px;
-			height: 210px;
-			float: left;  
+			padding: 10px 40px;
+			max-width: 510px;
+			float: left;
+			list-style: none;
+			line-height: 1.2;
+
 			li{
 				font-size: 1.2em;
 				margin-bottom: 20px;
 				position: relative;
-				padding-left: 8px; 
+
+				//padding-left: 8px; 
 				&:first-of-type{
 					margin-top: 15px; 
 				}
+
 				&:before{
 					content: "";
-			    transform: rotate(45deg);
-			    background-color: #8D7BA8;
-			    width: 14px;
-			    height: 14px;
-			    top: 1px;
-			    left: -22px;
-			    position: absolute;
-			    border-radius: 20%;
-				}
-
-				&:after{
-					content: "";
-			    position: absolute;
-			    width: 11px;
-			    height: 20px;    
-			    top: -3px;
-			    left: -17px;
-			    //border: 1px solid red;
-			    box-shadow: 0px 0px 0px 8px #f4f1f5;
+					width: 0; 
+					height: 0; 
+					border-top: 8px solid transparent;
+					border-bottom: 8px solid transparent;
+					border-left: 8px solid #8D7BA8;
+				    top: 2px;
+				    left: -18px;
+				    position: absolute;
 				}
 			}
 		}

@@ -8,19 +8,21 @@
 .smallcaps {
 	font-family: "SortsMillGoudy-SC", "SortsMillGoudy", serif;
 	letter-spacing: 0.5px;
+  line-height: 1;
 }
 
 //simple-dropcaps
 span.simple-dropcaps{
-  font-size: 2.5em; 
-  margin-right: 0.1em;
+  font-size: 2.4em; 
   float: left;
   line-height: 0.5;
-  padding-top: 0.4em;  
+  padding-top: 15px;
+  margin-right: 10px;
+
   color: lighten($base-text,5%);
   &+.smallcaps{
     display: inline-block;//for text-indent
-    text-indent: -2px;//bring first line closer to dropcaps then second line
+    text-indent: -10px;//bring first line closer to dropcaps then second line
   }
 }
 
@@ -276,7 +278,7 @@ ul.font-awesome{
     		}
 				p.button-text{
 					&:before{
-						content: "-";
+						content: "–";
             margin-right: 0.5em; 
 					}
 				}
@@ -311,9 +313,7 @@ ul.font-awesome{
 .hidden-content{
   height: 0px; 
   overflow: hidden;
-  opacity: 0; 
-  @include transition(height 0.3s ease 0s);
-  padding: 0px; 
+  @include transition(height 3s ease 0s);
 }
 
 //accordion-button styles
@@ -327,23 +327,27 @@ div.accordion{
 	a.accordion-button-anchor{
 		display: block;
 		color: $base-text;
+
 		div.accordion-button{
 			@include background-image(linear-gradient(to bottom, rgba(253,247,222,1), rgba(226,217,186,1)));
 			border: 1px solid #A598A9;
 			border-radius: 4px;
-			padding: 14px;
+			padding: 9px 14px;
 			margin: 0 auto;  
 			box-shadow: 0px 2px 3px rgba(193,193,193,0.5);
-      position: relative;
       z-index: 2;
+
 			&:active{
+        position: relative;
 				top: 1px;
 			}
+      
 			p.button-text{
         margin: 0;
 				font-style: italic;
 				text-shadow: 0px 2px 1px rgba(white,1);
-				font-size: 1.3em;
+				font-size: 1.2em;
+
 				&:before{
 					content: "+";
           margin-right: 0.5em;

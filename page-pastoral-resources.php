@@ -4,7 +4,7 @@
 <section class="pastoral-resources">
 	<h1 class="page-title">Pastoral Resources</h1>
 	<p class="top-p">
-		<span class="simple-dropcaps">L</span><span class="smallcaps">orem ipsum dolor sit amet,</span> consectetur adipisicing elit. Architecto facilis illo velit animi voluptas porro, vel? Ab similique nisi, voluptatum perferendis corporis, deleniti quo expedita, fugiat ratione enim animi commodi. Consectetur adipisicing elit. Architecto facilis illo velit animi voluptas porro, vel? Ab similique nisi, voluptatum perferendis corporis, deleniti quo expedita, fugiat ratione enim animi commodi.
+		<span class="simple-dropcaps">A</span><span class="smallcaps">t the heart</span> of AFL’s ministry is our effort to come alongside the Anglican Church. We know that church leaders have their hands full, so we want to make Life-Affirming Ministry as easy as possible. We’re always compiling information, articles, news updates, statistics, curriculums, and more, so that it’s simple and useful for the church to utilize.
 	</p>
 
 <!--

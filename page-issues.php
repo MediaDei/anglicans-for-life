@@ -2,8 +2,15 @@
 <section class="issues">
 	<h1 class="page-title">Issues</h1>
 	<p class="top-p">
-		<span class="simple-dropcaps">M</span><span class="smallcaps">auris non tempor quam,</span> et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
+		<span class="simple-dropcaps">A</span><span class="smallcaps">nglicans for Life</span> is a life-affirming ministry. We celebrate, honor, and protect life from conception to natural death and every stage in between because we believe that life is a sacred gift given to us by God! 
+		<br>
+		<br>
+		In our culture there are sadly many ways to cause harm to or end the lives of the unborn, the elderly, and the vulnerable.  But it is our duty and privilege to educate and engage the Church in protecting these people and changing our culture to one that values Life at all stages.
+		<br>
+		<br>
+		Lean more about the issues we address and what you can do to help!
 	</p>
+
 	<div class="bubbles grid">
 		<div class="grid-1-3">
 			<a href="#" class="bubble-link">

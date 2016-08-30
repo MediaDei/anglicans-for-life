@@ -5,7 +5,7 @@
 
 html {
 	font-family: "SortsMillGoudy", serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1;
 	text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
 	color: $base-text;
@@ -28,8 +28,9 @@ a{
 p{
 	line-height: 1.3; 
 }
+
 //twitter widget{
-	a.twitter-timeline {
+a.twitter-timeline {
   /* Buttonish */
   display: inline-block;
   padding: 6px 12px 6px 30px;
@@ -51,7 +52,6 @@ a.twitter-timeline:focus {
 }
  
 /* Color Highlight for keyboard navigation */
- 
 a.twitter-timeline:focus {
   outline: none;
   border-color: #0089cb;
@@ -60,8 +60,9 @@ a.twitter-timeline:focus {
 div.social-buttons{
 	position: absolute;
 	top: 10px;
-	right: 10px; 
+	right: 10px;
 }
+
 a.icon{//circle icon style
 	div.icon{
 		display: inline-block;
@@ -71,12 +72,13 @@ a.icon{//circle icon style
 			@include background(
 				linear-gradient(to bottom, rgba(white,0.7), rgba(191,161,140,0.5)),
 				#F5E3BF);
-		border: 1px solid #A69370 * 1.3; 
-		//box-shadow: inset 0px 0px 4px 1px rgba(white,0.75);
-		text-shadow: 0px 1px 0px rgba(white,1);
+		border: 1px solid #A69370; 
+		text-shadow: 0px 1px 0px white;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 		border-radius: 100%;
-		padding: 0.5em;
-		font-size: 1.3em;
+		padding: 0.5em 0;
+		text-align: center;
+		font-size: 1.35em;
 		margin-right: 10px;
 		line-height: 0.85em;
 
@@ -91,18 +93,13 @@ a.icon{//circle icon style
 		}
 		&:hover{
 			opacity: 1;
-			box-shadow: inset 0px 0px 4px 1px rgba(white,0.75),
-									0px 1px 1px rgba(black,0.3);
+			background-color: #F5E3BF * 1.2;
 			color: #625B51;
 		} 
-		&.facebook{
-			padding-left: 0.6em; 
-		}
 		&:active{
 			position: relative;
 			top: 1px;
-			box-shadow: inset 0px 0px 4px 1px rgba(white,0.75),
-									0px 0px 0px rgba(black,0.3);
+			box-shadow: 0px 0px 0px black;
 		}
 	}
 }
@@ -112,8 +109,9 @@ a.button{
 	color: #46565D;
 	display: inline-block;
 	position: relative;
+
 	&.donate{
-		top: 10px;
+		top: 13px;
 	}
 	div.button{
 		display: table;
@@ -122,14 +120,19 @@ a.button{
 	 	@include background-image(linear-gradient(to bottom, rgba(white,0.5),rgba(191,161,140,0.38)));
 	 	border: 1px solid $border;
 	 	border-radius: 9px;
-	 	box-shadow: inset 0px -1px 11px 1px rgba(white,0.75);
-	 	text-shadow: 0px -1px 0px rgba(black,0.25),
-							 	 0px 1px 0px rgba(white,0.7);
+	 	box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+	 	text-shadow: 0px 1px 0px white;
 		font-size: 1.05em;
 		letter-spacing: 0.5px;
+
+		&:hover {
+			background-color: #F5E3BF*1.05;			
+		}
+
 	 	&:active{
 	 		position: relative;
 	 		top: 1px;
+	 		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 	 	}  
 	}
 }
@@ -149,7 +152,7 @@ div.raised-button-widget{
 	p.box-title{
 		font-size: 1.1em;
 		text-align: center; 
-		margin: 0 auto 20px;		
+		margin: 0 auto 20px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #CCCCCC;
 		box-shadow: 0px 2px 0px 0px rgba(white,1);
@@ -157,8 +160,8 @@ div.raised-button-widget{
 	p.button-title{
 		text-align: center;
 		font-style: italic;
-		font-size: 2.5em; 
-		margin-top: 50px; 
+		font-size: 2em;
+		margin-top: 50px;
 		&.pregnant{
 			font-size: 1em;
 			font-style: normal;
@@ -169,10 +172,13 @@ div.raised-button-widget{
 div.raised-button-container{
 	margin: 0 auto;
 	position: relative;
+	border-radius: 4px;
+
+
 	&.lead-life-ministry{
 		background-color: #E5E3E6;
 		border: 1px solid #D2CBD5;
-		border-radius: 3px; 
+		border-radius: 3px;
 		width: 460px;
 		height: 60px;
 	}
@@ -180,37 +186,32 @@ div.raised-button-container{
 		background-color: #F4F1F5;
 		border: 1px solid #D2CBD5;
 		width: 600px;
-		height: 60px;  
+		height: 56px;
 	}
 	&.pregnant{
 		background-color: #FCFCFA;
 		border: 1px solid #D3D3C9;
 		width: 600px;
-		height: 60px;
+		height: 54px;
 	}
 	div.raised-button-container-contents{
 		display: table;
-		margin: 0 auto;
+		margin: -7px auto 0;
 		a{
 			&.raised-button{
-				top: -7px;
-				margin-right: 5px; 
+
 				div.raised-button{
-					width: 74px;
-					height: 74px;
-					font-size: 3em;  
+					border-radius: 5px;
+					width: 66px;
+					height: 66px;
+					padding: 10px 25px 8px;
+					font-size: 2.8em;
 					color: #46565D;
 					box-shadow: 0px 2px 4px rgba(black,0.5),
-											inset 0px -2px 11px 1px rgba(white,0.75);
+						  inset 0px -2px 11px 1px rgba(white,0.75);
 					&:active{
 						box-shadow: 0px 1px 2px rgba(black,0.5),
-												inset 0px -2px 11px 1px rgba(white,0.75);
-					}
-					&.fa-envelope-o{
-						padding: 9px 11px;
-					}
-					&.fa-phone{
-						padding: 12px 17px;
+							  inset 0px -2px 11px 1px rgba(white,0.75);
 					}
 				}
 			}
@@ -218,9 +219,12 @@ div.raised-button-container{
 		div.links{
 			display: table-cell;
 			vertical-align: middle;
-			padding-left: 10px;
-			padding-bottom: 16px;  
-			a#hidden-email,a#hidden-phone{
+			padding-left: 15px;
+
+			#hidden-email,
+			#hidden-phone,
+			#hidden-email2,
+			#hidden-phone2 {
 				display: block;
 				width: 175px;
 				margin: 0 auto; 
@@ -285,7 +289,7 @@ a.img-heading-section{
 	display: block;
 	width: 100%;
 	height: 315px;
-	padding-top: 50px;
+	padding-top: 100px;
 	@include background( 
 		    linear-gradient(rgba(28,12,33,0.7), rgba(28,12,33,0.7)),
 		    url('../images/get-involved-bg.jpg') no-repeat center center / auto 316px
@@ -306,7 +310,7 @@ a.img-heading-section{
 					 0px 2px 4px rgba(black,0.8);
 	}
 	h2{
-		font-size: 3em;
+		font-size: 2.5em;
 		letter-spacing: 3.5px;
 		padding-bottom: 12px;
 		text-transform: uppercase;
@@ -319,16 +323,15 @@ a.img-heading-section{
 		box-shadow: 0px 2px 4px rgba(black,0.8); 
 	}
 	p{
-		font-size: 1.1em;
 		letter-spacing: 0.5px;
 		padding-top: 18px;
 	} 
 }
 //donate section divider
 div.donate{
-	height: 110px;
-	//background-color: #2D2A58;
-	//@include background(linear-gradient(to bottom, rgba(black,0.24), rgba(150,150,150,0), rgba(white,0.27)));
+	height: 90px;
+	font-size: 14px;
+
 	@include background(
 			    linear-gradient(to bottom,
 			      rgba(black,0.24), 
@@ -340,7 +343,7 @@ div.donate{
 	div.content-wrapper{
 		display: table;
 		margin: 0 auto;
-		padding-top: 26px;
+		padding-top: 14px;
 		p{
 			width: none; 
 			margin: 0 15px 0 0;

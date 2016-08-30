@@ -1,43 +1,48 @@
 		<footer>
 			<div class="grid">
-				<div class="grid-box brand">
-					<p class="smallcaps logo">Anglicans</p>
-					<p class="smallcaps logo-bottom">for life</p>
+				<div class="grid-box brand smallcaps">
+					<p class="logo">Anglicans</p>
+					<p class="logo-bottom">for life</p>
 				</div>
+
 				<div class="grid-box address">
 					<address>
-						405 Frederick Avenue<br>Sewickley, PA 15143
+						405 Frederick Avenue<br>
+						Sewickley, PA 15143
 					</address>
 				</div>
-				<div class="grid-box contact">
-					<a class="contact icon" href="#">
-						<div class="icon fa fa-envelope-o"></div>
-					</a>
-					<script type="text/javascript">
-						var $ = jQuery.noConflict();
-						$(document).ready(function() {
-							var e = "info"; // replace with your email username
-							var t = "anglicansforlife"; // replace with your email provider
-							var n = ".org"; // replace with your email provider TLD
-							var r = "mailto:" + e + '@' + t + n; //href
-							$('#hidden-email').attr('href',r).html(e + '@'+t+n);
-						});
-					</script>
-					<a class="underline" id="hidden-email" href="#">Please enable Javascript to view</a>
-					<br>
 
-					<script type="text/javascript">
-						var $ = jQuery.noConflict();
-						$(document).ready(function() {
-							var a = "1"; // extension
-							var e = "(412)"; // area code
-							var t = "749"; // next 3 digits
-							var n = "0445"; // final 4 digits
-							var r = "tel:" + e + t + n; //href
-							$('#hidden-phone').attr('href',r).html(e + ' ' + t + ' ' + n);
-						});
-					</script>
-					<a class="underline" id="hidden-phone" href="#">Please enable Javascript to view</a>
+				<div class="grid-box contact">
+					<address>
+						<a class="contact icon" href="#">
+							<div class="icon fa fa-envelope-o"></div>
+						</a>
+						<script type="text/javascript">
+							var $ = jQuery.noConflict();
+							$(document).ready(function() {
+								var e = "mail"; // replace with your email username
+								var t = "anglicansforlife"; // replace with your email provider
+								var n = ".org"; // replace with your email provider TLD
+								var r = "mailto:" + e + '@' + t + n; //href
+								$('#hidden-email-footer').attr('href',r).html(e + '@'+t+n);
+							});
+						</script>
+						<a class="underline" id="hidden-email-footer" href="#">Please enable Javascript to view</a>
+						<br>
+
+						<script type="text/javascript">
+							var $ = jQuery.noConflict();
+							$(document).ready(function() {
+								var a = "1"; // extension
+								var e = "(412)"; // area code
+								var t = "749"; // next 3 digits
+								var n = "0445"; // final 4 digits
+								var r = "tel:" + e + t + n; //href
+								$('#hidden-phone-footer').attr('href',r).html(e + ' ' + t + ' ' + n);
+							});
+						</script>
+						<a class="underline" id="hidden-phone-footer" href="#">Please enable Javascript to view</a>
+					</address>
 				</div>
 				<div class="grid-box social">
 					<div class="icon-row">

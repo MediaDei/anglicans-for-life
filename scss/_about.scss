@@ -3,7 +3,7 @@ section.about{
 		margin-bottom: 70px; 
 	}
 	h2{
-		font-size: 2.3em;
+		font-size: 2.1em;
 		text-align: center;
 		margin-bottom: 40px; 
 	}
@@ -29,38 +29,38 @@ section.about{
 
 			div.position-icon{
 				//margin-right: 10px; 
-				width: 70px;
-				height: 70px;
-				border: 1px solid #E0DED7;
+				width: 68px;
+				height: 68px;
+				border: 1px solid #E0DED7 * 0.9;
 				float: left;
-				margin-left: -80px;
+				margin-left: -77px;
 				margin-top: 25px;
 				border-radius: 100%;
 				box-shadow: 0px 2px 3px rgba(black,0.35);
 
 				&.abortion{
-					background: #F6F3E9 url("../images/abortion-icon.png") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/abortion-icon.png") no-repeat center center / 52% auto;
 				}
 				&.contraception{
-					background: #F6F3E9 url("../images/contraception-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/contraception-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.euthanasia{
-					background: #F6F3E9 url("../images/euthanasia-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/euthanasia-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.stem-cells{
-					background: #F6F3E9 url("../images/stem-cells-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/stem-cells-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.partial-birth-abortion{
-					background: #F6F3E9 url("../images/partial-birth-abortion-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/partial-birth-abortion-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.post-abortion-aftercare{
-					background: #F6F3E9 url("../images/post-abortion-aftercare-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/post-abortion-aftercare-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.death-penalty{
-					background: #F6F3E9 url("../images/death-penalty-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/death-penalty-icon.svg") no-repeat center center / 52% auto;
 				}
 				&.adoption{
-					background: #F6F3E9 url("../images/adoption-icon.svg") no-repeat center center / 50% auto;
+					background: #F6F3E9 url("../images/adoption-icon.svg") no-repeat center center / 52% auto;
 				}
 			}
 		}
