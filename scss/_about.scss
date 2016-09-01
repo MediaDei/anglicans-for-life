@@ -217,27 +217,21 @@ section.about{
 
 	p{
 		&.history{
+			display: block;
 			width: 600px;
 			margin: 0 auto 30px;
 		}
-	}
-	div.bottom-history-row{
-		display: table;
-		margin: 0 auto;
 
-		p.history-bottom{
-			width: 400px;
+		.gold-frame.silent-img{
 			display: inline-block;
-			margin: 20px 0 0px;
-		}
-		div.gold-frame.silent-img{
-			display: inline-block;
-			width: 300px;
+			float: right;
+			width: 230px;
 			height: 120px; 
 			background: url("../images/our-history-silent.png") no-repeat center center / 90% auto;
 			vertical-align: top;
 		}
 	}
+
 	div.our-staff{
 		border-top: 1px solid #D6D6D6;
 		border-bottom: 1px solid #D6D6D6;
