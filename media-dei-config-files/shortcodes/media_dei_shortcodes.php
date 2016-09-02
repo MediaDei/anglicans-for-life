@@ -178,18 +178,16 @@ add_shortcode('accordion','media_dei_accordion_shortcode');
 //button for css accordion functionality
 function media_dei_accordion_button_shortcode($atts, $content){
   extract(shortcode_atts(array(            
-    "style" => '1',//if not set by user in wp page wysiwyg editor, defaults to style 1               
+    "style" => '1', //if not set by user in wp page wysiwyg editor, defaults to style 1               
   ), $atts));
 
   if($style==='1'){
     $return_string='
     <span class="anchor" id="accordion-button-' . $GLOBALS['accordionCount'] .'"></span>
-    <a class="accordion-button-anchor anchor-button" href="#accordion-button-' . $GLOBALS['accordionCount'] . '">
-      <div class="accordion-button" role="button">
+    <a class="accordion-button-anchor anchor-button accordion-button" href="#accordion-button-' . $GLOBALS['accordionCount'] . '" role="button">
         <p class="button-text">'
           . do_shortcode($content) .
         '</p>
-      </div>
     </a>';
     return $return_string;
   }
@@ -271,12 +269,10 @@ function media_dei_accordion_hidden_content_shortcode($atts, $content){
       <style>
       /* reveal when targeted */
         .anchor:target + .anchor-button + .accordion-button-' . $GLOBALS['accordionCount'] . ' {
-          height: auto;
-          padding: 30px 30px 15px;
-          position: relative;
-          top: -10px;
-          //z-index: 1;
+          height: 230px;
           opacity: 1;
+          padding: 10px 30px 0;
+          margin-top: -5px;
         }
       </style>';
     $return_string.=$widget_style;

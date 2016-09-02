@@ -223,12 +223,11 @@ section.about{
 		}
 
 		.gold-frame.silent-img{
-			display: inline-block;
 			float: right;
 			width: 230px;
 			height: 120px; 
 			background: url("../images/our-history-silent.png") no-repeat center center / 90% auto;
-			vertical-align: top;
+			margin-top: -20px;
 		}
 	}
 

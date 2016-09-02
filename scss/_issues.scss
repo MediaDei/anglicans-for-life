@@ -19,43 +19,50 @@ section.issues{
 			&:nth-of-type(5){
 				margin-left: 20px; 
 			}
-			a.bubble-link{
+			a.bubble-link {
 				display: table;
 				margin: 0 auto;
+
 				div.bubble{
 					width: 156px;
 					height: 156px;
 					border: 2px solid white;
 					border-radius: 100%;
-					box-shadow: 0px 0px 0px 1px #BABABA;
+					box-shadow: 0px 0px 0px 1px #BABABA,
+								0 2px 4px rgba(0,0,0,0.3);
 					&.bubble-1{
-						background: url('../images/issue-bubble-1.jpg') no-repeat center center / 100% auto;
-					}					
+						background: url('../images/issue-bubble-1.jpg') no-repeat -29px 0px / 150% auto;
+					}
 					&.bubble-2{
-						background: url('../images/issue-bubble-2.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-2.jpg') no-repeat -46px 0px / 150% auto;
 					}
 					&.bubble-3{
-						background: url('../images/issue-bubble-3.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-3.jpg') no-repeat right center / 150% auto;
 					}
 					&.bubble-4{
-						background: url('../images/issue-bubble-4.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-4.jpg') no-repeat -60px center / 150% auto;
 					}
 					&.bubble-5{
-						background: url('../images/issue-bubble-5.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-5.jpg') no-repeat -6px center / 150% auto;
 					}
 					&.bubble-6{
-						background: url('../images/issue-bubble-6.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-6.jpg') no-repeat -67px center / 150% auto;
 					}
 					&.bubble-7{
-						background: url('../images/issue-bubble-7.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-7.jpg') no-repeat -60px center / 150% auto;
 					}
 					&.bubble-8{
-						background: url('../images/issue-bubble-8.jpg') no-repeat center center / 100% auto;
+						background: url('../images/issue-bubble-8.jpg') no-repeat center center / 190% auto;
+					}
+					&:hover {
+						opacity: 0.9;
 					}
 					&:active{
 						position: relative;
 						top: 1px;
-					}				
+						box-shadow: 0px 0px 0px 1px #BABABA,
+									0 1px 2px rgba(0,0,0,0.2);
+					}
 				}
 			}
 			p.bubble-title{

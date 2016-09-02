@@ -7,6 +7,16 @@
 		<span class="simple-dropcaps">A</span><span class="smallcaps">t the heart</span> of AFL’s ministry is our effort to come alongside the Anglican Church. We know that church leaders have their hands full, so we want to make Life-Affirming Ministry as easy as possible. We’re always compiling information, articles, news updates, statistics, curriculums, and more, so that it’s simple and useful for the church to utilize.
 	</p>
 
+	<?php //get page contents
+	if ( have_posts() ) {
+		while ( have_posts() ) {
+			the_post(); 
+			the_content();
+		} // end while
+	} // end if
+	?>
+
+
 <!--
 	<div class="accordion">
 		<?php $accordionCount++ ?>

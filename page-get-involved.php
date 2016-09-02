@@ -7,9 +7,20 @@
 		<span class="simple-dropcaps">M</span>
 		<span class="smallcaps">auris non tempor</span> quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
 	</p>
+
+	<script type="text/javascript">
+		var $ = jQuery.noConflict();
+		$(function() {
+			$(".priests-pastors-link").click(function() {
+				$('html, body').animate({scrollTop: $("#priests-pastors-section").offset().top}, 500);
+			});
+		});
+	</script>
+
 	<a href="#priests-pastors-section" class="priests-pastors-link">
 		Special section for Priests and Pastors below &darr;
 	</a>
+
 
 	<?php include(TEMPLATEPATH."/global-parts/pray-for-life-subscription.php"); ?>
 	

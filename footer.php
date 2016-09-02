@@ -59,7 +59,7 @@
 							<div class="icon instagram fa fa-instagram"></div>
 						</a>
 					</div>
-					<a class="terms-privacy" href="/terms-privacy/">
+					<a class="terms-privacy" href="<?php echo get_site_url() ?>/terms-privacy/">
 						<p class="terms-privacy">Terms and Privacy</p>
 					</a>
 				</div>
