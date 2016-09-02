@@ -1,5 +1,38 @@
+9/1/16
+
+Home
+- Need at least a static version of sign up widget or the real mailchimp
+
+Need Help
+- Add contact form 7 functionality
+	- can do it all through mailchimp?
+		- buy mailchimp plugin
+
+Take Action
+- The most incomplete
 
 
+Donate
+- skip for now
+
+Pastoral Resources and Teaching Resources
+- saturday work
+
+-------------
+Tier 1:
+*Forms
+Take action - James
+	- except I am doing shortcodes for list
+
+Tier 2:
+Donate
+Shop
+
+
+---
+
+James
+----------------------------
 1. Missing WP menu-bar fixed
 
 2. Home > Trending Issues, 
@@ -23,3 +56,49 @@
 -missing white gradient fixed — present in code, but buggy CSS didn’t show it
 -when active, box-shadow now disappears
 -both <a> and inner <div> have class “icon”?
+
+
+
+Tyler
+-----------------------------
+To James
+
+1. Get involved bubble href
+2. Change Stand with us design
+	- name going in box on right of photo
+
+
+explore shortcode names (less verbose)
+	- more user friendly
+
+We need to ...
+
+- figure out how to use php include in a shortcode for Terms Privacy page/Donate widget
+
+- style Twitter widget
+
+- add read & respond page and make ask widget into a post type
+
+- learn how to use mailchimp/mailchimp with wordpress
+
+- fix pagination for archive
+
+- link trending issues widget up to wp-admin somehow
+
+- fix email/phone script glitch when in footer and in page body
+
+- finish shortcodes for middle issue section "Learn about Abortion" ect...
+
+- discuss positioning for get involved button on issue pages
+
+- decide on link for first bubble on get involved page (find church / leader)
+
+- create donate page with Give plugin
+
+- make shortcode for take action bullet list squares
+
+- code php for what can I do radio buttons
+
+- add declaration of life section to pastoral resources page
+
+- discuss/create teaching resources document shortcodes
