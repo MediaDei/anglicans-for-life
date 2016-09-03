@@ -1,4 +1,5 @@
 section.pregnant{
+	padding-bottom: 0px; 
 	h2.msg{
 		padding: 20px 0px;
 		text-align: center;
@@ -225,7 +226,11 @@ section.pregnant{
 		}
 	}
 	div.colored-section-break{
-		margin-top: 80px; 
+		margin-top: 80px;
+		margin-bottom: 0px;  
 	}
-
+	div.subscribe{
+		background-color: #FCFCFC; 
+		padding-top: 40px; 
+	}
 }
