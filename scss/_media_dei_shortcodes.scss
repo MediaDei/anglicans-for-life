@@ -133,12 +133,72 @@ h3.issue-paragraph-heading{
   font-style: italic;
   font-size: 1.7em;
   text-align: center;
-  margin-bottom: 10px; 
+  margin: 50px auto 10px;
 }
 p.issue-paragraph{
-  width: 50%;
-  margin: 0 auto 40px; 
+  max-width: 470px;
+  margin: 0 auto 50px; 
   hyphens: auto;
+}
+
+div.thumbnail-paragraph-widget{
+  margin: 40px auto;
+  width: 600px;  
+  min-height: 200px;
+  img.attachment-post-thumbnail{
+    float: left;
+    width: 260px;
+    height: auto;
+    display: block;  
+    margin: 0px 20px 0px 0px; 
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1px white,
+                0px 0px 0px 2px #C3C3C3,
+                0px 3px 3px 0px rgba(black,0.5);
+  }
+  p{
+    overflow: hidden;
+  }
+}
+div.icon-paragraph-widget{
+  width: 400px; 
+  margin: 20px auto;
+  div.icon{
+    width: 68px;
+    height: 68px;
+    border: 1px solid #E0DED7 * 0.9;
+    float: left;
+    margin-left: -76px;
+    margin-top: 8px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 3px rgba(black,0.35);
+    &.pie-chart{
+      background: #F6F3E9 url('../images/pie-icon.png') no-repeat center center / 60% auto;
+    }
+    &.line-chart{
+      background: #F6F3E9 url('../images/line-icon.png') no-repeat center center / 52% auto;
+    }
+    &.bar-chart{
+      background: #F6F3E9 url('../images/bar-icon.png') no-repeat center center / 54% auto;
+    }
+  }
+  p{
+    background-color: #F7F7F7;
+    padding: 7px 10px 7px 16px;  
+    border: 1px solid rgba(151,151,151,0.25);
+    border-radius: 4px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -7px;
+      width: 10px;
+      height: 122%;
+      background-color: white; 
+      box-shadow: 5px 0px 4px -4px rgba(black,0.4);    
+    }
+  }
 }
 
 //--------------------END TYPOGRAPHY STYLES USED-------
@@ -192,9 +252,21 @@ ul{
     width: 56%;
     margin: 0 auto 60px; 
    li{
-      list-style-image: url('../images/arrow-bullet-0.5x.png');
+      list-style: none;
       line-height: 1.3;
-      margin-bottom: 10px;  
+      margin-bottom: 10px;
+      position: relative;
+      &:before{
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #8d7ba8;
+        border-top: 8px solid transparent;
+        content: "";
+        height: 0;
+        left: -18px;
+        position: absolute;
+        top: 2px;
+        width: 0;  
+      }
     } 
   }
 }

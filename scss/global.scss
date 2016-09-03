@@ -246,7 +246,7 @@ div.pray-for-life{
 	border-radius: 4px;
 	border: 1px solid #D2CBD5;
 	width: 650px;
-	height: 200px;
+	height: 180px;
 	padding: 20px 40px; 
 	margin: 50px auto;  
 	h2{
@@ -260,6 +260,9 @@ div.pray-for-life{
 	}
 	p{
 		color: $lighter-text;
+		margin-left: 80px; 
+		margin-bottom: 4px; 
+		font-style: italic;
 	}
 }
 .italic{
@@ -354,12 +357,90 @@ div.donate{
 		}
 	}  
 }
-//subscribe section divider
+//mailchimp global
+div.form-elements{
+	&.carpe-diem-mc{
+		width: 456px;
+	}
+	&.pray-for-life-mc{
+		width: 410px; 
+		input[type="email"]{
+			width: 300px; 
+		}
+	}
+	margin: 0 auto 30px !important;
+	input{
+		&[type="email"]{
+			float: left;
+			background-color: #FFFEFB; 
+			margin-right: 12px; 
+			font-style: italic;
+			padding: 10px;
+			border: 1px solid #979797;
+			border-radius: 5px;
+			box-shadow: inset 0px 1px 2px rgba(black,0.3);
+		}
+		&[type="submit"]{
+			color: #46565D;
+			display: table;
+		 	padding: 10px 35px 8px;
+		 	background-color: #F5E3BF;
+		 	@include background-image(linear-gradient(to bottom, rgba(white,0.5),rgba(191,161,140,0.38)));
+		 	border: 1px solid $border;
+		 	border-radius: 9px;
+		 	box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+		 	text-shadow: 0px 1px 0px white;
+			font-size: 1.05em;
+			letter-spacing: 0.5px;
+
+			&:hover {
+				background-color: #F5E3BF*1.05;			
+			}
+
+		 	&:active{
+		 		position: relative;
+		 		top: 1px;
+		 		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+		 	} 
+		}
+		&[type="checkbox"]{
+			display: none;
+		}
+	}
+	span{
+		display: none;
+	}
+	div.social-buttons.mailchimp{
+		position: static;
+		float: right;
+		margin-top: 3px;
+		a.icon{
+			div.icon{
+				width: 20px;
+				height: 20px;
+				font-size: 1.05em;
+				width: 30px;
+				height: 30px;   
+				margin-right: 4px; 
+			}
+		}
+	}
+}
+.mc4wp-response{
+	.mc4wp-alert{
+		p{
+			margin: -1em auto;
+			display: table;
+		}
+	}
+}
+
+//subscribe section divider -- mailchimp
 div.subscribe{
 	padding: 60px 0px;
 	p{
 		display: table;
-		margin: 0 auto;
+		margin: 0 auto 20px;
 		letter-spacing: 0.5px;
 	}
 }

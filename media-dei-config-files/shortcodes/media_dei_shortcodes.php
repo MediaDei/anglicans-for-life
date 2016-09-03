@@ -148,6 +148,31 @@ function media_dei_shortcode_terms_privacy_heading($atts, $content){
   return $return_string;
 }
 add_shortcode('terms_privacy_heading', 'media_dei_shortcode_terms_privacy_heading');
+
+function media_dei_shortcode_thumbnail_paragraph($atts, $content){
+  global $post;
+  $return_string='<p>' . do_shortcode($content) . '</p>';
+  return '<div class="thumbnail-paragraph-widget">'.get_the_post_thumbnail( $post->ID ).$return_string.'</div>';
+}
+add_shortcode('thumbnail_paragraph', 'media_dei_shortcode_thumbnail_paragraph');
+
+function media_dei_shortcode_icon_paragraph($atts, $content){
+  extract(shortcode_atts(array(            
+    "icon" => 'pie_chart',               
+  ), $atts));
+  if($icon==='pie_chart'){
+    $return_string='<div class="icon-paragraph-widget"><div class="icon pie-chart"></div><p>' . do_shortcode($content) . '</p></div>';
+  }
+  elseif($icon==='line_chart'){
+    $return_string='<div class="icon-paragraph-widget"><div class="icon line-chart"></div><p>' . do_shortcode($content) . '</p></div>';
+  }
+  elseif($icon==='bar_chart'){
+    $return_string='<div class="icon-paragraph-widget"><div class="icon bar-chart"></div><p>' . do_shortcode($content) . '</p></div>';
+  }
+  return $return_string;
+}
+add_shortcode('icon_paragraph', 'media_dei_shortcode_icon_paragraph');
+
 //--------------------END TYPOGRAPHY SHORTCODES ------
 
 
