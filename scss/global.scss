@@ -245,7 +245,7 @@ div.pray-for-life{
 	background-color: #F4F1F5;
 	border-radius: 4px;
 	border: 1px solid #D2CBD5;
-	width: 650px;
+	width: 560px;
 	height: 180px;
 	padding: 20px 40px; 
 	margin: 50px auto;  
@@ -269,14 +269,20 @@ div.pray-for-life{
 	font-style: italic;
 }
 h1.page-title,.sub-section-title{
-	font-size: 2.7em;
 	font-style: italic;
-	margin: 0 auto 30px;
-	display: table;
+	margin: 0 0 30px;
+	text-align: center;
 	&.has-subtitle{
 		margin-bottom: 0px 
 	}
 }
+h1.page-title{
+	font-size: 2.7em;
+}
+.sub-section-title{
+	font-size: 2.2em;
+}
+
 span.page-title-subtext{
 	font-style: italic;
 	font-size: 2em;
@@ -287,6 +293,15 @@ p.top-p{
 	width: 70%;
 	margin: 0 auto 20px; 
 }
+
+.border-top {
+	border-top: 8px solid #787594;
+}
+
+.border-bottom {
+	border-bottom: 8px solid #787594;
+}
+
 //img-heading-section
 a.img-heading-section{
 	display: block;
