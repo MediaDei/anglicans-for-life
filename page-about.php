@@ -114,41 +114,41 @@
 		?>
 	</div>
 	<div class="more-staff">
-		<div class="board-of-directors">
-			<h3>Board of Directors</h3>
-			<div class="members">
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
+        <div class="board-of-directors">
+            <h3>Board of Directors</h3>
+            <div class="members">
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
 
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
 
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
 
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
 
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
 
-				<div class="board-member">
-					<p class="name">Lorem Ipsum</p>
-					<p class="title">Dolor sit amet arma virumque cano</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="board-member">
+                    <p class="name">Lorem Ipsum</p>
+                    <p class="title">Dolor sit amet arma virumque cano</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

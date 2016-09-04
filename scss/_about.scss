@@ -238,14 +238,17 @@ section.about{
 		padding-bottom: 20px; 
 		margin-top: 80px; 
 		background-color: $bg-grey;
-		box-shadow: 0px 135px 6px -135px rgba(black,0.5);//shadow over board members div below
+		box-shadow: 0px 176px 6px -175px rgba(black,0.5);//shadow over board members div below
+		z-index: 1; // to go above more-staff below
+		position: relative; // to go above more-staff below
+
 		h2{
 			margin-bottom: 90px;
 			font-style: italic; 
 		}
 		div.accordion{
-			margin-bottom: 2px;
-			width: 70%; 
+			margin-bottom: 0px;
+			width: 67%; 
 			span.anchor{
 				&:target{
 					&+a.accordion-button-anchor{
@@ -259,10 +262,13 @@ section.about{
 							padding: 0px 110px;
 							margin: 40px auto 0px;  
 							box-shadow: 0px 2px 3px rgba(193,193,193,0.5);
-							height: 100px; 
+							height: 100px;
+							width: 100%;
+
 							figure{
-								position: relative;
-								top: -30px;
+								margin: -30px 0;
+								width: 150px;
+								height: 150px;
 							}
 							p.accordion-staff-name{
 								margin-top: 20px; 
@@ -273,23 +279,26 @@ section.about{
 			}
 			a.accordion-button-anchor{
 				div.accordion-staff{
-					background-color: #F2EFF7;
+					background-color: lighten(#F2EFF7, 2%);
 					border-bottom: 1px solid #CAC8C8;
-					padding: 20px 110px;
+					padding: 10px 110px;
 					position: relative;
+					width: 95%;
+					margin: 0 auto;
 					z-index: 2; 
+
 					&:after{//clearfix
 						content: "";
-					  display: table;
-					  clear: both;
-				  }
+						display: table;
+						clear: both;
+					}
 					figure{
 						border-radius: 100px;
 						border: 1px solid white;
 						box-shadow: 0px 0px 0px 2px #BABABA;
-						margin: 0px; 
-						width: 166px;
-						height: 166px;
+						margin: 0px;
+						width: 130px;
+						height: 130px;
 						float: left;
 						overflow: hidden;  
 						img{
@@ -304,7 +313,7 @@ section.about{
 				}
 				p.accordion-staff-name{
 					font-size: 1.6em; 
-					margin-top: 55px; 
+					margin-top: 35px; 
 				}
 				p.accordion-staff-title{
 					font-style: italic;
@@ -312,26 +321,23 @@ section.about{
 				}
 			}
 			div.hidden-content{
-				width: 96%; 
-				top: -70px;
+				width: 95%; 
 			}
 		}
 	}
 	div.more-staff{
-		position: relative;
-		z-index: -1;
-		top: -10px;  
-		width: 660px; 
-		margin: 0 auto;
+		width: 600px; 
+		margin: -4px auto 0;
 		border: 1px solid #C9C7BF;
 		border-radius: 4px;
-		padding: 20px 70px; 
+		padding: 20px 50px; 
 		background-color: #FFFEFA; 
+
 		div.board-of-directors{ 
 			h3{
 				text-align: center;
 				font-style: italic;
-				font-size: 1.8em; 
+				font-size: 1.4em; 
 				border-bottom: 1px solid #E2E0E0;
 				padding: 10px 0px 4px;  
 			}
@@ -343,12 +349,11 @@ section.about{
 						margin: 0px;
 					}
 					p.name{
-						font-size: 1.2em; 
+						font-size: 1.1em; 
 					}
 					p.title{
 						font-style: italic;
 						color: $lighter-text;
-						font-size: 1.1em;
 					}
 				}
 			}

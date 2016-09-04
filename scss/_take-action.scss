@@ -1,46 +1,81 @@
 section.take-action{
 	div.grid{
-		div.grid-1-2,div.grid-1-3{
+		div.grid-1-2, div.grid-1-3{
 			p.box-title{
-				font-size: 1.7em;
+				font-size: 1.6em;
 				font-style: italic;
 				text-align: center;
 				color: $lighter-text;
+				margin: 5px;
 			}
-			div.box{
-				overflow: hidden;
-				@include background
-									(linear-gradient(
-											to bottom,
-											rgba(white,0.5) 10%,
-											rgba(white,0)
-											),
-									#F1F0EA);
-				border-radius: 8px;
-				border: 1px solid #BABABA;
-				margin: 0px auto;
-				width: 324px;
-				height: 258px;
+
+			div.box {
+				padding: 40px 64px;
+				border-radius: 6px;
+				border: 1px solid #BABABA;	
+				@include background (
+					linear-gradient(to bottom, rgba(white,0.5) 10%, rgba(white,0) 50%, rgba(white,0)),
+					#F1F0EA
+				);
+			}
+		}
+
+		div.grid-1-2{
+			&:first-of-type {
+				padding-left: 120px
+			}
+			&:last-of-type {
+				padding-right: 120px;
+			}
+			div.box {
+				width: 260px;
+				height: 240px;
+				margin: 0 auto;
+				padding: 40px 64px;
 			}
 		}
 		div.grid-1-3{
+			&:first-of-type {
+				padding-left: 60px
+			}
+			&:last-of-type {
+				padding-right: 60px;
+			}
 			div.box{
-				width: 254px;
-				height: 290px;
-				padding: 40px 64px; 
+				width: 230px;
+				height: 240px;
+				margin: 0 auto;
 				&.pray{
-					@include background
-										(linear-gradient(
-											to bottom,
-											rgba(white,0.5) 10%,
-											rgba(white,0)
-											),
-										url('../images/take-action-pray.jpg') no-repeat center center / 100% auto);
+					box-shadow: inset 2px solid white;
+					@include background (
+						linear-gradient(to bottom, rgba(white,0.5) 10%, rgba(white,0) 50%, rgba(white,0)),
+						url('../images/take-action-pray.jpg') no-repeat -90px center / auto 100%,
+						#F1F0EA
+					);
 				}
+				&.interest{
+					padding: 12px 25px;
+				}
+				&.activity{
+					padding: 50px 35px;
+				}
+
 				label{
+					display: block;
+					line-height: 1.8;
+					padding: 4px 30px;
+					border-radius: 3px;
+
+					&:hover{
+						background-color: rgba(black,0.03);
+					}
+					&:active{
+						background-color: rgba(black,0.08);
+					}
+
 					input{
-						width: 26px;
-						height: 26px;  
+						width: 20px;
+						height: 20px;  
 						vertical-align: middle;
 					}
 				}
@@ -50,17 +85,17 @@ section.take-action{
 	div.what-can-i-do{
 		background-color: $bg-grey;
 		border-bottom: 1px solid #D6D6D6;
-		padding: 80px 0px; 
+		padding: 55px 0px; 
 		position: relative;
-		margin-bottom: 120px; 
+		margin-bottom: 70px; 
 		&:before{
 			content: "";
 			position: absolute;
-			bottom: -58px;
+			bottom: -36px;
 			left: 50%;
 			@include transform(translateX(-50%) rotate(45deg));
-			width: 112px;
-			height: 112px;
+			width: 70px;
+			height: 70px;
 			background-color: $bg-grey;
 			border-right: 1px solid #D6D6D6;
 			border-bottom: 1px solid #D6D6D6;
@@ -79,17 +114,18 @@ section.take-action{
 				line-height: 1.3;
 				margin-bottom: 10px;
 				position: relative;
+
 				&:before{
-	        border-bottom: 8px solid transparent;
-	        border-left: 8px solid #8d7ba8;
-	        border-top: 8px solid transparent;
-	        content: "";
-	        height: 0;
-	        left: -18px;
-	        position: absolute;
-	        top: 2px;
-	        width: 0;  
-	      }  
+			        border-bottom: 8px solid transparent;
+			        border-left: 8px solid #8d7ba8;
+			        border-top: 8px solid transparent;
+			        content: "";
+			        height: 0;
+			        left: -18px;
+			        position: absolute;
+			        top: 2px;
+			        width: 0;  
+			    }  
 			}
 		}
 	}
