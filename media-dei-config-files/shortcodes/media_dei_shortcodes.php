@@ -57,6 +57,45 @@ add_shortcode('line_section_divider', 'media_dei_line_section_divider_shortcode'
 //-------------------- END SECTION DIVIDER SHORTCODES ------
 
 
+//---------------------GRID SHORTCODES----------------
+function media_dei_grid_shortcode($atts, $content){
+  $return_string='
+    <div class="grid">'
+      . do_shortcode($content) .
+    '</div>
+  ';
+  return $return_string;
+}
+add_shortcode('grid', 'media_dei_grid_shortcode');
+
+function media_dei_grid_child_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "fraction" => '1',               
+  ), $atts));
+  $return_string='
+    <div class="grid-'.$fraction.'">'
+      . do_shortcode($content) .
+    '</div>
+  ';
+  return $return_string;
+}
+add_shortcode('grid_child', 'media_dei_grid_child_shortcode');
+//---------------------GRID SHORTCODES----------------
+
+//---------------------- TOP P SHORTCODE -------
+function media_dei_top_text_shortcode($atts, $content){
+  $return_string='
+    <p class="top-p">'
+      . do_shortcode($content) .
+    '</p>
+  ';
+  return $return_string;
+}
+add_shortcode('top_text', 'media_dei_top_text_shortcode');
+
+//----------------------END TOP P -------
+
+
 
 //--------------------TYPOGRAPHY SHORTCODES ----------
 
@@ -175,6 +214,44 @@ add_shortcode('icon_paragraph', 'media_dei_shortcode_icon_paragraph');
 
 //--------------------END TYPOGRAPHY SHORTCODES ------
 
+//---------------------TAKE ACTION BOXES---------
+
+function media_dei_list_box_shortcode($atts, $content){
+  $return_string='
+    <div class="grid-1-2">'
+      . do_shortcode($content) .
+    '</div>
+  ';
+  return $return_string;
+}
+add_shortcode('list_box', 'media_dei_list_box_shortcode');
+
+function media_dei_list_box_title_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "position" => 'left',               
+  ), $atts)); 
+  $return_string='
+    <p class="box-title ' . $position . '">'
+      . do_shortcode($content) .
+    '</p>
+  ';
+  return $return_string;
+}
+add_shortcode('list_title', 'media_dei_list_box_title_shortcode');
+
+function media_dei_list_box_list_shortcode($atts, $content){
+  extract(shortcode_atts(array(            
+    "position" => 'left',               
+  ), $atts)); 
+  $return_string='
+    <div class="box ' . $position . '">'
+      . do_shortcode($content) .
+    '</div>
+  ';
+  return $return_string;
+}
+add_shortcode('list', 'media_dei_list_box_list_shortcode');
+//---------------------END TAKE ACTION BOXES-----
 
 
 //--------------------ACCORDION SHORTCODES ----------

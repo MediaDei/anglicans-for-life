@@ -2,21 +2,16 @@
 
 <section class="take-action">
 	<h1 class="page-title">Take Action</h1>
-	<p class="top-p">
-		<span class="simple-dropcaps">C</span><span class="smallcaps">urbabitur lobortis id lorem</span>
-		Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu-lum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu.
-	</p>
-	<div class="grid">
-		<div class="grid-1-2">
-			<p class="box-title left">Action ideas:</p>
-			<div class="box left"></div>
-		</div>
-		<div class="grid-1-2">
-			<p class="box-title right">Resources:</p>
-			<div class="box right"></div>
-		</div>
-	</div>
-	
+
+	<?php //get page contents
+	if ( have_posts() ) {
+		while ( have_posts() ) {
+			the_post(); 
+			the_content();
+		} // end while
+	} // end if
+	?>
+
 	<?php include(TEMPLATEPATH."/global-parts/pray-for-life-subscription.php"); ?>
 
 	<div class="what-can-i-do border-top">

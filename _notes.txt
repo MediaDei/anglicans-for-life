@@ -1,3 +1,101 @@
+9/4/16
+
+
+
+- Mailchimp (1.Tyler)
+	- redo forms (only need one mailchimp form  in lightbox, other forms just html)
+	- use #subscribe
+
+- Home (James)
+	- trending issues 
+		- think about getting into header from body of homepage
+			- shortcode vs custom post type, ect
+				- position?
+	- post type for Q and A
+
+- Pregnant (James)
+	- image gal needs caption fix
+
+- Take Action (1.Tyler)
+	- need shortcode to pop content in squares
+
+- Issue Pages (1.Tyler)
+	- disp table-cell; vert align
+		- disptable (container)
+			- disptabcell (child)
+				- vert align children
+	- add custom post type for top 5 articles
+		- just links to external sites
+			- text in lists
+
+- Teaching Re (2.Tyler)
+	- update hover state on audio player
+	- add missing content from sketch
+		- shortcodes
+
+- Archive (James)
+	- pagination needs to work
+		- scope issue?
+
+- Terms and Priv (2.Tyler)
+	- drop shortcode for donate
+		- fix button on bottom of page style
+
+- Global (2.Tyler)
+	- deverbose shortcodes
+		ex. docx and pdf
+			- send updates to James
+
+- Donate (James)
+
+- Menu (James)
+	- Shop
+	- Canada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if html contains(php function) string
+	then get post id which = form id
+
+<?php 
+$loop = new WP_Query( array( 'post_type' => 'give_forms') );
+while ( $loop->have_posts() ) : $loop->the_post();
+  if(get_the_excerpt() === "mailchimp-form") {
+    echo do_shortcode( '[give_form id="' . get_the_ID() . '"]' );
+  }
+endwhile; wp_reset_query(); 
+?>
+
+
+
+
+
+
+
+
+-----------------------------
+
+
+
+
+
+
+
+
+
+
+
 9/1/16
 
 Home
