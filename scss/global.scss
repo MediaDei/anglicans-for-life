@@ -9,11 +9,206 @@ html {
 	line-height: 1;
 	text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
 	color: $base-text;
- }
+}
 
- body {
- 	background-color: rgb(250,250,250);
- }
+body {
+	background-color: rgb(250,250,250);
+}
+
+//input fields for forms
+input[type="text"],input[type="email"],textarea{
+	width: 100%; 
+	background-color: #FFFEFB;  
+	padding: 10px;
+	border: 1px solid #979797;
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 2px rgba(black,0.3);
+	transition: border 0.2s ease-in-out 0s;
+	&#sub-email{
+		width: 200px;
+		float: left;
+	}
+	&#pray-email{
+		width: 212px;
+		float: left; 
+	}
+	&:focus{
+    border-color:#129fea;
+  }
+	@include input-placeholder {
+    color: #D7D6D4;
+    font-style: italic;
+  }
+  &[aria-invalid="true"] {
+    border: 1px solid red;
+    transition: border 0.2s ease-in-out 0s;
+  }
+  + span {
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+}
+
+
+
+
+
+//mailchimp
+#subscribe{
+	display: none;
+	&:target{
+		display: block;
+		position: fixed;
+		z-index: 1000;
+		background-color: rgba(black,0.7);
+		width: 100%; 
+		height: 100%;
+		.mc4wp-form{
+			margin: 0 auto;
+			max-width: 520px; 
+			padding: 20px 40px;
+			background-color: #F4F1F5; 
+			border: 1px solid #D2CBD5;
+			border-radius: 4px;  
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include transform(translateX(-50%)translateY(-50%)); 
+			div.form-nav{
+				margin-bottom: 20px; 
+				.close{
+					color: $base-text;
+					padding: 2px 5px; 
+					margin-bottom: 4px;
+					border-radius: 2px;
+					float: right;
+					&:hover{
+						box-shadow: 0px 0px 0px 1px rgba(black,0.5);
+					}
+					&:active{
+						box-shadow: 0px 0px 0px 1px rgba(black,0.8);
+					}
+				}
+				h1{
+					text-align: center;
+					font-size: 1.8em;
+					font-style: italic;  
+				}
+			}
+			div.form-elements{
+				p{
+					margin: 8px 0px; 
+					&.first-name,&.email,&.city{
+						float: left;
+					} 
+					&.last-name,&.parish,&.state{
+						float: right;
+					}
+					&.first-name{
+						width: 49%; 
+					}
+					&.last-name{
+						width: 49%; 
+					}
+					&.email{
+						width: 49%; 
+					}
+					&.parish{
+						width: 49%; 
+					}
+					&.city{
+						width: 49%; 
+					}
+					&.state{
+						width: 49%; 
+					}
+					input[type="text"],input[type="email"]{
+						margin-top: 4px; 
+						margin-right: 10px;
+					}
+					textarea{
+						resize: vertical;
+						
+					}
+					input[type="checkbox"]{
+						width: 20px; 
+						margin: 0px 4px 0px 0px; 
+					}
+				}
+			}
+			div.interests{
+				margin-bottom: 20px; 
+				p{
+					margin-bottom: 6px;
+				} 
+				label{
+					display: block; 
+					float: left;
+					width: 50%; 
+					margin-bottom: 4px; 
+				}
+			}
+			input[type="submit"]{
+				color: #46565D;
+				width: 160px; 
+				display: block;
+				margin: 0 auto;
+			 	padding: 10px 35px 8px;
+			 	background-color: #F5E3BF;
+			 	@include background-image(linear-gradient(to bottom, rgba(white,0.5),rgba(191,161,140,0.38)));
+			 	border: 1px solid $border;
+			 	border-radius: 9px;
+			 	box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+			 	text-shadow: 0px 1px 0px white;
+				font-size: 1.05em;
+				letter-spacing: 0.5px;
+
+				&:hover {
+					background-color: #F5E3BF*1.05;			
+				}
+
+			 	&:active{
+			 		position: relative;
+			 		top: 1px;
+			 		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+			 	} 
+			}
+		}
+	}
+}
+
+//subscribe section divider
+div.subscribe{
+	padding: 60px 0px;
+	p{
+		display: table;
+		margin: 0 auto 20px;
+		letter-spacing: 0.5px;
+	}
+	form{
+		display: table;
+		margin: 0 auto;
+		input,a.button,div.social-buttons{
+			float: left;
+		}
+		input{
+			margin-right: 18px; 
+		}
+		div.social-buttons{
+			position: static;
+			margin-left: 18px;
+			a.icon{
+				div.icon{
+					width: 30px;
+					height: 30px;
+					font-size: 1.05em; 
+					margin-right: 4px; 
+				}
+			}
+		}
+	}
+}
+
 
 .page-wrap{
 	max-width: 960px;
@@ -264,6 +459,17 @@ div.pray-for-life{
 		margin-bottom: 4px; 
 		font-style: italic;
 	}
+	form{
+		display: table;
+		margin: 0 auto;
+		input{
+			margin-right: 18px; 
+		}
+		a.button{
+			float: right;
+			display: block;
+		}
+	}
 }
 .italic{
 	font-style: italic;
@@ -372,93 +578,7 @@ div.donate{
 		}
 	}  
 }
-//mailchimp global
-div.form-elements{
-	&.carpe-diem-mc{
-		width: 456px;
-	}
-	&.pray-for-life-mc{
-		width: 410px; 
-		input[type="email"]{
-			width: 300px; 
-		}
-	}
-	margin: 0 auto 30px !important;
-	input{
-		&[type="email"]{
-			float: left;
-			background-color: #FFFEFB; 
-			margin-right: 12px; 
-			font-style: italic;
-			padding: 10px;
-			border: 1px solid #979797;
-			border-radius: 5px;
-			box-shadow: inset 0px 1px 2px rgba(black,0.3);
-		}
-		&[type="submit"]{
-			color: #46565D;
-			display: table;
-		 	padding: 10px 35px 8px;
-		 	background-color: #F5E3BF;
-		 	@include background-image(linear-gradient(to bottom, rgba(white,0.5),rgba(191,161,140,0.38)));
-		 	border: 1px solid $border;
-		 	border-radius: 9px;
-		 	box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-		 	text-shadow: 0px 1px 0px white;
-			font-size: 1.05em;
-			letter-spacing: 0.5px;
 
-			&:hover {
-				background-color: #F5E3BF*1.05;			
-			}
-
-		 	&:active{
-		 		position: relative;
-		 		top: 1px;
-		 		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-		 	} 
-		}
-		&[type="checkbox"]{
-			display: none;
-		}
-	}
-	span{
-		display: none;
-	}
-	div.social-buttons.mailchimp{
-		position: static;
-		float: right;
-		margin-top: 3px;
-		a.icon{
-			div.icon{
-				width: 20px;
-				height: 20px;
-				font-size: 1.05em;
-				width: 30px;
-				height: 30px;   
-				margin-right: 4px; 
-			}
-		}
-	}
-}
-.mc4wp-response{
-	.mc4wp-alert{
-		p{
-			margin: -1em auto;
-			display: table;
-		}
-	}
-}
-
-//subscribe section divider -- mailchimp
-div.subscribe{
-	padding: 60px 0px;
-	p{
-		display: table;
-		margin: 0 auto 20px;
-		letter-spacing: 0.5px;
-	}
-}
 
 //latest-posts style
 article{

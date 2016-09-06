@@ -16,8 +16,8 @@
 - Pregnant (James)
 	- image gal needs caption fix
 
-- Take Action (1.Tyler)
-	- need shortcode to pop content in squares
+* Take Action (1.Tyler)
+	* need shortcode to pop content in squares
 
 - Issue Pages (1.Tyler)
 	- disp table-cell; vert align
