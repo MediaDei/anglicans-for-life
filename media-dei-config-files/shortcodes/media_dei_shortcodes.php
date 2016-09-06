@@ -96,6 +96,47 @@ add_shortcode('top_text', 'media_dei_top_text_shortcode');
 //----------------------END TOP P -------
 
 
+//------------------- ISSUE PAGE SHORTCODES ----
+
+function media_dei_get_involved_section_shortcode($atts, $content){ 
+  $return_string='
+    <div class="get-involved grid">
+      <h2 class="sub-section-title">Get involved</h2>
+      <a class="take-action-button" href="/take-action/"><div class="take-action-button">
+        <p><span class="smallcaps">Take</span></p> 
+        <p><span class="smallcaps">Action</span></p>
+        <div class="button-underline"></div>
+        <div class="button-underline"></div>
+        <div class="arrow fa fa-arrow-right"></div>
+      </div></a>'
+      . do_shortcode($content) .
+      '</div>';
+  return $return_string;
+}
+add_shortcode('get_involved_section', 'media_dei_get_involved_section_shortcode');
+
+
+function media_dei_resource_list_shortcode($atts, $content){
+  $return_string='
+    <div class="resource-list">'.do_shortcode($content).'</div>
+  ';
+  return $return_string;
+}
+add_shortcode('resource_list', 'media_dei_resource_list_shortcode');
+
+function media_dei_resource_list_heading_shortcode($atts, $content){
+  $return_string='
+    <h3 class="list-heading">'.do_shortcode($content).'</h3>
+  ';
+  return $return_string;
+}
+add_shortcode('list_heading', 'media_dei_resource_list_heading_shortcode');
+
+
+//------------------- END ISSUE PAGE SHORTCODES -----
+
+
+
 
 //--------------------TYPOGRAPHY SHORTCODES ----------
 

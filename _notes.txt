@@ -2,7 +2,7 @@
 
 
 
-- Mailchimp (1.Tyler)
+* Mailchimp (1.Tyler)
 	- redo forms (only need one mailchimp form  in lightbox, other forms just html)
 	- use #subscribe
 
