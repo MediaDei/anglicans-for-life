@@ -3,3 +3,5 @@ css/global.css
 config.codekit
 
 config.rb
+
+.DS_Store

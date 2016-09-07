@@ -17,8 +17,6 @@ Template Name: Issue Page
 	} // end if
 	?>
 
-	<?php include(TEMPLATEPATH."/global-parts/issue-get-involved.php"); ?>
-
 	<?php include(TEMPLATEPATH."/global-parts/subscribe-section-divider.php"); ?>
 </section>
 

@@ -27,7 +27,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+	<?php include(TEMPLATEPATH."/global-parts/mailchimp-form.php"); ?>
 	<div class="page-wrap">
 		<header>
 			<span class="anchor" id="navigation-menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
