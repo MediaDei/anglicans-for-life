@@ -15,10 +15,16 @@ Template Name: Home Page
 			<div class="grid-2-3 ask">
 				<h2 class="italic">Ask:</h2>
 				<p class="question italic">
-					“There is a lot of recent pro-euthanasia legislation all over the country. I don’t think it’s right, but I don’t have a lot of answers either. Can you help?” -Anne
+
+				<?php 
+					$query = new WP_Query("cat=2");
+					$query->the_post(); 
+					echo get_the_content();
+				?>
+
 				</p>
 				<div class="line"></div>
-				<a href="#" class="answer-link"><span class="italic">read & respond</span> &rarr;</a>
+				<a href="<?php the_permalink(); ?>" class="answer-link italic">read & respond &rarr;</a>
 			</div>
 			<div class="twitter grid-1-3">
 				<h2><span class="italic">Recent Tweets</span></h2>

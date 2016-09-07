@@ -270,14 +270,12 @@ header{
 				li{
 					margin-bottom: 10px;
 					padding-left: 10px;
+					font-size: 0.9em; 
 					a{
 						color: #585858;
-						font-size: 0.9em; 
-						span{
-							&:hover{
-								text-decoration: underline;
-							}
-						}	  
+						&:hover{
+							text-decoration: underline;
+						}  
 					}
 				}
 			}

@@ -83,16 +83,12 @@
 				echo '<div class="hero-img" role="image">';
 				include(TEMPLATEPATH."/global-parts/navigation-menu.php");
 				if(is_page('home')){
+					the_post();
 					echo '
 					<div class="trending-issues">
-						<h2>Trending Issues:</h2>
-						<ul>
-							<li><a href="#"><span>Abortion</span></a></li>
-							<li><a href="#"><span>The Pill</span></a></li>
-							<li><a href="#"><span>Euthanasia</span></a></li>
-							<li><a href="#"><span>RU-485</span></a></li>
-						</ul>
-						<a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a>
+						<h2>Trending Issues:</h2>' .
+							get_the_content()
+						. '<a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a>
 					</div>';
 				}
 				the_post_thumbnail();

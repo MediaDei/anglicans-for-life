@@ -27,7 +27,7 @@ section.home{
 					color: #585858;
 					background-color: rgba(white, 0.5);
 					margin: 0;
-					padding: 20px 0;
+					padding: 20px 0 15px;
 					&:before{
 						content: "Q | ";
 						color: #FF0000;
@@ -40,12 +40,14 @@ section.home{
 						content: "A | ";
 						color: #FF0000;
 					}
-					span{
-						&:hover{
-							text-decoration: underline;
-						}
+					&:hover{
+						text-decoration: underline;
 					}
 				}
+				.more-link {
+					display: none;
+				}
+
 			}
 			div.twitter{
 				margin-left: 30px;

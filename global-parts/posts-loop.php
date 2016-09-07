@@ -1,44 +1,42 @@
 <?php
-if(is_page('archives')){
-	// set the "paged" parameter (use 'page' if the query is on a static front page)
-	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+if(is_page('archives')){	
 	$args = array(
-		'offset'					=> '3',
-		//'posts_per_page'		=> '5',
-		'paged'						=> $paged
+		'posts_per_page'	=> '-1',
+		'cat'				=> '-2' // Q&A
 	);
 }
 else{
 	$args = array(
-		'posts_per_page'	=> '3'
+		'posts_per_page'	=> '3',
+		'cat'				=> '-2' // Q&A
 	);
 }
+
+
+
+
 $query = new WP_Query($args);
 if($query->have_posts()){
+
 	if(is_page('archives')){
 		echo '<h1 class="page-title">Archive</h1>';
 	}
-	
 
-	while($query->have_posts()){
-		$query->the_post();
-		?>
+	while($query->have_posts()): ?>
+		<?php $query->the_post(); ?>
+
 		<article>
 			<time class="circle">
 				<div class="top"><?php echo get_the_date('M'); ?></div>
 				<div class="bottom"><?php echo get_the_date('d'); ?></div>
 			</time>
-			<?php if(has_post_thumbnail()){
-				?>
+
+			<?php if(has_post_thumbnail()): ?>
 				<figure><?php the_post_thumbnail(); ?></figure>
-				<?php
-			}
-			else{
-				?>
+			<?php else: ?>
 				<figure>placeholder</figure>
-				<?php
-			}
-			?>
+			<?php endif; ?>
+
 			<div class="title-content">
 				<div class="social-buttons">
 					<a class="icon" href="https://www.facebook.com/AnglicansforLife/"><div class="icon has-fade facebook fa fa-facebook"></div></a>
@@ -50,8 +48,9 @@ if($query->have_posts()){
 				<p><?php the_excerpt('Read More'); ?></p>
 			</div>
 		</article>
-		<?php
-	}
+	
+	<?php endwhile; 
+	
 	if(is_page('archives')){
 	?>
 		<div class="pagination">
@@ -60,10 +59,10 @@ if($query->have_posts()){
 	<?php
 	}
 	elseif(is_page('home')){
-		echo '<a class="older-posts" href="/archives">older posts &rarr;</a>';
+		echo '<a class="older-posts" href="/archives/">older posts &rarr;</a>';
 	}
 	else{
-		echo '<a class="older-posts" href="/archives"><span>all posts</span> &rarr;</a>';
+		echo '<a class="older-posts" href="/archives/"><span>all posts</span> &rarr;</a>';
 	}
 }
 // clean up after wp_query

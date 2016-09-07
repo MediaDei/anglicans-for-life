@@ -49,6 +49,38 @@ section.single-post{
 		}
 	}
 }
+section.single-post.qa div.post {
+	background-color: rgba(black,0.02);
+	border-radius: 6px;
+
+	h1.title {
+		font-size: 1.5em;
+	}
+
+	time.circle {
+		display: none;
+	}
+
+	.content {
+		font-size: 1.2em;
+
+		p:first-of-type:before{
+			content: "Q | ";
+			color: #FF0000;
+		}
+
+		span[id^="more-"] {
+			display: block;
+			position: relative;
+			overflow: hidden;
+		}
+	}
+
+	.pub-date.bottom {
+		display: none;
+	}
+}
+
 section{
 	&.latest-posts{
 		padding-top: 5px; 
