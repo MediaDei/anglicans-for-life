@@ -2,12 +2,13 @@
 	<h2>Pray for life</h2>
 	<p>Join our prayer team:</p>
 	<form class="grid">
-		<script>
+		<script type="text/javascript">
+			var $ = jQuery.noConflict();
 			$(document).ready(function() {
-				var $ = jQuery.noConflict();
 				var $email = $("#mailchimp-email");
 				$("#pray-email").keyup(function() {
 				    $email.val( this.value );
+				    $(".prayer").prop( 'checked', true );
 				});
 			});
 		</script>

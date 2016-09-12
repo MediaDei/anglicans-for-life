@@ -85,9 +85,9 @@ add_shortcode('grid_child', 'media_dei_grid_child_shortcode');
 //---------------------- TOP P SHORTCODE -------
 function media_dei_top_text_shortcode($atts, $content){
   $return_string='
-    <p class="top-p">'
+    <div class="top-p">'
       . do_shortcode($content) .
-    '</p>
+    '</div>
   ';
   return $return_string;
 }
@@ -100,17 +100,20 @@ add_shortcode('top_text', 'media_dei_top_text_shortcode');
 
 function media_dei_get_involved_section_shortcode($atts, $content){ 
   $return_string='
-    <div class="get-involved grid">
+    <div class="grid">
       <h2 class="sub-section-title">Get involved</h2>
-      <a class="take-action-button" href="/take-action/"><div class="take-action-button">
-        <p><span class="smallcaps">Take</span></p> 
-        <p><span class="smallcaps">Action</span></p>
-        <div class="button-underline"></div>
-        <div class="button-underline"></div>
-        <div class="arrow fa fa-arrow-right"></div>
-      </div></a>'
-      . do_shortcode($content) .
-      '</div>';
+      <div class="get-involved">
+        '  . do_shortcode($content) . '
+        <a class="button-container" href="/take-action/"><div class="button">
+            <p class="smallcaps">Take</p> 
+            <p class="smallcaps">Action</p>
+            <div class="button-underline"></div>
+            <div class="button-underline"></div>
+          </div>
+          <div class="arrow fa fa-arrow-right"></div>
+        </a>
+      </div>
+    </div>';
   return $return_string;
 }
 add_shortcode('get_involved_section', 'media_dei_get_involved_section_shortcode');

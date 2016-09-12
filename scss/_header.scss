@@ -1,7 +1,7 @@
 header{
 	position: relative;
 	z-index: 0; 
-	span#navigation-menu:target {
+	span#menu:target {
 
 		& ~ nav div.buttons-right a.menu{
 			&.open{
@@ -13,7 +13,7 @@ header{
 		}
 	}
 
-	span#navigation-menu:target {
+	span#menu:target {
 		& ~ .hero-img .navigation-menu{
 			width: 300px;
 			height: 100%;
@@ -54,6 +54,7 @@ header{
 		z-index: 3; //show shadow over div.hero-img and cover navigation-menu
 		
 		a.ribbon{
+
 			div.top-ribbon{
 				background-color: #F1CE18;
 			    height: 54px; 
@@ -74,8 +75,9 @@ header{
 				} 
 				p{
 					font-style: italic;
-					hyphens: none;
-					font-size: 0.8em;
+					@include hyphens(none);
+					font-size: 0.95em;
+					line-height: 1.2;
 					color: #252553;
 					text-shadow: 0px 1px 1px white;
 					text-align: center;
@@ -167,7 +169,7 @@ header{
 	  					rgba(24,22,48,0.4));
 	      		&.fa{
 	      			font-size: 1.3em;
-	      			padding: 4px 10px 6px; 
+	      			padding: 5px 10px 8px; 
 	      		}
 	     		&:hover{
 					@include background(

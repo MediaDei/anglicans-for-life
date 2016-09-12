@@ -14,7 +14,7 @@
 
 				<div class="grid-box contact">
 					<address>
-						<a class="contact icon" href="#">
+						<a class="contact icon" href="<?php echo get_site_url() ?>/contact/">
 							<div class="icon fa fa-envelope-o"></div>
 						</a>
 						<script type="text/javascript">
@@ -36,7 +36,7 @@
 								var a = "1"; // extension
 								var e = "(412)"; // area code
 								var t = "749"; // next 3 digits
-								var n = "0445"; // final 4 digits
+								var n = "0455"; // final 4 digits
 								var r = "tel:" + e + t + n; //href
 								$('#hidden-phone-footer').attr('href',r).html(e + ' ' + t + ' ' + n);
 							});

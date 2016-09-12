@@ -1,12 +1,12 @@
 <div class="subscribe">
 	<p>Sign up for <span class="italic">Carpe Diem</span>, AFL’s quarterly newsletter:</p>
 	<form class="grid">
-	  <script>
+	  <script type="text/javascript">
+	  		var $ = jQuery.noConflict();
 			$(document).ready(function() {
-				var $ = jQuery.noConflict();
-				var $email = $("#mailchimp-email");
 				$("#sub-email").keyup(function() {
-				    $email.val( this.value );
+				    $("#mailchimp-email").val( this.value );
+				    $(".newsletter").prop( 'checked', true );
 				});
 			});
 		</script>

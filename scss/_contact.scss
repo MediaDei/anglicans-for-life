@@ -41,8 +41,8 @@ section.contact{
 					transition: border 0.2s ease-in-out 0s;
 					&:focus{
             border-color:#129fea;
-          }
-					@include input-placeholder {
+            }
+			@include input-placeholder {
 	          color: #D7D6D4;
 	          font-style: italic;
 	        }
@@ -86,12 +86,17 @@ section.contact{
 			}
 		}
 	}
-	a{
-		color: $base-text;
-		display: table;
-		margin: 40px auto;
-		&:hover{
-			text-decoration: underline;
+	> p {
+		text-align: center;
+		padding-top: 30px;
+		line-height: 1.5;
+
+		a{
+			color: $base-text;
+			&:hover{
+				text-decoration: underline;
+			}
 		}
+	
 	}
 }

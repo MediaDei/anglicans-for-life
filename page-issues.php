@@ -14,49 +14,113 @@
 	<div class="bubbles grid">
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/abortion/" class="bubble-link">
-				<div class="bubble bubble-1"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'abortion', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Abortion</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/bioethics/" class="bubble-link">
-				<div class="bubble bubble-2"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'bioethics', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Bioethics</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/after-abortion/" class="bubble-link">
-				<div class="bubble bubble-3"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'after-abortion', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">After-abortion</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/abstinence/" class="bubble-link">
-				<div class="bubble bubble-4"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'abstinence', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Abstinence</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/pregnancy/" class="bubble-link">
-				<div class="bubble bubble-5"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'pregnancy', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Pregnancy</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/adoption/" class="bubble-link">
-				<div class="bubble bubble-6"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'adoption', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Adoption</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/end-of-life/" class="bubble-link">
-				<div class="bubble bubble-7"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'end-of-life', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">End of Life</p>
 		</div>
 		<div class="grid-1-3">
 			<a href="<?php echo get_site_url() ?>/issues/social-justice/" class="bubble-link">
-				<div class="bubble bubble-8"></div>
+				<div class="bubble">
+				<?php $my_posts = get_posts($args = array(
+					  'name'        => 'social-justice', 'post_type'   => 'page',
+					  'post_status' => 'publish'
+				));
+				foreach ($my_posts as $post) :
+					echo get_the_post_thumbnail($post->the_ID, 'thumbnail');
+				endforeach; ?>
+				</div>
 			</a>
 			<p class="bubble-title">Social Justice</p>
 		</div>

@@ -4,92 +4,106 @@ section.issue{
 		width: 438px;
 		margin: 0px 20px 20px 20px; 
 	}
-	div.resource-list{
-		margin: 0px 0px 20px 60px; 
+
+	div.get-involved{
 		display: table;
-		h3.list-heading{
-			font-size: 1.5em;
-			margin-bottom: 10px; 
-		}
-		ul{
-			display: table;
-			margin-left: 22px; 
-			li{
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 20px;
+
+		div.resource-list{
+			margin: 0px 0px 20px 60px; 
+			display: table-cell;
+			width: 100%; // not really 100%, just pushes right as far as it can go
+
+			h3.list-heading{
+				font-size: 1.5em;
+				margin-top: 20px;
 				margin-bottom: 10px; 
-				padding-left: 10px; 
-				font-size: 1.1em; 
-				a{
-					font-style: italic; 
-					&:hover{
-						text-decoration: underline;
+			}
+			ul{
+				//display: table;
+				margin-left: 22px; 
+				li{
+					margin-bottom: 10px; 
+					padding-left: 10px; 
+					font-size: 1.1em; 
+					a{
+						font-style: italic; 
+						&:hover{
+							text-decoration: underline;
+						}
 					}
 				}
 			}
 		}
-	}
-	a.take-action-button{
-		display: table;
-		float: right;
-		margin-right: 60px;
-		div.take-action-button{
-			width: 220px;
-			height: 280px;
+
+
+		a.button-container{
+			display: table-cell;
+			vertical-align: middle;
 			position: relative;
-			//z-index: 2;
-			@include background(
-				linear-gradient(
-				rgba(white,0.75),
-				rgba(white,0) 20%
-				),
-				
-				url('../images/take-action-button.jpg') no-repeat center center / 100% auto);
-			border: 1px solid white;
-			border-radius: 4px;
-			box-shadow: 0px 0px 0px 1px #A5A493,
-			 						0px 2px 5px rgba(black,0.5);
-			&:active{
+			
+			div.button{
+				width: 220px;
+				height: 280px;
 				position: relative;
-				top: 1px;
-				div.arrow{
-					top: 75px;
+				z-index: 2;
+
+				@include background(
+					linear-gradient(rgba(white,0.75), rgba(white,0) 20%),
+					url('../images/take-action-button.jpg') no-repeat center center / 100% auto);
+				border: 1px solid white;
+				border-radius: 4px;
+				box-shadow: 0px 0px 0px 1px #A5A493,
+				 			0px 2px 5px rgba(black,0.5);
+				&:hover{
+					opacity: 0.9;
+				}
+				&:active{
+					position: relative;
+					top: 1px;
+					box-shadow: 0px 0px 0px 1px #A5A493,
+					 			0px 1px 2px rgba(black,0.5);
+				}
+				p{
+					font-size: 2.2em;
+					letter-spacing: 3px;
+					text-shadow: 0px 2px 0px rgba(white,0.75); 
+					color: #53346C;
+					text-align: center;
+					margin: 0px; 
+					line-height: 0.9;  
+					&:first-letter{
+						font-size: 1.2em;
+					}
+					&:first-of-type{
+						margin-top: 30px; 
+					}
+				}
+				div.button-underline{
+					width: 60%;
+					margin: 0 auto 6px;
+					height: 2px;  
+					border-top: 1px solid #5A7078;
+					box-shadow: 0px 1px 0px rgba(white,0.75);
+					&:first-of-type{
+						margin-top: 10px; 
+					}
 				}
 			}
-			p{
-				font-size: 2.2em;
-				letter-spacing: 3px;
-				text-shadow: 0px 2px 0px rgba(white,0.75); 
-				color: #53346C;
-				text-align: center;
-				margin: 0px; 
-				line-height: 0.9;  
-				&:first-letter{
-					font-size: 1.2em;
-				}
-				&:first-of-type{
-					margin-top: 30px; 
-				}
-			}
-			div.button-underline{
-				width: 60%;
-				margin: 0 auto 6px;
-				height: 2px;  
-				border-top: 1px solid #5A7078;
-				box-shadow: 0px 1px 0px rgba(white,0.75);
-				&:first-of-type{
-					margin-top: 10px; 
-				}
-			}
+
 			div.arrow{
-				color: #F8F8F8;
-				font-size: 8em;
-				text-shadow: 0px -1px 0px rgba(153,153,153,0.5);
+				color: #F8F8F8 * 1.01;
+				font-size: 10em;
+				text-shadow: 0px -1px 0px rgba(153,153,153,0.3);
 				position: absolute;
-				top: 76px;
-				left: -90px; 
-				//z-index: 1;
+				top: 100px;
+				left: -100px; 
 			}
 		}
 	}
+
 	div.subscribe{
 		background-color: #FCFCFC; 
 		border-top: 1px solid #D6D6D6;

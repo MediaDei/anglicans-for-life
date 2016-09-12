@@ -118,33 +118,51 @@
             <h3>Board of Directors</h3>
             <div class="members">
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">Mr. Greg Plizga</p>
+                    <p class="title">Chair</p>
                 </div>
 
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">Rev. David R. Bickel</p>
+                    <p class="title">Vice Chair</p>
                 </div>
 
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">Mrs. Marianne Finnie</p>
+                    <p class="title">Secretary</p>
                 </div>
 
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">The Rev. Ron McKeon</p>
+                    <p class="title">Treasurer</p>
                 </div>
 
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">Very Rev. Robert Munday</p>
                 </div>
 
                 <div class="board-member">
-                    <p class="name">Lorem Ipsum</p>
-                    <p class="title">Dolor sit amet arma virumque cano</p>
+                    <p class="name">Mrs. Carrie Boren-Headington</p>
+                </div>
+
+                <div class="board-member">
+                    <p class="name">Rev. W. Ross Blackburn, PhD</p>
+                </div>
+
+                <div class="board-member">
+                    <p class="name">Mrs. Kathleen Sweet</p>
+                </div>
+
+                <div class="board-member">
+                    <p class="name">Rt. Rev. Derek Jones</p>
+                </div>
+
+                <div class="board-member">
+                    <p class="name">Ms. Mary Ailes</p>
+                </div>
+
+                <div class="board-member">
+                    <p class="name">The Rev. Cathie Young</p>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ Template Name: Home Page
 
 				</p>
 				<div class="line"></div>
-				<a href="<?php the_permalink(); ?>" class="answer-link italic">read & respond &rarr;</a>
+				<a href="<?php the_permalink(); ?>" class="answer-link italic">Read response &rarr;</a>
 			</div>
 			<div class="twitter grid-1-3">
 				<h2><span class="italic">Recent Tweets</span></h2>

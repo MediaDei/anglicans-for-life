@@ -4,8 +4,8 @@
 	<h1 class="page-title">Get Involved</h1>
 
 	<p class="top-p">
-		<span class="simple-dropcaps">M</span>
-		<span class="smallcaps">auris non tempor</span> quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
+		<span class="simple-dropcaps">W</span>
+		<span class="smallcaps">e believe</span> that every person in every church doing one thing every day to uphold the sacredness of Life can make a difference—and every person means you!  No matter your age, experience, or talents, there are things you can do to celebrate, protect, and honor Life.  We’ve provided some resources, examples, and guides to help you in this ministry.  Will you join with us?
 	</p>
 
 	<script type="text/javascript">
@@ -33,7 +33,7 @@
 				Find a Life-Affirming Church or Leader
 			</h3>
 				<p class="bubble-text">
-					Arma virumque cano.
+					Connect with People Honoring Life Near You.
 			</p>
 		</div>
 
@@ -45,7 +45,7 @@
 				Lead Life Ministry
 			</h3>
 			<p class="bubble-text">
-				Help your church establish a life witness. Lorem ipsum sit.
+				Educate & advocate in your churches and communities.
 			</p>
 		</div>
 
@@ -57,7 +57,7 @@
 				Take Action for Life
 			</h3>
 			<p class="bubble-text">
-				Help people defend life and promote Christian values.
+				Not sure how to get started? We have suggestions!
 			</p>
 		</div>
 	</div>
@@ -71,19 +71,22 @@
 		<div class="grid lower-grid">
 			<div class="grid-1-2">
 				<a href="<?php echo get_site_url() ?>/pastoral-resources/" class="bubble">
-					<div class="bubble bubble-4">
-						
-					</div>
+					<div class="bubble bubble-4"></div>
 				</a>
 				<h3 class="bubble-title">Pastoral Resources</h3>
+				<p class="bubble-text">
+					Helpful guides for ministering to others facing life issues.
+				</p>
+
 			</div>
 			<div class="grid-1-2">
 				<a href="<?php echo get_site_url() ?>/teaching-resources/#audio-track-1" class="bubble">
-					<div class="bubble bubble-5">
-						
-					</div>
+					<div class="bubble bubble-5"></div>
 				</a>
 				<h3 class="bubble-title">Teaching Resources</h3>
+				<p class="bubble-text">
+					Useful tools for educating your church about life issues.
+				</p>
 			</div>
 		</div>
 	</div>

@@ -30,7 +30,7 @@
 	<?php include(TEMPLATEPATH."/global-parts/mailchimp-form.php"); ?>
 	<div class="page-wrap">
 		<header>
-			<span class="anchor" id="navigation-menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
+			<span class="anchor" id="menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
 
 			<nav class="grid">
 				<a href="<?php echo get_site_url() ?>/need-help/" class="ribbon">
@@ -50,24 +50,24 @@
 					<h1 class="smallcaps">for life</h1>
 				</a>
 				<div class="buttons-right">
-					<a href="#">
+					<a href="<?php echo get_site_url() ?>/contact/">
 						<div class="button fa fa-envelope-o"></div>
 					</a>
 					<a href="<?php echo get_site_url() ?>/take-action/">
 						<div class="button">Take Action</div>
 					</a>
-					<a href="#">
+					<a href="https://connect.egiving.com/general-fund61/anglicans-for-life-inc">
 						<div class="button">Donate</div>
 					</a>
-					<a class="menu open" href="#navigation-menu">
+					<a class="menu open" href="#menu">
 						<div class="button fa fa-bars"></div>
 					</a>
-					<a class="menu close" href="#close-navigation-menu">
+					<a class="menu close" href="#">
 						<div class="button fa fa-bars"></div>
 					</a>
 				</div>
 			</nav>
-			<span class="anchor" id="close-navigation-menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
+
 
 			<?php 
 			//get hero for index.php and also apply it to archive.php
@@ -86,9 +86,9 @@
 					the_post();
 					echo '
 					<div class="trending-issues">
-						<h2>Trending Issues:</h2>' .
-							get_the_content()
-						. '<a href="/archives/" class="smallcaps all-issues">all issues &rarr;</a>
+						<h2>Trending now:</h2>
+						' . get_the_content() . '
+						<a href="<?php echo get_site_url() ?>/issues/" class="smallcaps all-issues">our issues &rarr;</a>
 					</div>';
 				}
 				the_post_thumbnail();

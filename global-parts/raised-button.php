@@ -12,7 +12,7 @@ if(is_page('lead-life-ministry')){
 		-->
 		<div class="raised-button-container lead-life-ministry">
 			<div class="raised-button-container-contents">
-				<a href="" class="button raised-button">
+				<a href="<?php echo get_site_url() ?>/contact/" class="button raised-button">
 					<div class="button raised-button fa fa-envelope-o"></div>
 				</a>
 				<div class="links">
@@ -33,9 +33,9 @@ if(is_page('lead-life-ministry')){
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
 							var a = "1"; // extension
-							var e = "(800)"; // area code
-							var t = "707"; // next 3 digits
-							var n = "6635"; // final 4 digits
+							var e = "(412)"; // area code
+							var t = "749"; // next 3 digits
+							var n = "0455"; // final 4 digits
 							var r = "tel:" + e + t + n; //href
 							$('#hidden-phone').attr('href',r).html(e + ' ' + t + '–' + n);
 						});
@@ -61,7 +61,7 @@ if(is_page('need-help')){
 
 		<div class="raised-button-container need-help">
 			<div class="raised-button-container-contents">
-				<a href="#" class="button raised-button">
+				<a href="<?php echo get_site_url() ?>/contact/" class="button raised-button">
 					<div class="button raised-button fa fa-envelope-o"></div>
 				</a>
 				<div class="links">
@@ -115,7 +115,7 @@ if(is_page('pregnant')){
 
 		<div class="raised-button-container pregnant">
 			<div class="raised-button-container-contents">
-				<a href="#" class="button raised-button">
+				<a href="<?php echo get_site_url() ?>/contact/" class="button raised-button">
 					<div class="button raised-button fa fa-phone"></div>
 				</a>
 				<div class="links">
@@ -147,7 +147,7 @@ if(is_page('pregnant')){
 
 		<div class="raised-button-container need-help">
 			<div class="raised-button-container-contents">
-				<a href="#" class="button raised-button">
+				<a href="<?php echo get_site_url() ?>/contact/" class="button raised-button">
 					<div class="button raised-button fa fa-envelope-o"></div>
 				</a>
 				<div class="links">
@@ -168,9 +168,9 @@ if(is_page('pregnant')){
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
 							var a = "1"; // extension
-							var e = "(800)"; // area code
-							var t = "712"; // next 3 digits
-							var n = "4357"; // final 4 digits
+							var e = "(412)"; // area code
+							var t = "749"; // next 3 digits
+							var n = "0455"; // final 4 digits
 							var r = "tel:" + e + t + n; //href
 							$('#hidden-phone2').attr('href',r).html(e + ' ' + t + '–' + n);
 						});

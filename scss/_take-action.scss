@@ -21,6 +21,7 @@ section.take-action{
 		}
 
 		div.grid-1-2{
+			font-size: 0.9em;
 			&:first-of-type {
 				padding-left: 120px
 			}
@@ -31,8 +32,10 @@ section.take-action{
 				width: 260px;
 				height: 240px;
 				margin: 0 auto;
-				padding: 40px 64px;
+				padding: 20px 30px 20px 40px;
 				overflow: hidden;
+				@include hyphens(auto);
+
 				ol{
 					li{
 						margin-bottom: 20px;
