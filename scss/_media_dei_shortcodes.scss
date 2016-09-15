@@ -410,8 +410,32 @@ div.accordion{
           margin-right: 0.5em;
 				}
 			}
-		}
-	}
+    }
+  }
+
+  .anchor:target + .anchor-button + .accordion-button-1 {
+    height: 110px;
+  }
+  .anchor:target + .anchor-button + .accordion-button-2 {
+    height: 250px;
+  }
+  .anchor:target + .anchor-button + .accordion-button-3 {
+    height: 210px;
+  }
+  .anchor:target + .anchor-button + .accordion-button-4 {
+    height: 130px;
+  }
+  .anchor:target + .anchor-button + .accordion-button-5 {
+    height: 120px;
+  }
+  .anchor:target + .anchor-button + .accordion-button-6 {
+    height: 270px;
+  }
+
+
+  p.hidden-text a:hover {
+    text-decoration: underline;
+  }
 }
 //--------------- END HIDDEN CONTENT NO JS -----------
 
@@ -536,7 +560,7 @@ div.audio-player{
   box-shadow: 0px 2px 3px rgba(black,0.5),
               0px 5px 14px rgba(black,0.25);
   border-radius: 3px;
-  span{
+  span.anchor{
     display: none;
     position: fixed; 
     &:target{

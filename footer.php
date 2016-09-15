@@ -20,7 +20,7 @@
 						<script type="text/javascript">
 							var $ = jQuery.noConflict();
 							$(document).ready(function() {
-								var e = "mail"; // replace with your email username
+								var e = "info"; // replace with your email username
 								var t = "anglicansforlife"; // replace with your email provider
 								var n = ".org"; // replace with your email provider TLD
 								var r = "mailto:" + e + '@' + t + n; //href
@@ -46,16 +46,16 @@
 				</div>
 				<div class="grid-box social">
 					<div class="icon-row">
-						<a class="icon" href="https://www.facebook.com/AnglicansforLife/">
+						<a class="icon" href="https://www.facebook.com/AnglicansforLife/" target="_blank">
 							<div class="icon facebook fa fa-facebook"></div>
 						</a>
-						<a class="icon" href="https://twitter.com/anglicans4life">
+						<a class="icon" href="https://twitter.com/anglicans4life" target="_blank">
 							<div class="icon twitter fa fa-twitter"></div>
 						</a>
-						<a class="icon" href="https://www.pinterest.com/anglicans4life/anglicans-for-life/">
+						<a class="icon" href="https://www.pinterest.com/anglicans4life/anglicans-for-life/" target="_blank">
 							<div class="icon pinterest fa fa-pinterest"></div>
 						</a>
-						<a class="icon" href="https://www.instagram.com/anglicans4life/">
+						<a class="icon" href="https://www.instagram.com/anglicans4life/" target="_blank">
 							<div class="icon instagram fa fa-instagram"></div>
 						</a>
 					</div>

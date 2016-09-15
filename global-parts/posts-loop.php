@@ -1,14 +1,14 @@
 <?php
 if(is_page('archives')){	
 	$args = array(
-		'posts_per_page'	=> '-1',
-		'cat'				=> '-2' // Q&A
+		'posts_per_page'	=> '-1', // unlimited per page
+		'cat'				=> '-2'  // skip Q&A posts
 	);
 }
 else{
 	$args = array(
-		'posts_per_page'	=> '3',
-		'cat'				=> '-2' // Q&A
+		'posts_per_page'	=> '3',  // 3 per page
+		'cat'				=> '-2'  // skip Q&A posts
 	);
 }
 
@@ -39,9 +39,9 @@ if($query->have_posts()){
 
 			<div class="title-content">
 				<div class="social-buttons">
-					<a class="icon" href="https://www.facebook.com/AnglicansforLife/"><div class="icon has-fade facebook fa fa-facebook"></div></a>
-					<a class="icon" href="https://twitter.com/Anglicans4Life"><div class="icon has-fade fa fa-twitter"></div></a>
-					<a class="icon" href="#"><div class="icon has-fade fa fa-pinterest"></div></a>
+					<a class="icon" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>=" target="_blank" title="Share on Facebook"><div class="icon has-fade facebook fa fa-facebook"></div></a>
+					<a class="icon" href="https://twitter.com/intent/tweet?text=<?php echo 'New article: ' . get_the_permalink(); ?>" target="_blank" title="Share on Twitter"><div class="icon has-fade fa fa-twitter"></div></a>
+					<a class="icon" href="http://pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>" target="_blank" title="Share on Pinterest"><div class="icon has-fade fa fa-pinterest"></div></a>
 				</div>
 				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<time class="pub-date"><?php echo 'Published ' . get_the_date('F j, Y'); ?></time>

@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<?php echo '<section class="single-post'; if(in_category('qa')) echo ' qa'; echo '">'; ?>
+<?php echo '
+<section class="single-post'; if(in_category('qa')) echo ' qa'; echo '">'; ?>
+
 	<?php the_post(); ?>
 	<div class="post">
 		<time class="circle">
@@ -8,8 +10,9 @@
 			<div class="bottom"><?php echo get_the_date('d'); ?></div>
 		</time>
 		<div class="social-buttons">
-			<a class="icon" href="https://www.facebook.com/AnglicansforLife/"><div class="icon small facebook fa fa-facebook"></div></a>
-			<a class="icon" href="https://twitter.com/Anglicans4Life"><div class="icon small fa fa-twitter"></div></a>
+			<a class="icon" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank" title="Share on Facebook"><div class="icon small facebook fa fa-facebook"></div></a>
+			<a class="icon" href="https://twitter.com/intent/tweet?text=<?php echo 'New article: ' . get_the_permalink(); ?>" target="_blank" title="Share on Twitter"><div class="icon small fa fa-twitter"></div></a>
+			<a class="icon" href="http://pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>" target="_blank" title="Share on Pinterest"><div class="icon small fa fa-pinterest"></div></a>
 		</div>
 		<h1 class="title"><?php the_title(); ?></h1>
 		<time class="pub-date"><span class="italic"><?php echo 'Published ' . get_the_date('F j, Y'); ?></span></time>
