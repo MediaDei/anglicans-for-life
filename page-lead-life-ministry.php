@@ -77,7 +77,7 @@
 		[simple_dropcaps]B[/simple_dropcaps][smallcaps]efore registering[/smallcaps] to be a Chapter Leader, we encourage you to start with Prayer and Self-Evaluation. Pray for God’s guidance and discernment, seeking to understand the Lord’s call on your life. Ask yourself questions like: <em>How strong is my relationship with the Lord? Do I feel called by God to this ministry? How are my leadership skills? Do I have the time and emotional and spiritual energy for this commitment?</em>
 
 			<br><br>
-			TTo become a Chapter Leader, you must first recruit a few potential Chapter members. When you have several people ready to join you in forming a Chapter in your church, you can start the process of forming a chapter by providing some basic contact info on our <a href="' . get_site_url() . '/contact/">contact form</a> or reaching out to our office directly at <a id="hidden-email" href="#">Info@AnglicansForLife.org</a>.
+			To become a Chapter Leader, you must first recruit a few potential Chapter members. When you have several people ready to join you in forming a Chapter in your church, you can start the process of forming a chapter by providing some basic contact info on our <a href="' . get_site_url() . '/contact/">contact form</a> or reaching out to our office directly at <a id="hidden-email" href="#">Info@AnglicansForLife.org</a>.
 		[/accordion_hidden_content]
 		[/accordion]'); ?>
 

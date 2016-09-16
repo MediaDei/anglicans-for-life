@@ -19,7 +19,7 @@ if(is_page('lead-life-ministry')){
 					<script type="text/javascript">
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
-							var ee = "mail"; // replace with your email username
+							var ee = "info"; // replace with your email username
 							var tt = "anglicansforlife"; // replace with your email provider
 							var nn = ".org"; // replace with your email provider TLD
 							var rr = "mailto:" + ee + '@' + tt + nn; //href
@@ -68,7 +68,7 @@ if(is_page('need-help')){
 					<script type="text/javascript">
 						var $ = jQuery.noConflict();
 						$(document).ready(function() {
-							var e = "mail"; // replace with your email username
+							var e = "info"; // replace with your email username
 							var t = "anglicansforlife"; // replace with your email provider
 							var n = ".org"; // replace with your email provider TLD
 							var r = "mailto:" + e + '@' + t + n; //href
