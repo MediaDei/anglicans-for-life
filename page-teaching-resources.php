@@ -3,7 +3,7 @@
 <section class="teaching-resources">
 	<h1 class="page-title">Teaching Resources</h1>
 	<p class="top-p">
-		<span class="simple-dropcaps">M</span><span class="smallcaps">auris non tempor quam,</span> et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
+		<span class="simple-dropcaps">W</span><span class="smallcaps">ith all</span> the other responsibilities that come from working in a church or diocese, being an advocate for Life can sometimes feel more like an additional burden than a calling.  We understand how busy our priests and pastors can be, so we developed a resource page with life-affirming sermons, lectionary teachings, curriculums, and bulletin inserts&mdash;much of which have been written and created by your fellow clergy members&mdash;to help you in educating your Church or diocese about life issues.
 	</p>
 	
 	<?php //get page contents
@@ -14,45 +14,6 @@
 		} // end while
 	} // end if
 	?>
-<!--
-	<div class="audio-player">
-	  <span class="anchor" id="audio-track-1"></span>
-		<div class="audio-track">
-			<p class="audio-title"><a href="#audio-track-1">Magnificat Chant Instructions</a></p>
-			<p class="audio-author">RES Cathedral Musician</p>
-			<div class="line"></div>
-			<p class="audio-description">An instructional track about how to chant the Magnificat for Evensong</p>
-			<audio controls>
-			  <source src="http://anglicans-for-life.phasstw/wp-content/uploads/2016/08/Magnificat-demo.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio> 
-		</div>
-
-	  <span class="anchor" id="audio-track-2"></span>
-		<div class="audio-track">
-			<p class="audio-title"><a href="#audio-track-2">Magnificat Chant Instructions</a></p>
-			<p class="audio-author">RES Cathedral Musician</p>
-			<div class="line"></div>
-			<p class="audio-description">An instructional track about how to chant the Magnificat for Evensong</p>
-			<audio controls>
-			  <source src="http://anglicans-for-life.phasstw/wp-content/uploads/2016/08/Magnificat-demo.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio> 
-		</div>
-
-	  <span class="anchor" id="audio-track-3"></span>
-		<div class="audio-track">		
-			<p class="audio-title"><a href="#audio-track-3">Magnificat Chant Instructions</a></p>
-			<p class="audio-author">RES Cathedral Musician</p>
-			<div class="line"></div>
-			<p class="audio-description">An instructional track about how to chant the Magnificat for Evensong</p>
-			<audio controls>
-			  <source src="http://anglicans-for-life.phasstw/wp-content/uploads/2016/08/Magnificat-demo.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-			</audio> 
-		</div>
-	</div>
-	-->
 </section>
 
 <?php get_footer(); ?>

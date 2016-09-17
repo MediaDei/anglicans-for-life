@@ -31,29 +31,21 @@
 		<h2 class="sub-section-title">Considering Abortion?</h2>
 		<div class="grid">
 			<div class="grid-1-2">
-				<a href="http://youroptions.com" class="considering-button">
+				<a href="http://youroptions.com/" class="considering-button" target="_blank">
 					<div class="considering-button options">
 						<div class="text">
-							<p class="top">
-								Your options
-							</p>
-							<p class="bottom">
-								www.youroptions.com
-							</p>
+							<p class="top">Your options</p>
+							<p class="bottom">www.youroptions.com</p>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="grid-1-2">
-				<a href="http://abortiontestimonies.com" class="considering-button">
+				<a href="http://abortiontestimonies.com/" class="considering-button" target="_blank">
 					<div class="considering-button voices">
 						<div class="text">
-							<p class="top">
-								Women voices
-							</p>
-							<p class="bottom">
-								www.abortiontestimonies.com
-							</p>
+							<p class="top">Women voices</p>
+							<p class="bottom">www.abortiontestimonies.com</p>
 						</div>
 					</div>
 				</a>
