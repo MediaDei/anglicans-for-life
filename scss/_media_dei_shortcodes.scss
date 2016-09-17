@@ -525,10 +525,93 @@ div.doc-list{
   }
 }
 //--------------- END DOCUMENT LIST WIDGET STYLES -------
+//--------------- RESCOURCE CONTAINER WIDGET STYLES -----------
+div.resource-container{
+  max-width: 600px;
+  margin: 90px auto;
+  h2.resource-container-heading{
+    font-size: 1.7em;
+    font-style: italic;
+    text-align: center; 
+    padding: 6px 0px;
+    border-bottom: 1px solid rgba(black,0.5);
+    box-shadow: 0px 2px 4px rgba(black,0.5); 
+  }
+  ul{
+    padding: 40px 20px;
+    background-color: #FFFEFA;
+    border: 1px solid #C9C7BF;
+    width: 98%; 
+    margin: 0 auto; 
+    a{
+      margin: 0px auto;
+      display: table;
+      font-size: 1.3em;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    li{
+      padding-left: 20px; 
+      margin: 0px 0px 10px 40px; 
+      list-style: none;
+      font-size: 1.3em;
+      a{
+        display: inline-block;
+        color: $base-text;
+        &.pdf{
+          width: 44px;
+          height: 13px;
+          margin: 0px 6px;
+          background: url('../images/icon-pdf.png') no-repeat center center / 100% auto;
+        }
+        &.docx{
+          width: 44px;
+          height: 13px;
+          margin: 0px 6px;
+          background: url('../images/icon-docx.png') no-repeat center center / 100% auto;
+        }
+      }
+    }
+  }
+}
+//--------------- END RESOURCE CONTAINER WIDGET STYLES -------
+
+//--------------- END TEACHING RESOURCES LISTS STYLES -------
+div.resource-list{
+  padding: 0px 0px 0px 110px; 
+  h2.resource-list-title{
+    font-size: 1.7em;
+    font-style: italic;
+    margin-bottom: 8px; 
+  }
+  ul{
+    width: 80%;
+    margin: 0 auto; 
+    li{
+      margin-bottom: 8px; 
+      padding-left: 12px;
+      font-size: 1.2em;
+      a{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+//--------------- END TEACHING RESOURCES LISTS STYLES -------
 
 
 //--------------- AUDIO PLAYER WIDGET STYLES -------
-
+h2.audio-player-heading{
+  text-align: center;
+  font-size: 1.7em;
+  margin: 40px auto 20px;  
+}
 div.audio-player{
   width: 600px;
   margin: 0 auto;
@@ -546,6 +629,11 @@ div.audio-player{
         );
         border-top: 1px solid rgba(black,0.05);
         border-bottom: 1px solid rgba(black,0.05);
+        &:hover{
+          @include background( 
+            linear-gradient(rgba(white,0.5), rgba(123,123,123,0.07), rgba(black,0)), #FFFAEE
+          );
+        }
         &:first-of-type{
           border-top: none;
         }
@@ -554,6 +642,9 @@ div.audio-player{
         }
         p.audio-title{
           padding: 6px 0px 0px 20px;
+          a:hover{
+            cursor: default;
+          }
         }
         p.audio-author{
           display: block;
@@ -579,9 +670,15 @@ div.audio-player{
     }
   }
   div.audio-track{  
-    background: rgba(white,1); 
+    background: rgba(white,1);
+    &:hover{
+      background: darken(#F3F3F3,8%);
+    } 
     &.dark-bg{
       background: #F3F3F3;
+      &:hover{
+        background: darken(#F3F3F3,8%);
+      }
     }         
   }
   p{
@@ -594,9 +691,7 @@ div.audio-player{
       padding: 12px 0px 12px 20px;
       a{
         color: $base-text;
-        &:hover{
-          text-decoration: underline;
-        }
+        display: block;
       }
     }
     &.audio-author{

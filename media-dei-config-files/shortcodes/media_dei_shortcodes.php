@@ -139,6 +139,25 @@ add_shortcode('list_heading', 'media_dei_resource_list_heading_shortcode');
 //------------------- END ISSUE PAGE SHORTCODES -----
 
 
+//------------------------- TEACHING RESOURCES ------------
+
+function media_dei_resource_container_shortcode($atts, $content){
+  $return_string='
+    <div class="resource-container">'.do_shortcode($content).'</div>
+  ';
+  return $return_string;
+}
+add_shortcode('resource_container', 'media_dei_resource_container_shortcode');
+
+function media_dei_resource_container_heading_shortcode($atts, $content){
+  $return_string='
+    <h2 class="resource-container-heading">'.do_shortcode($content).'</h2>
+  ';
+  return $return_string;
+}
+add_shortcode('container_heading', 'media_dei_resource_container_heading_shortcode');
+
+//------------------------- TEACHING RESOURCES ------------
 
 
 //--------------------TYPOGRAPHY SHORTCODES ----------
@@ -176,7 +195,7 @@ function media_dei_simple_dropcaps_shortcode($atts, $content){
   $return_string='<span class="simple-dropcaps">' . do_shortcode($content) . '</span>';
   return $return_string;
 }
-add_shortcode('simple_dropcaps', 'media_dei_simple_dropcaps_shortcode');
+add_shortcode('dropcaps', 'media_dei_simple_dropcaps_shortcode');
 
 function media_dei_page_title_shortcode($atts, $content){
   $return_string='<h1 class="page-title">'. $content . '</h1>';
@@ -338,7 +357,7 @@ function media_dei_accordion_button_shortcode($atts, $content){
     return $return_string;
   }
 }
-add_shortcode('accordion_button', 'media_dei_accordion_button_shortcode');
+add_shortcode('acc_button', 'media_dei_accordion_button_shortcode');
 
 
 //button for css accordion-staff functionality
@@ -358,7 +377,7 @@ function media_dei_accordion_staff_shortcode($atts, $content){
     return $return_string;
   }
 }
-add_shortcode('accordion_staff', 'media_dei_accordion_staff_shortcode');
+add_shortcode('staff', 'media_dei_accordion_staff_shortcode');
 
 
 //accordion_staff_photo
@@ -369,7 +388,7 @@ function media_dei_accordion_staff_photo_shortcode($atts, $content){
   '</figure>';
   return $return_string;
 }
-add_shortcode('accordion_staff_photo', 'media_dei_accordion_staff_photo_shortcode');
+add_shortcode('staff_photo', 'media_dei_accordion_staff_photo_shortcode');
 
 //accordion_staff_name
 function media_dei_accordion_staff_name_shortcode($atts, $content){
@@ -379,7 +398,7 @@ function media_dei_accordion_staff_name_shortcode($atts, $content){
   '</p>';
   return $return_string;
 }
-add_shortcode('accordion_staff_name', 'media_dei_accordion_staff_name_shortcode');
+add_shortcode('staff_name', 'media_dei_accordion_staff_name_shortcode');
 
 //accordion_staff_title
 function media_dei_accordion_staff_title_shortcode($atts, $content){
@@ -389,7 +408,7 @@ function media_dei_accordion_staff_title_shortcode($atts, $content){
   '</p>';
   return $return_string;
 }
-add_shortcode('accordion_staff_title', 'media_dei_accordion_staff_title_shortcode');
+add_shortcode('staff_title', 'media_dei_accordion_staff_title_shortcode');
 
 
 
@@ -450,7 +469,7 @@ function media_dei_accordion_hidden_content_shortcode($atts, $content){
       return $return_string;
   }
 }
-add_shortcode('accordion_hidden_content', 'media_dei_accordion_hidden_content_shortcode');
+add_shortcode('acc_content', 'media_dei_accordion_hidden_content_shortcode');
 
 //--------------------END ACCORDION SHORTCODES ------
 
@@ -766,7 +785,7 @@ function media_dei_document_list_icon_docx_shortcode($atts, $content){
   $return_string='<a href="' . $document_url . '" class="docx"></a>';
   return $return_string;
 }
-add_shortcode('document_list_icon_docx', 'media_dei_document_list_icon_docx_shortcode');
+add_shortcode('docx_icon', 'media_dei_document_list_icon_docx_shortcode');
 
 function media_dei_document_list_icon_pdf_shortcode($atts, $content){
   extract(shortcode_atts(array(            
@@ -775,7 +794,7 @@ function media_dei_document_list_icon_pdf_shortcode($atts, $content){
   $return_string='<a href="' . $document_url . '" class="pdf"></a>';
   return $return_string;
 }
-add_shortcode('document_list_icon_pdf', 'media_dei_document_list_icon_pdf_shortcode');
+add_shortcode('pdf_icon', 'media_dei_document_list_icon_pdf_shortcode');
 
 
 
@@ -786,6 +805,14 @@ add_shortcode('document_list_icon_pdf', 'media_dei_document_list_icon_pdf_shortc
 
 
 //----------------------- AUDIO PLAYER WIDGET SHORTCODE -------------
+
+function media_dei_audio_player_heading_shortcode($atts, $content){ 
+  $return_string='<h2 class="audio-player-heading">'.do_shortcode($content).'</h2>';
+  return $return_string;
+}
+add_shortcode('audio_player_heading', 'media_dei_audio_player_heading_shortcode');
+
+
 function media_dei_audio_player_shortcode($atts, $content){ 
   $return_string='<div class="audio-player">' . do_shortcode($content) . '</div>';
   return $return_string;
@@ -844,8 +871,40 @@ add_shortcode('audio_file', 'media_dei_audio_file_shortcode');
 //----------------------- AUDIO PLAYER WIDGET SHORTCODE -------------
 
 
+//--------------- END TEACHING RESOURCES LISTS STYLES -------
+function media_dei_teaching_resources_list_wrap_shortcode($atts, $content){
+  $return_string='
+    <div class="grid">'
+      . do_shortcode($content) .
+    '</div>';
+  return $return_string;
+}
+add_shortcode('resource_list_wrap', 'media_dei_teaching_resources_list_wrap_shortcode');
+function media_dei_teaching_resources_list_shortcode($atts, $content){
+  $return_string='
+    <div class="grid-1-2 resource-list">'
+      . do_shortcode($content) .
+    '</div>';
+  return $return_string;
+}
+add_shortcode('teaching_resource_list', 'media_dei_teaching_resources_list_shortcode');
+
+function media_dei_teaching_resources_list_title_shortcode($atts, $content){
+  $return_string='
+    <h2 class="resource-list-title">'
+      . do_shortcode($content) .
+    '</h2>';
+  return $return_string;
+}
+add_shortcode('list_title', 'media_dei_teaching_resources_list_title_shortcode');
+
+
+
+//--------------- END TEACHING RESOURCES LISTS STYLES -------
+
+
 //----------------------- PHP INCLUDES SHORTCODE -------------
-function media_dei_include_donate_shortcode($atts, $content){
+function media_dei_include_donate_shortcode($atts, $content){//not working as of 9/17/16. Cannot echo shortcode content...
   $return_string='<?php include(TEMPLATEPATH."/global-parts/donate-section-divider.php"); ?>';
   return $return_string;
 }

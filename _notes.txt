@@ -1,11 +1,5 @@
 9/4/16
 
-
-
-* Mailchimp (1.Tyler)
-	- redo forms (only need one mailchimp form  in lightbox, other forms just html)
-	- use #subscribe
-
 - Home (James)
 	- trending issues 
 		- think about getting into header from body of homepage
@@ -16,17 +10,11 @@
 - Pregnant (James)
 	- image gal needs caption fix
 
-* Take Action (1.Tyler)
-	* need shortcode to pop content in squares
-
 - Issue Pages (1.Tyler)
 	- disp table-cell; vert align
 		- disptable (container)
 			- disptabcell (child)
 				- vert align children
-	- add custom post type for top 5 articles
-		- just links to external sites
-			- text in lists
 
 - Teaching Re (2.Tyler)
 	- update hover state on audio player
