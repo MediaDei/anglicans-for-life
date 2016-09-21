@@ -104,13 +104,13 @@ function media_dei_get_involved_section_shortcode($atts, $content){
       <h2 class="sub-section-title">Get involved</h2>
       <div class="get-involved">
         '  . do_shortcode($content) . '
-        <a class="button-container" href="/take-action/"><div class="button">
-            <p class="smallcaps">Take</p> 
-            <p class="smallcaps">Action</p>
-            <div class="button-underline"></div>
-            <div class="button-underline"></div>
-          </div>
-          <div class="arrow fa fa-arrow-right"></div>
+        <a class="button-container" href="/take-action/">
+        <div class="button">
+            Take
+            <span class="line"></span>
+            Action
+        </div>
+        <div class="arrow fa fa-arrow-right"></div>
         </a>
       </div>
     </div>';
@@ -143,7 +143,7 @@ add_shortcode('list_heading', 'media_dei_resource_list_heading_shortcode');
 
 function media_dei_resource_container_shortcode($atts, $content){
   $return_string='
-    <div class="resource-container">'.do_shortcode($content).'</div>
+    <div class="resource-container"><ul>'.do_shortcode($content).'</ul></div>
   ';
   return $return_string;
 }
@@ -281,7 +281,7 @@ add_shortcode('icon_paragraph', 'media_dei_shortcode_icon_paragraph');
 
 function media_dei_list_box_shortcode($atts, $content){
   $return_string='
-    <div class="grid-1-2">'
+    <div class="grid-1-2 resource-list">'
       . do_shortcode($content) .
     '</div>
   ';
