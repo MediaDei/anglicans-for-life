@@ -2,16 +2,13 @@ section.single-post{
 	padding-bottom: 0px; 
 	div.post{
 		width: 80%;
-		//background-color: #FFFEFA;
 		margin: 0 auto;
-		//border: 1px solid #DCD8CE;
-		//border-radius: 4px;  
 		padding: 40px 70px 20px;
 		position: relative;
 		time.circle {
 			position: absolute;
 			top: 0px;
-			left: -80px;
+			left: 0px;
 			box-shadow: 0px 1px 3px rgba(black,0.5); 
 		}
 		h1.title{
@@ -24,29 +21,27 @@ section.single-post{
 			display: table;
 			margin: 0 auto;
 			color: $lighter-text;
-			&.bottom{
+			&.bottom {
 				margin: 30px 0px 0px;
 			}
 		}
-		div.img{
-			margin: 0 auto; 
-			border: 8px solid white;
-			box-shadow: 0px 2px 4px 1px rgba(black,0.4);
-			img{
-				display: block;
-				width: 100%;
-				height: auto;  
-			}
-		} 
 		div.line{
 			border-bottom: 1px solid $border;
 			height: 1px;
 			width: 100%;
 			margin: 30px auto; 
 			&.bottom{
-				margin: 10px 0px 0px; 
+				margin: 10px 0px 10px; 
 			}
 		}
+		ul, ol {
+			padding-left: 30px;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
 	}
 }
 section.single-post.qa div.post {

@@ -19,6 +19,14 @@ add_shortcode('shortcode_name', 'media_dei_shortcode');
 */
 
 
+
+/////////////////// -- Globals -- ///////////////////////////
+$GLOBALS['accordionCount'] = 0;
+$GLOBALS['audioTrackCount'] = 0;
+
+
+
+
 //-------------------- SHORTCODE SETTINGS ----------
 
 //stop WP core from adding <p> and <br> tags to shortcode from WYSIWYG editor filter (wpautop)
@@ -322,7 +330,6 @@ add_shortcode('list', 'media_dei_list_box_list_shortcode');
 //wrapper for all shortcodes with css accordion functionality
 function media_dei_accordion_shortcode($atts, $content){
   //increment counter for each accordion in use on this page
-  $GLOBALS['accordionCount'];
   $GLOBALS['accordionCount']++;
 
   extract(shortcode_atts(array(            
@@ -820,8 +827,8 @@ function media_dei_audio_player_shortcode($atts, $content){
 add_shortcode('audio_player', 'media_dei_audio_player_shortcode');
 
 function media_dei_audio_track_shortcode($atts, $content){ 
-  $GLOBALS['audioTrackCount'];
   $GLOBALS['audioTrackCount']++;
+
   if($GLOBALS['audioTrackCount']%2===0){
     $return_string='
       <span class="anchor" id="audio-track-' . $GLOBALS['audioTrackCount'] . '"></span>

@@ -22,7 +22,7 @@
 				echo bloginfo("name");
 			} 
 			else { 
-				echo wp_title(" | ", false, right);
+				echo wp_title(" | ", false, 'right');
 				echo bloginfo("name");
 			} 
 		?>
@@ -33,7 +33,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php include(TEMPLATEPATH."/global-parts/mailchimp-form.php"); ?>
 	<div class="page-wrap">
 		<header>
 			<span class="anchor" id="menu"></span><!--used to close/opon nav menu and show/hide menu buttons-->
@@ -94,7 +93,7 @@
 					<div class="trending-issues">
 						<h2>Trending now:</h2>
 						' . get_the_content() . '
-						<a href="<?php echo get_site_url() ?>/issues/" class="smallcaps all-issues">our issues &rarr;</a>
+						<a href="/issues/" class="smallcaps all-issues">our issues &rarr;</a>
 					</div>';
 				}
 				the_post_thumbnail();

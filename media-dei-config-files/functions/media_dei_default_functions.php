@@ -1,11 +1,17 @@
 <?php
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
+
 //allow Featured Images in Posts/Pages
 add_theme_support( 'post-thumbnails' );
 
 //Disable Emoji from WP Core
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
-
+//add_filter( 'emoji_svg_url', '__return_false' );
 
 // default Media Dei scripts
 function scripts_styles() {
@@ -34,11 +40,15 @@ function media_dei_filter_ptags_on_images($content)
 {
     // strip <p> from post images
     // regular expression: <p> (whitespace) <a (stuff)>(stuff)</a> (whitespace) </p>
+    
     // replace with <div> and inner contents
-    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '<div class="img">\1\2\3</div>', $content);
+    //// return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '<div class="img">\1\2\3</div>', $content);
+
+    // just strip out <p>, leave only <img>
+    return preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '\1', $content);
 }
 // we want it to be run after the autop stuff... 10 is default.
-add_filter('the_content', 'media_dei_filter_ptags_on_images');
+//add_filter('the_content', 'media_dei_filter_ptags_on_images');
 
 
 /**

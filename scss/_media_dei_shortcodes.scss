@@ -675,8 +675,9 @@ div.audio-player{
           linear-gradient(rgba(white,0.5), rgba(123,123,123,0.07), rgba(black,0)), 
           #FFFAEE
         );
-        border-top: 1px solid rgba(black,0.05);
-        border-bottom: 1px solid rgba(black,0.05);
+        box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.3);
+        position: relative;
+
         &:hover{
           @include background( 
             linear-gradient(rgba(white,0.5), rgba(123,123,123,0.07), rgba(black,0)), 

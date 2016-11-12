@@ -1,5 +1,5 @@
 <?php
-if(is_page('archives')){	
+if(is_page('blog')){	
 	$args = array(
 		'posts_per_page'	=> '-1', // unlimited per page
 		'cat'				=> '-2'  // skip Q&A posts
@@ -13,13 +13,17 @@ else{
 }
 
 
+if(is_category('')) {
+	echo 'THIS IS CATEGORY';
+}
+
 
 
 $query = new WP_Query($args);
 if($query->have_posts()){
 
-	if(is_page('archives')){
-		echo '<h1 class="page-title">Archive</h1>';
+	if(is_page('blog')){
+		echo '<h1 class="page-title">Blog</h1>';
 	}
 
 	while($query->have_posts()): ?>
@@ -45,13 +49,13 @@ if($query->have_posts()){
 				</div>
 				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<time class="pub-date"><?php echo 'Published ' . get_the_date('F j, Y'); ?></time>
-				<p><?php the_excerpt('Read More'); ?></p>
+				<?php the_excerpt('Read More'); ?>
 			</div>
 		</article>
 	
 	<?php endwhile; 
 	
-	if(is_page('archives')){
+	if(is_page('blog')){
 	?>
 		<div class="pagination">
 			<?php echo paginate_links( $args ); ?>
@@ -59,10 +63,10 @@ if($query->have_posts()){
 	<?php
 	}
 	elseif(is_page('home')){
-		echo '<a class="older-posts" href="/archives/">older posts &rarr;</a>';
+		echo '<a class="older-posts" href="/blog/">older posts &rarr;</a>';
 	}
 	else{
-		echo '<a class="older-posts" href="/archives/"><span>all posts</span> &rarr;</a>';
+		echo '<a class="older-posts" href="/blog/"><span>all posts</span> &rarr;</a>';
 	}
 }
 // clean up after wp_query

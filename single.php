@@ -19,6 +19,38 @@
 		<div class="line"></div>
 		<div class="content"><?php the_content(); ?></div>
 		<time class="pub-date bottom"><span class="italic"><?php echo 'Published ' . get_the_date('F j, Y'); ?></span></time>
+		<br>
+		<div class="line bottom"></div>
+
+		<?php 
+			// if has categories, output "Categories: ..."
+			$post_categories = wp_get_post_categories( get_the_ID() );
+			if ( !is_null($post_categories) ) {
+				echo 'Categories: <em>';
+
+				foreach($post_categories as $c){
+					$cat = get_category( $c );
+					echo '<a href="/category/' . $cat->slug . '">' . $cat->name . '</a>, ';
+				}
+
+				echo '</em><br>';
+			}
+			
+			// if has tags, output "Tags: ..."
+			$post_tags = wp_get_post_tags( get_the_ID() );
+			if ( !is_null($post_tags) ) {
+				echo 'Tags: <em>';
+
+				foreach($post_tags as $t){
+					$tag = get_tag( $t );
+					echo '<a href="/tag/' . $tag->slug . '">' . $tag->name . '</a>, ';
+				}
+
+				echo '</em>';
+			}
+
+		?>
+
 		<div class="line bottom"></div>
 	</div>
 

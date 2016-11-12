@@ -18,6 +18,11 @@ section.take-action{
 					linear-gradient(to bottom, rgba(white,0.5) 10%, rgba(white,0) 50%, rgba(white,0)),
 					#F1F0EA
 				);
+
+				ol, ul, li {
+					margin: 0;
+					padding: 0;
+				}
 			}
 		}
 

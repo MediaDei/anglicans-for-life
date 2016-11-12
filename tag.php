@@ -13,7 +13,7 @@ Template Name: Archive
 
 	if ( have_posts() ) : ?>
 
-	<h1 class="page-title">Category: <?php single_cat_title(); ?></h1>
+	<h1 class="page-title">Tag: <?php single_tag_title(); ?></h1>
 
 	<?php while( have_posts() ) : the_post(); ?>
 

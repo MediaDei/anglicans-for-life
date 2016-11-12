@@ -94,6 +94,8 @@
 		</footer> 
 	</div><!--close page-wrap opened in header.php-->
 
+	<?php include(TEMPLATEPATH."/global-parts/mailchimp-form.php"); ?>
+
 	<?php wp_footer(); ?>
 </body>
 </html>

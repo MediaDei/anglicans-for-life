@@ -26,14 +26,15 @@
 	
 	<div class="grid">
 		<div class="grid-1-3">
-			<a class="bubble" href="#">
+			<a class="bubble" href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">
 				<div class="bubble bubble-1"></div>
 			</a>
-			<h3 class="bubble-title">
-				Find a Life-Affirming Church or Leader
+			<h3 class="bubble-title life-affirming">
+				<span class="arrow">&rarr;</span> <a href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">Life-Affirming Leaders</a><br>
+				<span class="arrow">&rarr;</span> <a href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-life-affirming-churches/">Life-Affirming Churches</a>
 			</h3>
-				<p class="bubble-text">
-					Connect with People Honoring Life Near You.
+			<p class="bubble-text">
+				Find those who affirm life.
 			</p>
 		</div>
 
@@ -42,7 +43,7 @@
 				<div class="bubble bubble-2"></div>
 			</a>
 			<h3 class="bubble-title">
-				Lead Life Ministry
+				<a href="<?php echo get_site_url() ?>/lead-life-ministry/">Lead Life Ministry</a>
 			</h3>
 			<p class="bubble-text">
 				Educate & advocate in your churches and communities.
@@ -54,7 +55,7 @@
 				<div class="bubble bubble-3"></div>
 			</a>
 			<h3 class="bubble-title">
-				Take Action for Life
+				<a href="<?php echo get_site_url() ?>/take-action/">Take Action for Life</a>
 			</h3>
 			<p class="bubble-text">
 				Not sure how to get started? We have suggestions!
@@ -73,7 +74,9 @@
 				<a href="<?php echo get_site_url() ?>/pastoral-resources/" class="bubble">
 					<div class="bubble bubble-4"></div>
 				</a>
-				<h3 class="bubble-title">Pastoral Resources</h3>
+				<h3 class="bubble-title">
+					<a href="<?php echo get_site_url() ?>/pastoral-resources/">Pastoral Resources</a>
+				</h3>
 				<p class="bubble-text">
 					Helpful guides for ministering to others facing life issues.
 				</p>
@@ -83,7 +86,9 @@
 				<a href="<?php echo get_site_url() ?>/teaching-resources/#audio-track-1" class="bubble">
 					<div class="bubble bubble-5"></div>
 				</a>
-				<h3 class="bubble-title">Teaching Resources</h3>
+				<h3 class="bubble-title">
+					<a href="<?php echo get_site_url() ?>/teaching-resources/#audio-track-1">Teaching Resources</a>
+				</h3>
 				<p class="bubble-text">
 					Useful tools for educating your church about life issues.
 				</p>
