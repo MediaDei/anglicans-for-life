@@ -256,6 +256,7 @@ header{
 			background-color: rgba(black,0.03);
 			z-index: 1; 
 			@include transition(opacity 0.5s ease);
+			max-width: 200px;
 
 			div.trending-issues{
 				position: relative;
@@ -281,7 +282,7 @@ header{
 					box-shadow: 0 1px 0 rgba(black, 0.1);
 
 					background-color: rgba(white, 0.1);
-					padding: 10px 20px 1px 40px;
+					padding: 14px 10px 4px 30px;
 					li{
 						margin-bottom: 10px;
 						padding-left: 10px;
@@ -304,7 +305,7 @@ header{
 					}
 
 					&:active{
-						background-color: rgba(black, 0.8);
+						background-color: rgba(black, 0.08);
 					}
 				}
 			}
