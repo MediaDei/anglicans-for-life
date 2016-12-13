@@ -90,10 +90,12 @@
 				if(is_page('home')){
 					the_post();
 					echo '
+					<div class="trending-wrapper">
 					<div class="trending-issues">
-						<h2>Trending now:</h2>
+						<h2>Trending issues:</h2>
 						' . get_the_content() . '
-						<a href="/issues/" class="smallcaps all-issues">our issues &rarr;</a>
+						<a href="/issues/" class="smallcaps all-issues">all issues &rarr;</a>
+					</div>
 					</div>';
 				}
 				the_post_thumbnail();
