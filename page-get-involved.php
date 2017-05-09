@@ -26,12 +26,12 @@
 	
 	<div class="grid">
 		<div class="grid-1-3">
-			<a class="bubble" href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">
+			<a class="bubble" href="http://vps27450.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">
 				<div class="bubble bubble-1"></div>
 			</a>
 			<h3 class="bubble-title life-affirming">
-				<span class="arrow">&rarr;</span> <a href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">Life-Affirming Leaders</a><br>
-				<span class="arrow">&rarr;</span> <a href="http://vps8838.inmotionhosting.com/~anglicansforlife/category/find-life-affirming-churches/">Life-Affirming Churches</a>
+				<span class="arrow">&rarr;</span> <a href="http://vps27450.inmotionhosting.com/~anglicansforlife/category/find-a-leader/">Life-Affirming Leaders</a><br>
+				<span class="arrow">&rarr;</span> <a href="http://vps27450.inmotionhosting.com/~anglicansforlife/category/find-life-affirming-churches/">Life-Affirming Churches</a>
 			</h3>
 			<p class="bubble-text">
 				Find those who affirm life.
